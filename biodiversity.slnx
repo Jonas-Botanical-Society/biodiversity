@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="biodiversity.csproj"/>
+  <Project Path="CakeBuild/CakeBuild.csproj" />
+</Solution>
