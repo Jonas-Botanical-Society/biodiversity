@@ -1,2 +1,4 @@
-# Biodiversity-Core
-Core mod for Biodiversity
+# Biodiversity
+Core mod for Biodiversity along with cakebuild.
+
+Anything not realated to one of the submods goes in this repository.
