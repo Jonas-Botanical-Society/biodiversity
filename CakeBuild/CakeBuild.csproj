@@ -4,7 +4,8 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>net10.0</TargetFramework>
     <RootNamespace>CakeBuild</RootNamespace>
-     <RunWorkingDirectory>$(MSBuildProjectDirectory)</RunWorkingDirectory>
+    <OutputPath />
+    <RunWorkingDirectory>$(MSBuildProjectDirectory)</RunWorkingDirectory>
   </PropertyGroup>
 
   <ItemGroup>
