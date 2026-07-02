@@ -1,192 +1,148 @@
-using Cake.Common;
-using Cake.Common.IO;
-using Cake.Common.Solution;
-using Cake.Common.Tools.DotNet;
-using Cake.Common.Tools.DotNet.Clean;
-using Cake.Common.Tools.DotNet.MSBuild;
-using Cake.Common.Tools.DotNet.Publish;
-using Cake.Common.Tools.MSBuild;
-using Cake.Core;
-using Cake.Frosting;
-using Cake.Json;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
-using System;
-using System.IO;
+using System.Collections.Generic;
 using System.Linq;
-using System.Xml.Linq;
-using Vintagestory.API.Common;
+using Cake.Common.Diagnostics;
+using Cake.Common.IO;
+using Cake.Common.Tools.DotNet;
+using Cake.Common.Tools.DotNet.Build;
+using Cake.Core;
+using Cake.Core.IO;
+using Cake.Frosting;
 
-namespace CakeBuild
+public static class Program
 {
-    public static class Program
+    public static int Main(string[] args)
     {
-        public static int Main(string[] args)
+        return new CakeHost()
+            .UseContext<BuildContext>()
+            .Run(args);
+    }
+}
+
+public class BuildContext : FrostingContext
+{
+    // Repo root is the parent of the CakeBuild project directory.
+    public DirectoryPath RootDirectory { get; }
+    public DirectoryPath BinDirectory { get; }
+    public List<DirectoryPath> ModDirectories { get; set; } = new List<DirectoryPath>();
+
+    public BuildContext(ICakeContext context)
+        : base(context)
+    {
+        // Assumes the build is invoked from the repo root, e.g.:
+        //   dotnet run --project CakeBuild -- --target=Default
+        RootDirectory = context.Environment.WorkingDirectory;
+        BinDirectory = RootDirectory.Combine("bin");
+    }
+}
+
+[TaskName("Clean")]
+public sealed class CleanTask : FrostingTask<BuildContext>
+{
+    public override void Run(BuildContext context)
+    {
+        context.CleanDirectory(context.BinDirectory.FullPath);
+    }
+}
+
+[TaskName("Discover-Mods")]
+public sealed class DiscoverModsTask : FrostingTask<BuildContext>
+{
+    public override void Run(BuildContext context)
+    {
+        var binPath = context.BinDirectory.FullPath.TrimEnd('/', '\\');
+
+        var modInfoFiles = context.GetFiles(
+            context.RootDirectory.FullPath + "/**/modinfo.json");
+
+        context.ModDirectories = modInfoFiles
+            .Select(f => f.GetDirectory())
+            // Exclude anything already inside bin/ (e.g. previously packaged output)
+            .Where(dir => !dir.FullPath.StartsWith(binPath))
+            .ToList();
+
+        foreach (var dir in context.ModDirectories)
         {
-            return new CakeHost()
-                .UseContext<BuildContext>()
-                .Run(args);
+            context.Information("Found mod: {0}", dir.GetDirectoryName());
         }
     }
+}
 
-    public class BuildContext : FrostingContext
+[TaskName("Build")]
+[IsDependentOn(typeof(DiscoverModsTask))]
+public sealed class BuildTask : FrostingTask<BuildContext>
+{
+    public override void Run(BuildContext context)
     {
-        public const string ProjectName = "biodiversity";
-
-        public string BuildConfiguration { get; }
-        public string Version { get; }
-        public string Name { get; }
-        public bool SkipJsonValidation { get; }
-
-        public BuildContext(ICakeContext context)
-            : base(context)
+        foreach (var dir in context.ModDirectories)
         {
-            BuildConfiguration = context.Argument("configuration", "Release");
-            SkipJsonValidation = context.Argument("skipJsonValidation", false);
-            var modInfo = context.DeserializeJsonFromFile<ModInfo>($"../{ProjectName}/modinfo.json");
-            Version = modInfo.Version;
-            Name = modInfo.ModID;
-        }
-    }
+            var dirName = dir.GetDirectoryName();
+            var csprojFiles = context.GetFiles(dir.FullPath + "/*.csproj");
+            var csproj = csprojFiles.FirstOrDefault();
 
-    [TaskName("ValidateJson")]
-    public sealed class ValidateJsonTask : FrostingTask<BuildContext>
-    {
-        public override void Run(BuildContext context)
-        {
-            if (context.SkipJsonValidation)
+            var packagedDir = context.BinDirectory.Combine(dirName);
+            context.EnsureDirectoryExists(packagedDir);
+
+            if (csproj is not null)
             {
-                return;
-            }
-            var jsonFiles = context.GetFiles($"../*/assets/**/*.json");
-            foreach (var file in jsonFiles)
-            {
-                try
-                {
-                    var json = File.ReadAllText(file.FullPath);
-                    JToken.Parse(json);
-                }
-                catch (JsonException ex)
-                {
-                    throw new Exception($"Validation failed for JSON file: {file.FullPath}{Environment.NewLine}{ex.Message}", ex);
-                }
-            }
-        }
-    }
+                context.Information("Building {0} -> {1}", dirName, packagedDir.FullPath);
 
-    [TaskName("Build")]
-    [IsDependentOn(typeof(ValidateJsonTask))]
-    public sealed class BuildTask : FrostingTask<BuildContext>
-    {
-        public override void Run(BuildContext context)
-        {
-            var projects = new[] { "biodiversity", "bdflower", "bdshrub", "bdaqua", "bdherb", "bdcrop", "bdorchard", "bdtree" };
-
-            foreach (var project in projects)
-            {
-                var modInfo = context.DeserializeJsonFromFile<ModInfo>($"../{project}/modinfo.json");
-                var modType = modInfo.Type.ToString();
-
-                context.DotNetClean($"../{project}/{project}.csproj",
-                new DotNetCleanSettings
+                context.DotNetBuild(csproj.FullPath, new DotNetBuildSettings
                 {
-                    Configuration = context.BuildConfiguration
+                    Configuration = "Release",
+                    OutputDirectory = packagedDir.FullPath
                 });
-
-                if (modType != "Code")
-                {
-                    continue;
-                }
-
-           //     var msBuildSettings = new DotNetMSBuildSettings()
-             //   .WithProperty("OutputPath", $"../Releases/{project}/");
-
-
-
-
-                context.DotNetPublish($"../{project}/{project}.csproj",
-                    new DotNetPublishSettings
-                    {
-                        Configuration = context.BuildConfiguration,
-                        //  OutputDirectory = $"../Releases/{project}",
-                        //       MSBuildSettings = msBuildSettings,
-                        NoBuild = false
-                    });
+            }
+            else
+            {
+                context.Information("{0} has no .csproj, skipping compile step.", dirName);
             }
         }
     }
+}
 
-    [TaskName("Package")]
-    [IsDependentOn(typeof(BuildTask))]
-    public sealed class PackageTask : FrostingTask<BuildContext>
+[TaskName("Copy-Assets")]
+[IsDependentOn(typeof(DiscoverModsTask))]
+public sealed class CopyAssetsTask : FrostingTask<BuildContext>
+{
+    public override void Run(BuildContext context)
     {
-        /*
-        public override void Run(BuildContext context)
+        foreach (var dir in context.ModDirectories)
         {
-            context.EnsureDirectoryExists("../Releases");
-            context.CleanDirectory("../Releases");
-            context.EnsureDirectoryExists($"../Releases/{context.Name}");
-            context.CopyFiles($"../{BuildContext.ProjectName}/bin/{context.BuildConfiguration}/Mods/mod/publish/*", $"../Releases/{context.Name}");
-            if (context.DirectoryExists($"../{BuildContext.ProjectName}/assets"))
+            var dirName = dir.GetDirectoryName();
+            var packagedDir = context.BinDirectory.Combine(dirName);
+            context.EnsureDirectoryExists(packagedDir);
+
+            var assetsDir = dir.Combine("assets");
+            if (context.DirectoryExists(assetsDir.FullPath))
             {
-                context.CopyDirectory($"../{BuildContext.ProjectName}/assets", $"../Releases/{context.Name}/assets");
+                context.CopyDirectory(assetsDir, packagedDir.Combine("assets"));
             }
-            context.CopyFile($"../{BuildContext.ProjectName}/modinfo.json", $"../Releases/{context.Name}/modinfo.json");
-            if (context.FileExists($"../{BuildContext.ProjectName}/modicon.png"))
+
+            var modInfoFile = dir.CombineWithFilePath("modinfo.json");
+            if (context.FileExists(modInfoFile))
             {
-                context.CopyFile($"../{BuildContext.ProjectName}/modicon.png", $"../Releases/{context.Name}/modicon.png");
+                context.CopyFile(modInfoFile, packagedDir.CombineWithFilePath("modinfo.json"));
             }
-            context.Zip($"../Releases/{context.Name}", $"../Releases/{context.Name}_{context.Version}.zip");
-        }
-        */
-        public override void Run(BuildContext context)
-        {
-            var projects = new[] { "biodiversity", "bdflower", "bdshrub", "bdaqua", "bdherb", "bdcrop", "bdorchard", "bdtree" };
-            context.EnsureDirectoryExists($"../Releases");
-            context.CleanDirectory($"../Releases");
-            context.EnsureDirectoryExists($"../Releases");
 
-
-            foreach (var project in projects)
+            var modIconFile = dir.CombineWithFilePath("modicon.png");
+            if (context.FileExists(modIconFile))
             {
-                var projectPath = $"../{project}";
-                var releasePath = $"../Releases/{project}";
-
-
-                var modInfo = context.DeserializeJsonFromFile<ModInfo>($"{projectPath}/modinfo.json");
-                var projectVersion = modInfo.Version;
-                var modID = modInfo.ModID;
-
-                context.EnsureDirectoryExists(releasePath);
-                context.CleanDirectory(releasePath);
-                context.EnsureDirectoryExists(releasePath);
-
-                context.CopyFiles($"../bin/{context.BuildConfiguration}/Mods/{modID}/*", $"../Releases/{modID}");
-
-                // Copy assets
-                if (context.DirectoryExists($"{projectPath}/assets"))
-                {
-                    context.CopyDirectory($"{projectPath}/assets", $"{releasePath}/assets");
-                }
-
-                // Copy modinfo.json
-                context.CopyFile($"{projectPath}/modinfo.json", $"{releasePath}/modinfo.json");
-
-                // Copy icon if it exists
-                if (context.FileExists($"{projectPath}/modicon.png"))
-                {
-                    context.CopyFile($"{projectPath}/modicon.png", $"{releasePath}/modicon.png");
-                }
-
-                // Zip the release
-                context.Zip(releasePath, $"../Releases/biodiversity_{modID}_{projectVersion}.zip");
+                context.CopyFile(modIconFile, packagedDir.CombineWithFilePath("modicon.png"));
             }
         }
     }
+}
 
-    [TaskName("Default")]
-    [IsDependentOn(typeof(PackageTask))]
-    public class DefaultTask : FrostingTask
-    {
-    }
+[TaskName("Package")]
+[IsDependentOn(typeof(BuildTask))]
+[IsDependentOn(typeof(CopyAssetsTask))]
+public sealed class PackageTask : FrostingTask<BuildContext>
+{
+}
+
+[TaskName("Default")]
+[IsDependentOn(typeof(CleanTask))]
+[IsDependentOn(typeof(PackageTask))]
+public sealed class DefaultTask : FrostingTask<BuildContext>
+{
 }
