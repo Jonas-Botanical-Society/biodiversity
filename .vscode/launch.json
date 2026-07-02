@@ -21,9 +21,9 @@
                 // "--openWorld" , "modding test world",
                 "--tracelog",
                 "--addModPath",
-                "${workspaceFolder}/biodiversity/bin/Debug/Mods",
-                "--addOrigin",
-                "${workspaceFolder}/biodiversity/assets"
+                "${workspaceFolder}/bin/Debug/Mods",
+                //"--addOrigin",
+                //"${workspaceFolder}/biodiversity/assets"
             ],
             "console": "internalConsole",
             "stopAtEntry": false
@@ -43,9 +43,9 @@
             "args": [
                 "--tracelog",
                 "--addModPath",
-                "${workspaceFolder}/biodiversity/bin/Debug/Mods",
-                 "--addOrigin",
-                 "${workspaceFolder}/biodiversity/assets"
+                "${workspaceFolder}/bin/Debug/Mods",
+                // "--addOrigin",
+                 //"${workspaceFolder}/biodiversity/assets"
             ],
             "console": "internalConsole",
             "stopAtEntry": false
@@ -54,8 +54,8 @@
             "name": "CakeBuild",
             "type": "coreclr",
             "request": "launch",
-            "preLaunchTask": "build (Cake)",
-            "program": "${workspaceFolder}/CakeBuild/bin/Debug/net7.0/CakeBuild.dll",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/CakeBuild/bin/Debug/net10.0/CakeBuild.dll",
             "args": [],
             "cwd": "${workspaceFolder}/CakeBuild",
             "stopAtEntry": false,

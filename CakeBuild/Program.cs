@@ -1,12 +1,15 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using Cake.Common.Diagnostics;
 using Cake.Common.IO;
 using Cake.Common.Tools.DotNet;
-using Cake.Common.Tools.DotNet.Build;
 using Cake.Core;
 using Cake.Core.IO;
 using Cake.Frosting;
+using Cake.Common.Tools.DotNet.Build; 
+using Newtonsoft.Json.Linq;
+using Cake.Common;
 
 public static class Program
 {
@@ -24,13 +27,15 @@ public class BuildContext : FrostingContext
     public DirectoryPath RootDirectory { get; }
     public DirectoryPath BinDirectory { get; }
     public List<DirectoryPath> ModDirectories { get; set; } = new List<DirectoryPath>();
-
+    public bool SkipJsonValidation { get; }
+    public string BuildConfiguration { get; }
     public BuildContext(ICakeContext context)
         : base(context)
     {
-        // Assumes the build is invoked from the repo root, e.g.:
-        //   dotnet run --project CakeBuild -- --target=Default
-        RootDirectory = context.Environment.WorkingDirectory;
+        SkipJsonValidation = context.Argument("skipJsonValidation", false);
+        BuildConfiguration = context.Argument("configuration", "Release");
+
+        RootDirectory = context.Environment.WorkingDirectory.Combine("..").Collapse();
         BinDirectory = RootDirectory.Combine("bin");
     }
 }
@@ -43,8 +48,33 @@ public sealed class CleanTask : FrostingTask<BuildContext>
         context.CleanDirectory(context.BinDirectory.FullPath);
     }
 }
+ [TaskName("ValidateJson")]
+public sealed class ValidateJsonTask : FrostingTask<BuildContext>
+{
+    public override void Run(BuildContext context)
+    {
+        if (context.SkipJsonValidation) return;
 
+        foreach (var dir in context.ModDirectories)
+        {
+            var jsonFiles = context.GetFiles(dir.FullPath + "/assets/**/*.json");
+            foreach (var file in jsonFiles)
+            {
+                try
+                {
+                    var json = System.IO.File.ReadAllText(file.FullPath);
+                    Newtonsoft.Json.Linq.JToken.Parse(json);
+                }
+                catch (Newtonsoft.Json.JsonException ex)
+                {
+                    throw new Exception($"Validation failed for JSON file: {file.FullPath}{Environment.NewLine}{ex.Message}", ex);
+                }
+            }
+        }
+    }
+}
 [TaskName("Discover-Mods")]
+[IsDependentOn(typeof(ValidateJsonTask))]
 public sealed class DiscoverModsTask : FrostingTask<BuildContext>
 {
     public override void Run(BuildContext context)
@@ -84,11 +114,11 @@ public sealed class BuildTask : FrostingTask<BuildContext>
 
             if (csproj is not null)
             {
-                context.Information("Building {0} -> {1}", dirName, packagedDir.FullPath);
+                context.Information("Building {0} -> {1}", dirName, context.BuildConfiguration, packagedDir.FullPath);
 
                 context.DotNetBuild(csproj.FullPath, new DotNetBuildSettings
                 {
-                    Configuration = "Release",
+                    Configuration = context.BuildConfiguration,
                     OutputDirectory = packagedDir.FullPath
                 });
             }

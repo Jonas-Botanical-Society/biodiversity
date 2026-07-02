@@ -4,12 +4,15 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>net10.0</TargetFramework>
     <RootNamespace>CakeBuild</RootNamespace>
+     <RunWorkingDirectory>$(MSBuildProjectDirectory)</RunWorkingDirectory>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Cake.Frosting" Version="5.0.0" />
     <PackageReference Include="Cake.Json" Version="7.0.1" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="NuGet.Packaging" Version="6.14.3" />
+    <PackageReference Include="NuGet.Protocol" Version="6.14.3" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="VintagestoryAPI">
