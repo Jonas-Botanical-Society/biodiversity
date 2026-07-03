@@ -60,6 +60,20 @@
             "cwd": "${workspaceFolder}/CakeBuild",
             "stopAtEntry": false,
             "console": "internalConsole"
+        },
+        {
+            "name": "Export",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/CakeBuild/bin/Debug/CakeBuild.dll",
+            "args": [
+                "--target=Export",
+                "--configuration=Release"
+            ],
+            "cwd": "${workspaceFolder}/CakeBuild",
+            "stopAtEntry": false,
+            "console": "internalConsole"
         }
     ]
 }

@@ -10,6 +10,7 @@ using Cake.Frosting;
 using Cake.Common.Tools.DotNet.Build; 
 using Newtonsoft.Json.Linq;
 using Cake.Common;
+using Cake.Json;
 
 public static class Program
 {
@@ -19,6 +20,11 @@ public static class Program
             .UseContext<BuildContext>()
             .Run(args);
     }
+}
+
+public class ModInfo
+{
+    public string Version { get; set; }
 }
 
 public class BuildContext : FrostingContext
@@ -33,6 +39,9 @@ public class BuildContext : FrostingContext
     // Actual packaging destination: bin/<Configuration>/Mods/<modname>
     public DirectoryPath BinDirectory { get; }
 
+    // Distributable zip output: Releases/<ModID>_<Version>.zip
+    public DirectoryPath ReleasesDirectory { get; }
+
     public List<DirectoryPath> ModDirectories { get; set; } = new List<DirectoryPath>();
     public bool SkipJsonValidation { get; }
     public string BuildConfiguration { get; }
@@ -45,6 +54,7 @@ public class BuildContext : FrostingContext
         RootDirectory = context.Environment.WorkingDirectory.Combine("..").Collapse();
         RootBinDirectory = RootDirectory.Combine("bin");
         BinDirectory = RootBinDirectory.Combine(BuildConfiguration).Combine("Mods");
+        ReleasesDirectory = RootDirectory.Combine("Releases");
     }
 }
 
@@ -196,6 +206,35 @@ public sealed class CopyContentTask : FrostingTask<BuildContext>
 [IsDependentOn(typeof(CopyContentTask))]
 public sealed class PackageTask : FrostingTask<BuildContext>
 {
+}
+
+[TaskName("Export")]
+[IsDependentOn(typeof(PackageTask))]
+public sealed class ExportTask : FrostingTask<BuildContext>
+{
+    public override void Run(BuildContext context)
+    {
+        context.EnsureDirectoryExists(context.ReleasesDirectory);
+
+        foreach (var dir in context.ModDirectories)
+        {
+            var dirName = dir.GetDirectoryName();
+            var packagedDir = context.BinDirectory.Combine(dirName);
+            var modInfoFile = dir.CombineWithFilePath("modinfo.json");
+
+            if (!context.FileExists(modInfoFile))
+            {
+                context.Warning("{0} has no modinfo.json, skipping export.", dirName);
+                continue;
+            }
+
+            var modInfo = context.DeserializeJsonFromFile<ModInfo>(modInfoFile.FullPath);
+            var zipFile = context.ReleasesDirectory.CombineWithFilePath($"{dirName}_{modInfo.Version}.zip");
+
+            context.Information("Zipping {0} -> {1}", dirName, zipFile.FullPath);
+            context.Zip(packagedDir, zipFile);
+        }
+    }
 }
 
 [TaskName("Default")]
