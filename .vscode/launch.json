@@ -15,13 +15,13 @@
             "osx": {
                 "program": "${env:VINTAGE_STORY}/Vintagestory"
             },
-            "preLaunchTask": "build",
+            "preLaunchTask": "package",
             "args": [
                 // "--playStyle" , "preset-surviveandbuild",
                 // "--openWorld" , "modding test world",
                 "--tracelog",
                 "--addModPath",
-                "${workspaceFolder}/bin",
+                "${workspaceFolder}/bin/Debug/Mods",
                 //"--addOrigin",
                 //"${workspaceFolder}/biodiversity/assets"
             ],
@@ -39,11 +39,11 @@
             "osx": {
                 "program": "${env:VINTAGE_STORY}/VintagestoryServer"
             },
-            "preLaunchTask": "build",
+            "preLaunchTask": "package",
             "args": [
                 "--tracelog",
                 "--addModPath",
-                "${workspaceFolder}/bin",
+                "${workspaceFolder}/bin/Debug/Mods",
                 // "--addOrigin",
                  //"${workspaceFolder}/biodiversity/assets"
             ],

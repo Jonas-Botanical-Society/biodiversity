@@ -25,7 +25,14 @@ public class BuildContext : FrostingContext
 {
     // Repo root is the parent of the CakeBuild project directory.
     public DirectoryPath RootDirectory { get; }
+
+    // Top-level bin/ folder, used only to EXCLUDE packaged output from mod discovery,
+    // regardless of which Configuration's subfolder it lives in.
+    public DirectoryPath RootBinDirectory { get; }
+
+    // Actual packaging destination: bin/<Configuration>/Mods/<modname>
     public DirectoryPath BinDirectory { get; }
+
     public List<DirectoryPath> ModDirectories { get; set; } = new List<DirectoryPath>();
     public bool SkipJsonValidation { get; }
     public string BuildConfiguration { get; }
@@ -36,7 +43,8 @@ public class BuildContext : FrostingContext
         BuildConfiguration = context.Argument("configuration", "Release");
 
         RootDirectory = context.Environment.WorkingDirectory.Combine("..").Collapse();
-        BinDirectory = RootDirectory.Combine("bin");
+        RootBinDirectory = RootDirectory.Combine("bin");
+        BinDirectory = RootBinDirectory.Combine(BuildConfiguration).Combine("Mods");
     }
 }
 
@@ -79,7 +87,7 @@ public sealed class DiscoverModsTask : FrostingTask<BuildContext>
 {
     public override void Run(BuildContext context)
     {
-        var binPath = context.BinDirectory.FullPath.TrimEnd('/', '\\');
+        var binPath = context.RootBinDirectory.FullPath.TrimEnd('/', '\\');
 
         var modInfoFiles = context.GetFiles(
             context.RootDirectory.FullPath + "/**/modinfo.json");
@@ -130,10 +138,14 @@ public sealed class BuildTask : FrostingTask<BuildContext>
     }
 }
 
-[TaskName("Copy-Assets")]
+[TaskName("Copy-Content")]
 [IsDependentOn(typeof(DiscoverModsTask))]
-public sealed class CopyAssetsTask : FrostingTask<BuildContext>
+public sealed class CopyContentTask : FrostingTask<BuildContext>
 {
+    // Non-code files that should ride along into the packaged mod.
+    // Extend this list if new metadata file types show up (e.g. .yaml).
+    private static readonly string[] IncludedExtensions = { ".json", ".md", ".txt", ".png" };
+
     public override void Run(BuildContext context)
     {
         foreach (var dir in context.ModDirectories)
@@ -142,22 +154,38 @@ public sealed class CopyAssetsTask : FrostingTask<BuildContext>
             var packagedDir = context.BinDirectory.Combine(dirName);
             context.EnsureDirectoryExists(packagedDir);
 
+            // Copy the whole assets/ folder as-is, preserving its nested structure.
             var assetsDir = dir.Combine("assets");
             if (context.DirectoryExists(assetsDir.FullPath))
             {
                 context.CopyDirectory(assetsDir, packagedDir.Combine("assets"));
             }
 
-            var modInfoFile = dir.CombineWithFilePath("modinfo.json");
-            if (context.FileExists(modInfoFile))
-            {
-                context.CopyFile(modInfoFile, packagedDir.CombineWithFilePath("modinfo.json"));
-            }
+            // Copy any remaining metadata files anywhere else in the mod folder
+            // (modinfo.json, modicon.png, README.md, LICENSE.txt, etc.) while
+            // skipping source, build intermediates, and the already-copied assets/.
+            var dirPathNormalized = dir.FullPath.TrimEnd('/', '\\');
+            var candidateFiles = context.GetFiles(dir.FullPath + "/**/*.*");
 
-            var modIconFile = dir.CombineWithFilePath("modicon.png");
-            if (context.FileExists(modIconFile))
+            foreach (var file in candidateFiles)
             {
-                context.CopyFile(modIconFile, packagedDir.CombineWithFilePath("modicon.png"));
+                var ext = file.GetExtension();
+                if (ext is null || Array.IndexOf(IncludedExtensions, ext.ToLowerInvariant()) < 0)
+                    continue;
+
+                var relativePath = file.FullPath
+                    .Substring(dirPathNormalized.Length)
+                    .TrimStart('/', '\\');
+
+                if (relativePath.StartsWith("src/", StringComparison.OrdinalIgnoreCase) ||
+                    relativePath.StartsWith("obj/", StringComparison.OrdinalIgnoreCase) ||
+                    relativePath.StartsWith("bin/", StringComparison.OrdinalIgnoreCase) ||
+                    relativePath.StartsWith("assets/", StringComparison.OrdinalIgnoreCase))
+                    continue;
+
+                var destination = packagedDir.CombineWithFilePath(relativePath);
+                context.EnsureDirectoryExists(destination.GetDirectory());
+                context.CopyFile(file, destination);
             }
         }
     }
@@ -165,7 +193,7 @@ public sealed class CopyAssetsTask : FrostingTask<BuildContext>
 
 [TaskName("Package")]
 [IsDependentOn(typeof(BuildTask))]
-[IsDependentOn(typeof(CopyAssetsTask))]
+[IsDependentOn(typeof(CopyContentTask))]
 public sealed class PackageTask : FrostingTask<BuildContext>
 {
 }
