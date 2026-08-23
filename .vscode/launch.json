@@ -15,15 +15,14 @@
             "osx": {
                 "program": "${env:VINTAGE_STORY}/Vintagestory"
             },
-            "preLaunchTask": "package",
+            "preLaunchTask": "build",
             "args": [
                 // "--playStyle" , "preset-surviveandbuild",
                 // "--openWorld" , "modding test world",
                 "--tracelog",
                 "--addModPath",
-                "${workspaceFolder}/bin/Debug/Mods",
-                //"--addOrigin",
-                //"${workspaceFolder}/biodiversity/assets"
+                "${workspaceFolder}/bin/Debug/Mods"
+                
             ],
             "console": "internalConsole",
             "stopAtEntry": false
@@ -39,13 +38,11 @@
             "osx": {
                 "program": "${env:VINTAGE_STORY}/VintagestoryServer"
             },
-            "preLaunchTask": "package",
+            "preLaunchTask": "build",
             "args": [
                 "--tracelog",
                 "--addModPath",
-                "${workspaceFolder}/bin/Debug/Mods",
-                // "--addOrigin",
-                 //"${workspaceFolder}/biodiversity/assets"
+                "${workspaceFolder}/biodiversityCore/bin/Debug/Mods"
             ],
             "console": "internalConsole",
             "stopAtEntry": false
@@ -54,23 +51,9 @@
             "name": "CakeBuild",
             "type": "coreclr",
             "request": "launch",
-            "preLaunchTask": "build",
+            "preLaunchTask": "build (Cake)",
             "program": "${workspaceFolder}/CakeBuild/bin/Debug/CakeBuild.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/CakeBuild",
-            "stopAtEntry": false,
-            "console": "internalConsole"
-        },
-        {
-            "name": "Export",
-            "type": "coreclr",
-            "request": "launch",
-            "preLaunchTask": "build",
-            "program": "${workspaceFolder}/CakeBuild/bin/Debug/CakeBuild.dll",
-            "args": [
-                "--target=Export",
-                "--configuration=Release"
-            ],
             "cwd": "${workspaceFolder}/CakeBuild",
             "stopAtEntry": false,
             "console": "internalConsole"
