@@ -2,5 +2,6 @@
   <Folder Name="/CakeBuild/">
     <Project Path="CakeBuild/CakeBuild.csproj" />
   </Folder>
-
+  <Project Path="biodiversityCore/core.csproj" />
+  <Project Path="biodiversityCrops/crops.csproj" />
 </Solution>
