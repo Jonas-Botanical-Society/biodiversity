@@ -1,5 +1,4 @@
-﻿using Cairo;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using Vintagestory.API.Common;
@@ -180,7 +179,7 @@ namespace biodiversity.src.System
 
 
             treeGenerators.LoadTreeGenerators();
-            int i = 0;
+           
 
             //get start position
             var asBlockPos = player.Entity.Pos.AsBlockPos;
