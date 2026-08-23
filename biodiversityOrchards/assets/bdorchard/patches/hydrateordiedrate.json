@@ -1,0 +1,57 @@
+[
+  // Fruit add hydration
+  {
+    "dependsOn": [ { "modid": "hydrateordiedrate" } ],
+    "file": "bdorchard:itemtypes/food/fruit.json",
+    "op": "addmerge",
+    "path": "/attributes",
+    "side": "server",
+    "value": {
+      "hydration": 30
+    }
+  },
+  // Pickled citrus add hydration
+  {
+    "dependsOn": [ { "modid": "hydrateordiedrate" } ],
+    "file": "bdorchard:itemtypes/food/pickledcitrus.json",
+    "op": "addmerge",
+    "path": "/attributes",
+    "side": "server",
+    "value": {
+      "hydration": 25
+    }
+  },
+  // Raw juice hydration
+  {
+    "dependsOn": [ { "modid": "hydrateordiedrate" } ],
+    "file": "bdorchard:itemtypes/liquid/rawjuice.json",
+    "op": "addmerge",
+    "path": "/attributes",
+    "side": "server",
+    "value": {
+      "hydration": 900
+    }
+  },
+  // Wine hydration
+  {
+    "dependsOn": [ { "modid": "hydrateordiedrate" } ],
+    "file": "bdorchard:itemtypes/liquid/cider.json",
+    "op": "addmerge",
+    "path": "/attributes",
+    "side": "server",
+    "value": {
+      "hydration": 200
+    }
+  },
+  // Spirits hydration
+  {
+    "dependsOn": [ { "modid": "hydrateordiedrate" } ],
+    "file": "bdorchard:itemtypes/liquid/spirit.json",
+    "op": "addmerge",
+    "path": "/attributes",
+    "side": "server",
+    "value": {
+      "hydration": 10
+    }
+  }
+]

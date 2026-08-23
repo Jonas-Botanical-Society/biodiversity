@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "sTZyQYf021c=",
+  "success": true,
+  "projectFilePath": "/home/daniel/Projects/BDrework/biodiversity/biodiversityFlowers/bdflower.csproj",
+  "expectedPackageFiles": [
+    "/home/daniel/.nuget/packages/microsoft.aspnetcore.app.ref/10.0.11/microsoft.aspnetcore.app.ref.10.0.11.nupkg.sha512"
+  ],
+  "logs": []
+}

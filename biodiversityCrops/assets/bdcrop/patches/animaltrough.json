@@ -1,0 +1,395 @@
+[
+  // Large Animal Trough
+  // leek
+  {
+    "op": "add",
+    "path": "/attributes/contentConfig/-",
+    "value": {
+      "code": "leek",
+      "content": {
+        "type": "item",
+        "code": "bdcrop:vegetable-leek"
+      },
+      "quantityPerFillLevel": 2,
+      "maxFillLevels": 8,
+      "shapesPerFillLevel": [ "block/wood/trough/large/grainfill1", "block/wood/trough/large/grainfill1", "block/wood/trough/large/grainfill2", "block/wood/trough/large/grainfill2", "block/wood/trough/large/grainfill3", "block/wood/trough/large/grainfill3", "block/wood/trough/large/grainfill4", "block/wood/trough/large/grainfill4" ],
+      "textureCode": "contents-vegetable-leek"
+    },
+    "file": "game:blocktypes/wood/trough-large.json",
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/textures/contents-vegetable-leek",
+    "value": {
+      "base": "bdcrop:block/food/pie/fill-leek",
+      "overlays": [ "block/wood/trough/large/shadow" ]
+    },
+    "file": "game:blocktypes/wood/trough-large.json",
+    "side": "server"
+  },
+  // tomato
+  {
+    "op": "add",
+    "path": "/attributes/contentConfig/-",
+    "value": {
+      "code": "tomato",
+      "content": {
+        "type": "item",
+        "code": "bdcrop:vegetable-tomato"
+      },
+      "quantityPerFillLevel": 2,
+      "maxFillLevels": 8,
+      "shapesPerFillLevel": [ "block/wood/trough/large/grainfill1", "block/wood/trough/large/grainfill1", "block/wood/trough/large/grainfill2", "block/wood/trough/large/grainfill2", "block/wood/trough/large/grainfill3", "block/wood/trough/large/grainfill3", "block/wood/trough/large/grainfill4", "block/wood/trough/large/grainfill4" ],
+      "textureCode": "contents-vegetable-tomato"
+    },
+    "file": "game:blocktypes/wood/trough-large.json",
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/textures/contents-vegetable-tomato",
+    "value": {
+      "base": "bdcrop:block/food/pie/fill-tomato",
+      "overlays": [ "block/wood/trough/large/shadow" ]
+    },
+    "file": "game:blocktypes/wood/trough-large.json",
+    "side": "server"
+  },
+  // potato
+  {
+    "op": "add",
+    "path": "/attributes/contentConfig/-",
+    "value": {
+      "code": "potato",
+      "content": {
+        "type": "item",
+        "code": "bdcrop:vegetable-potato"
+      },
+      "quantityPerFillLevel": 2,
+      "maxFillLevels": 8,
+      "shapesPerFillLevel": [ "block/wood/trough/large/grainfill1", "block/wood/trough/large/grainfill1", "block/wood/trough/large/grainfill2", "block/wood/trough/large/grainfill2", "block/wood/trough/large/grainfill3", "block/wood/trough/large/grainfill3", "block/wood/trough/large/grainfill4", "block/wood/trough/large/grainfill4" ],
+      "textureCode": "contents-vegetable-potato"
+    },
+    "file": "game:blocktypes/wood/trough-large.json",
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/textures/contents-vegetable-potato",
+    "value": {
+      "base": "game:block/wood/barrel/raw-potato",
+      "overlays": [ "block/wood/trough/large/shadow" ]
+    },
+    "file": "game:blocktypes/wood/trough-large.json",
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/attributes/contentConfig/-",
+    "value": {
+      "code": "watermelonmash",
+      "content": {
+        "type": "item",
+        "code": "bdcrop:pressedmash-watermelon"
+      },
+      "quantityPerFillLevel": 2,
+      "maxFillLevels": 8,
+      "shapesPerFillLevel": [ "block/wood/trough/large/grainfill1", "block/wood/trough/large/grainfill1", "block/wood/trough/large/grainfill2", "block/wood/trough/large/grainfill2", "block/wood/trough/large/grainfill3", "block/wood/trough/large/grainfill3", "block/wood/trough/large/grainfill4", "block/wood/trough/large/grainfill4" ],
+      "textureCode": "contents-pressedmash-watermelon"
+    },
+    "file": "game:blocktypes/wood/trough-large.json",
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/textures/contents-pressedmash-watermelon",
+    "value": {
+      "base": "bdcrop:block/food/pie/fill-watermelon",
+      "overlays": [ "block/wood/trough/large/shadow" ]
+    },
+    "file": "game:blocktypes/wood/trough-large.json",
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/attributes/contentConfig/-",
+    "value": {
+      "code": "honeydewmelonmash",
+      "content": {
+        "type": "item",
+        "code": "bdcrop:pressedmash-honeydewmelon"
+      },
+      "quantityPerFillLevel": 2,
+      "maxFillLevels": 8,
+      "shapesPerFillLevel": [ "block/wood/trough/large/grainfill1", "block/wood/trough/large/grainfill1", "block/wood/trough/large/grainfill2", "block/wood/trough/large/grainfill2", "block/wood/trough/large/grainfill3", "block/wood/trough/large/grainfill3", "block/wood/trough/large/grainfill4", "block/wood/trough/large/grainfill4" ],
+      "textureCode": "contents-pressedmash-honeydewmelon"
+    },
+    "file": "game:blocktypes/wood/trough-large.json",
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/textures/contents-pressedmash-honeydew",
+    "value": {
+      "base": "bdcrop:block/food/pie/fill-honeydewmelon",
+      "overlays": [ "block/wood/trough/large/shadow" ]
+    },
+    "file": "game:blocktypes/wood/trough-large.json",
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/attributes/contentConfig/-",
+    "value": {
+      "code": "mirzamelonmash",
+      "content": {
+        "type": "item",
+        "code": "bdcrop:pressedmash-mirzamelon"
+      },
+      "quantityPerFillLevel": 2,
+      "maxFillLevels": 8,
+      "shapesPerFillLevel": [ "block/wood/trough/large/grainfill1", "block/wood/trough/large/grainfill1", "block/wood/trough/large/grainfill2", "block/wood/trough/large/grainfill2", "block/wood/trough/large/grainfill3", "block/wood/trough/large/grainfill3", "block/wood/trough/large/grainfill4", "block/wood/trough/large/grainfill4" ],
+      "textureCode": "contents-pressedmash-mirzamelon"
+    },
+    "file": "game:blocktypes/wood/trough-large.json",
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/textures/contents-pressedmash-mirzamelon",
+    "value": {
+      "base": "bdcrop:block/food/pie/fill-mirzamelon",
+      "overlays": [ "block/wood/trough/large/shadow" ]
+    },
+    "file": "game:blocktypes/wood/trough-large.json",
+    "side": "server"
+  },
+  {
+    "enabled": false,
+    "op": "add",
+    "path": "/attributes/contentConfig/-",
+    "value": {
+      "code": "cantaloupemash",
+      "content": {
+        "type": "item",
+        "code": "bdcrop:pressedmash-cantaloupe"
+      },
+      "quantityPerFillLevel": 2,
+      "maxFillLevels": 8,
+      "shapesPerFillLevel": [ "block/wood/trough/large/grainfill1", "block/wood/trough/large/grainfill1", "block/wood/trough/large/grainfill2", "block/wood/trough/large/grainfill2", "block/wood/trough/large/grainfill3", "block/wood/trough/large/grainfill3", "block/wood/trough/large/grainfill4", "block/wood/trough/large/grainfill4" ],
+      "textureCode": "contents-pressedmash-cantaloupe"
+    },
+    "file": "game:blocktypes/wood/trough-large.json",
+    "side": "server"
+  },
+  {
+    "enabled": false,
+    "op": "add",
+    "path": "/textures/contents-pressedmash-cantaloupe",
+    "value": {
+      "base": "bdcrop:block/food/pie/fill-cantaloupe",
+      "overlays": [ "block/wood/trough/large/shadow" ]
+    },
+    "file": "game:blocktypes/wood/trough-large.json",
+    "side": "server"
+  },
+
+  // Small animal trough
+  // leek
+  {
+    "op": "add",
+    "path": "/attributes/contentConfig/-",
+    "value": {
+      "code": "leek",
+      "content": {
+        "type": "item",
+        "code": "bdcrop:vegetable-leek"
+      },
+      "quantityPerFillLevel": 1,
+      "maxFillLevels": 8,
+      "shapesPerFillLevel": [ "block/wood/trough/small/grainfill1", "block/wood/trough/small/grainfill1", "block/wood/trough/small/grainfill2", "block/wood/trough/small/grainfill2", "block/wood/trough/small/grainfill3", "block/wood/trough/small/grainfill3", "block/wood/trough/small/grainfill4", "block/wood/trough/small/grainfill4" ],
+      "textureCode": "contents-vegetable-leek"
+    },
+    "file": "game:blocktypes/wood/trough-small.json",
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/textures/contents-vegetable-leek",
+    "value": {
+      "base": "bdcrop:block/food/pie/fill-leek",
+      "overlays": [ "block/wood/trough/small/shadow" ]
+    },
+    "file": "game:blocktypes/wood/trough-small.json",
+    "side": "server"
+  },
+  // tomato
+  {
+    "op": "add",
+    "path": "/attributes/contentConfig/-",
+    "value": {
+      "code": "tomato",
+      "content": {
+        "type": "item",
+        "code": "bdcrop:vegetable-tomato"
+      },
+      "quantityPerFillLevel": 1,
+      "maxFillLevels": 8,
+      "shapesPerFillLevel": [ "block/wood/trough/small/grainfill1", "block/wood/trough/small/grainfill1", "block/wood/trough/small/grainfill2", "block/wood/trough/small/grainfill2", "block/wood/trough/small/grainfill3", "block/wood/trough/small/grainfill3", "block/wood/trough/small/grainfill4", "block/wood/trough/small/grainfill4" ],
+      "textureCode": "contents-vegetable-tomato"
+    },
+    "file": "game:blocktypes/wood/trough-small.json",
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/textures/contents-vegetable-tomato",
+    "value": {
+      "base": "bdcrop:block/food/pie/fill-tomato",
+      "overlays": [ "block/wood/trough/small/shadow" ]
+    },
+    "file": "game:blocktypes/wood/trough-small.json",
+    "side": "server"
+  },
+  // potato
+  {
+    "op": "add",
+    "path": "/attributes/contentConfig/-",
+    "value": {
+      "code": "potato",
+      "content": {
+        "type": "item",
+        "code": "bdcrop:vegetable-potato"
+      },
+      "quantityPerFillLevel": 1,
+      "maxFillLevels": 8,
+      "shapesPerFillLevel": [ "block/wood/trough/small/grainfill1", "block/wood/trough/small/grainfill1", "block/wood/trough/small/grainfill2", "block/wood/trough/small/grainfill2", "block/wood/trough/small/grainfill3", "block/wood/trough/small/grainfill3", "block/wood/trough/small/grainfill4", "block/wood/trough/small/grainfill4" ],
+      "textureCode": "contents-vegetable-potato"
+    },
+    "file": "game:blocktypes/wood/trough-small.json",
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/textures/contents-vegetable-potato",
+    "value": {
+      "base": "game:block/wood/barrel/raw-potato",
+      "overlays": [ "block/wood/trough/small/shadow" ]
+    },
+    "file": "game:blocktypes/wood/trough-small.json",
+    "side": "server"
+  },
+  // melons mashes
+  {
+    "op": "add",
+    "path": "/attributes/contentConfig/-",
+    "value": {
+      "code": "watermelonmash",
+      "content": {
+        "type": "item",
+        "code": "bdcrop:pressedmash-watermelon"
+      },
+      "quantityPerFillLevel": 1,
+      "maxFillLevels": 8,
+      "shapesPerFillLevel": [ "block/wood/trough/small/grainfill1", "block/wood/trough/small/grainfill1", "block/wood/trough/small/grainfill2", "block/wood/trough/small/grainfill2", "block/wood/trough/small/grainfill3", "block/wood/trough/small/grainfill3", "block/wood/trough/small/grainfill4", "block/wood/trough/small/grainfill4" ],
+      "textureCode": "contents-pressedmash-watermelon"
+    },
+    "file": "game:blocktypes/wood/trough-small.json",
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/textures/contents-pressedmash-watermelon",
+    "value": {
+      "base": "bdcrop:block/food/pie/fill-watermelon",
+      "overlays": [ "block/wood/trough/small/shadow" ]
+    },
+    "file": "game:blocktypes/wood/trough-small.json",
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/attributes/contentConfig/-",
+    "value": {
+      "code": "mirzamelonmash",
+      "content": {
+        "type": "item",
+        "code": "bdcrop:pressedmash-mirzamelon"
+      },
+      "quantityPerFillLevel": 1,
+      "maxFillLevels": 8,
+      "shapesPerFillLevel": [ "block/wood/trough/small/grainfill1", "block/wood/trough/small/grainfill1", "block/wood/trough/small/grainfill2", "block/wood/trough/small/grainfill2", "block/wood/trough/small/grainfill3", "block/wood/trough/small/grainfill3", "block/wood/trough/small/grainfill4", "block/wood/trough/small/grainfill4" ],
+      "textureCode": "contents-pressedmash-mirzamelon"
+    },
+    "file": "game:blocktypes/wood/trough-small.json",
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/textures/contents-pressedmash-mirzamelon",
+    "value": {
+      "base": "bdcrop:block/food/pie/fill-mirzamelon",
+      "overlays": [ "block/wood/trough/small/shadow" ]
+    },
+    "file": "game:blocktypes/wood/trough-small.json",
+    "side": "server"
+  },
+  {
+    "enabled": false,
+    "op": "add",
+    "path": "/attributes/contentConfig/-",
+    "value": {
+      "code": "cantaloupemash",
+      "content": {
+        "type": "item",
+        "code": "bdcrop:pressedmash-cantaloupe"
+      },
+      "quantityPerFillLevel": 1,
+      "maxFillLevels": 8,
+      "shapesPerFillLevel": [ "block/wood/trough/small/grainfill1", "block/wood/trough/small/grainfill1", "block/wood/trough/small/grainfill2", "block/wood/trough/small/grainfill2", "block/wood/trough/small/grainfill3", "block/wood/trough/small/grainfill3", "block/wood/trough/small/grainfill4", "block/wood/trough/small/grainfill4" ],
+      "textureCode": "contents-pressedmash-cantaloupe"
+    },
+    "file": "game:blocktypes/wood/trough-small.json",
+    "side": "server"
+  },
+  {
+    "enabled": false,
+    "op": "add",
+    "path": "/textures/contents-pressedmash-cantaloupe",
+    "value": {
+      "base": "bdcrop:block/food/pie/fill-cantaloupe",
+      "overlays": [ "block/wood/trough/small/shadow" ]
+    },
+    "file": "game:blocktypes/wood/trough-small.json",
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/attributes/contentConfig/-",
+    "value": {
+      "code": "honeydewmelonmash",
+      "content": {
+        "type": "item",
+        "code": "bdcrop:pressedmash-honeydewmelon"
+      },
+      "quantityPerFillLevel": 1,
+      "maxFillLevels": 8,
+      "shapesPerFillLevel": [ "block/wood/trough/small/grainfill1", "block/wood/trough/small/grainfill1", "block/wood/trough/small/grainfill2", "block/wood/trough/small/grainfill2", "block/wood/trough/small/grainfill3", "block/wood/trough/small/grainfill3", "block/wood/trough/small/grainfill4", "block/wood/trough/small/grainfill4" ],
+      "textureCode": "contents-pressedmash-honeydewmelon"
+    },
+    "file": "game:blocktypes/wood/trough-small.json",
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/textures/contents-pressedmash-honeydewmelon",
+    "value": {
+      "base": "bdcrop:block/food/pie/fill-honeydewmelon",
+      "overlays": [ "block/wood/trough/small/shadow" ]
+    },
+    "file": "game:blocktypes/wood/trough-small.json",
+    "side": "server"
+  }
+
+]

@@ -1,0 +1,109 @@
+﻿[
+  // Leek veg-basket whitelist
+  {
+    "dependsOn": [ { "modid": "foodshelves" } ],
+    "file": "foodshelves:config/restrictions/baskets/vegetablebasket.json",
+    "op": "addmerge",
+    "path": "/GroupingCodes/long",
+    "value": [
+      "bdcrop:vegetable-leek"
+    ]
+  },
+  // Tomato and Potato veg-basket whitelist
+  {
+    "dependsOn": [ { "modid": "foodshelves" } ],
+    "file": "foodshelves:config/restrictions/baskets/vegetablebasket.json",
+    "op": "addmerge",
+    "path": "/GroupingCodes/standard",
+    "value": [
+      "bdcrop:vegetable-potato",
+      "bdcrop:vegetable-tomato"
+    ]
+  },
+  // ===== Vegetable translations =====
+  // Leek
+  {
+    "dependsOn": [ { "modid": "foodshelves" } ],
+    "file": "foodshelves:config/transformations/baskets/vegetablebasket.json",
+    "op": "add",
+    "path": "/bdcrop:vegetable-leek",
+    "value": {
+      "origin": {
+        "x": 0.5,
+        "y": 0,
+        "z": 0.5
+      },
+      "scale": 1.0,
+      "translation": {
+        "x": 0.25,
+        "y": 0.15,
+        "z": 0
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 90
+      }
+    }
+  },
+  // Potato
+  {
+    "dependsOn": [ { "modid": "foodshelves" } ],
+    "file": "foodshelves:config/transformations/baskets/vegetablebasket.json",
+    "op": "add",
+    "path": "/bdcrop:vegetable-potato",
+    "value": {
+      "origin": {
+        "x": 0.5,
+        "y": 0,
+        "z": 0.5
+      },
+      "scale": 1.0,
+      "translation": {
+        "x": 0,
+        "y": 0.15,
+        "z": 0
+      }
+    }
+  },
+  // Tomato
+  {
+    "dependsOn": [ { "modid": "foodshelves" } ],
+    "file": "foodshelves:config/transformations/baskets/vegetablebasket.json",
+    "op": "add",
+    "path": "/bdcrop:vegetable-tomato",
+    "value": {
+      "origin": {
+        "x": 0.5,
+        "y": 0,
+        "z": 0.5
+      },
+      "scale": 1.2,
+      "translation": {
+        "x": 0,
+        "y": 0.2,
+        "z": 0
+      }
+    }
+  },
+  // Crop Seeds glass contanier whitelist
+  {
+    "dependsOn": [ { "modid": "foodshelves" } ],
+    "file": "foodshelves:config/restrictions/glassware/seedbins.json",
+    "op": "addmerge",
+    "path": "/CollectableCodes",
+    "value": [
+      "bdcrop:seeds-*"
+    ]
+  },
+  // Seed Bags
+  {
+    "dependsOn": [ { "modid": "foodshelves" } ],
+    "file": "foodshelves:config/restrictions/shelves/seedshelf.json",
+    "op": "addmerge",
+    "path": "/CollectableCodes",
+    "value": [
+      "bdcrop:seeds-*"
+    ]
+  }
+]

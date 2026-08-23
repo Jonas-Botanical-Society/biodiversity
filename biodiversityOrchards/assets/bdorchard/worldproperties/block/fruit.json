@@ -1,0 +1,32 @@
+{
+  "code": "fruit",
+  "variants": [
+    {
+      "code": "apricot"
+    },
+    {
+      "code": "avocado"
+    },
+    {
+      "code": "engkala"
+    },
+    {
+      "code": "fig"
+    },
+    {
+      "code": "grapefruit"
+    },
+    {
+      "code": "lemon"
+    },
+    {
+      "code": "lime"
+    },
+    {
+      "code": "nectarine"
+    },
+    {
+      "code": "sandpear"
+    }
+  ]
+}

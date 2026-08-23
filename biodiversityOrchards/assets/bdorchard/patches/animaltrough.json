@@ -1,0 +1,284 @@
+[
+  // Large Animal Trough
+  {
+    "op": "add",
+    "path": "/attributes/contentConfig/-",
+    "value": {
+      "code": "apricotmash",
+      "content": {
+        "type": "item",
+        "code": "bdorchard:pressedmash-apricot"
+      },
+      "quantityPerFillLevel": 2,
+      "maxFillLevels": 8,
+      "shapesPerFillLevel": [ "block/wood/trough/large/grainfill1", "block/wood/trough/large/grainfill1", "block/wood/trough/large/grainfill2", "block/wood/trough/large/grainfill2", "block/wood/trough/large/grainfill3", "block/wood/trough/large/grainfill3", "block/wood/trough/large/grainfill4", "block/wood/trough/large/grainfill4" ],
+      "textureCode": "contents-pressedmash-apricot"
+    },
+    "file": "game:blocktypes/wood/trough-large.json",
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/textures/contents-pressedmash-apricot",
+    "value": {
+      "base": "game:block/food/pie/fill-peach",
+      "overlays": [ "block/wood/trough/large/shadow" ]
+    },
+    "file": "game:blocktypes/wood/trough-large.json",
+    "side": "server"
+  },
+  //
+  {
+    "op": "add",
+    "path": "/attributes/contentConfig/-",
+    "value": {
+      "code": "avocadomash",
+      "content": {
+        "type": "item",
+        "code": "bdorchard:pressedmash-avocado"
+      },
+      "quantityPerFillLevel": 2,
+      "maxFillLevels": 8,
+      "shapesPerFillLevel": [ "block/wood/trough/large/grainfill1", "block/wood/trough/large/grainfill1", "block/wood/trough/large/grainfill2", "block/wood/trough/large/grainfill2", "block/wood/trough/large/grainfill3", "block/wood/trough/large/grainfill3", "block/wood/trough/large/grainfill4", "block/wood/trough/large/grainfill4" ],
+      "textureCode": "contents-pressedmash-avocado"
+    },
+    "file": "game:blocktypes/wood/trough-large.json",
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/textures/contents-pressedmash-avocado",
+    "value": {
+      "base": "bdorchard:block/food/pie/fill-avocado",
+      "overlays": [ "block/wood/trough/large/shadow" ]
+    },
+    "file": "game:blocktypes/wood/trough-large.json",
+    "side": "server"
+  },
+  //
+  {
+    "op": "add",
+    "path": "/attributes/contentConfig/-",
+    "value": {
+      "code": "engkalamash",
+      "content": {
+        "type": "item",
+        "code": "bdorchard:pressedmash-engkala"
+      },
+      "quantityPerFillLevel": 2,
+      "maxFillLevels": 8,
+      "shapesPerFillLevel": [ "block/wood/trough/large/grainfill1", "block/wood/trough/large/grainfill1", "block/wood/trough/large/grainfill2", "block/wood/trough/large/grainfill2", "block/wood/trough/large/grainfill3", "block/wood/trough/large/grainfill3", "block/wood/trough/large/grainfill4", "block/wood/trough/large/grainfill4" ],
+      "textureCode": "contents-pressedmash-engkala"
+    },
+    "file": "game:blocktypes/wood/trough-large.json",
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/textures/contents-pressedmash-engkala",
+    "value": {
+      "base": "bdorchard:block/food/pie/fill-engkala",
+      "overlays": [ "block/wood/trough/large/shadow" ]
+    },
+    "file": "game:blocktypes/wood/trough-large.json",
+    "side": "server"
+  },
+  //
+  {
+    "op": "add",
+    "path": "/attributes/contentConfig/-",
+    "value": {
+      "code": "nectarinemash",
+      "content": {
+        "type": "item",
+        "code": "bdorchard:pressedmash-nectarine"
+      },
+      "quantityPerFillLevel": 2,
+      "maxFillLevels": 8,
+      "shapesPerFillLevel": [ "block/wood/trough/large/grainfill1", "block/wood/trough/large/grainfill1", "block/wood/trough/large/grainfill2", "block/wood/trough/large/grainfill2", "block/wood/trough/large/grainfill3", "block/wood/trough/large/grainfill3", "block/wood/trough/large/grainfill4", "block/wood/trough/large/grainfill4" ],
+      "textureCode": "contents-pressedmash-nectarine"
+    },
+    "file": "game:blocktypes/wood/trough-large.json",
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/textures/contents-pressedmash-nectarine",
+    "value": {
+      "base": "game:block/food/pie/fill-peach",
+      "overlays": [ "block/wood/trough/large/shadow" ]
+    },
+    "file": "game:blocktypes/wood/trough-large.json",
+    "side": "server"
+  },
+  //
+  {
+    "op": "add",
+    "path": "/attributes/contentConfig/-",
+    "value": {
+      "code": "sandpearmash",
+      "content": {
+        "type": "item",
+        "code": "bdorchard:pressedmash-sandpear"
+      },
+      "quantityPerFillLevel": 2,
+      "maxFillLevels": 8,
+      "shapesPerFillLevel": [ "block/wood/trough/large/grainfill1", "block/wood/trough/large/grainfill1", "block/wood/trough/large/grainfill2", "block/wood/trough/large/grainfill2", "block/wood/trough/large/grainfill3", "block/wood/trough/large/grainfill3", "block/wood/trough/large/grainfill4", "block/wood/trough/large/grainfill4" ],
+      "textureCode": "contents-pressedmash-sandpear"
+    },
+    "file": "game:blocktypes/wood/trough-large.json",
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/textures/contents-pressedmash-sandpear",
+    "value": {
+      "base": "game:block/food/pie/fill-pear",
+      "overlays": [ "block/wood/trough/large/shadow" ]
+    },
+    "file": "game:blocktypes/wood/trough-large.json",
+    "side": "server"
+  },
+
+  // Small animal trough
+  {
+    "op": "add",
+    "path": "/attributes/contentConfig/-",
+    "value": {
+      "code": "apricotmash",
+      "content": {
+        "type": "item",
+        "code": "bdorchard:pressedmash-apricot"
+      },
+      "quantityPerFillLevel": 1,
+      "maxFillLevels": 8,
+      "shapesPerFillLevel": [ "block/wood/trough/small/grainfill1", "block/wood/trough/small/grainfill1", "block/wood/trough/small/grainfill2", "block/wood/trough/small/grainfill2", "block/wood/trough/small/grainfill3", "block/wood/trough/small/grainfill3", "block/wood/trough/small/grainfill4", "block/wood/trough/small/grainfill4" ],
+      "textureCode": "contents-pressedmash-apricot"
+    },
+    "file": "game:blocktypes/wood/trough-small.json",
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/textures/contents-pressedmash-apricot",
+    "value": {
+      "base": "game:block/food/pie/fill-peach",
+      "overlays": [ "block/wood/trough/small/shadow" ]
+    },
+    "file": "game:blocktypes/wood/trough-small.json",
+    "side": "server"
+  },
+  //
+  {
+    "op": "add",
+    "path": "/attributes/contentConfig/-",
+    "value": {
+      "code": "avocadomash",
+      "content": {
+        "type": "item",
+        "code": "bdorchard:pressedmash-avocado"
+      },
+      "quantityPerFillLevel": 1,
+      "maxFillLevels": 8,
+      "shapesPerFillLevel": [ "block/wood/trough/small/grainfill1", "block/wood/trough/small/grainfill1", "block/wood/trough/small/grainfill2", "block/wood/trough/small/grainfill2", "block/wood/trough/small/grainfill3", "block/wood/trough/small/grainfill3", "block/wood/trough/small/grainfill4", "block/wood/trough/small/grainfill4" ],
+      "textureCode": "contents-pressedmash-avocado"
+    },
+    "file": "game:blocktypes/wood/trough-small.json",
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/textures/contents-pressedmash-avocado",
+    "value": {
+      "base": "bdorchard:block/food/pie/fill-avocado",
+      "overlays": [ "block/wood/trough/small/shadow" ]
+    },
+    "file": "game:blocktypes/wood/trough-small.json",
+    "side": "server"
+  },
+  //
+  {
+    "op": "add",
+    "path": "/attributes/contentConfig/-",
+    "value": {
+      "code": "engkalamash",
+      "content": {
+        "type": "item",
+        "code": "bdorchard:pressedmash-engkala"
+      },
+      "quantityPerFillLevel": 1,
+      "maxFillLevels": 8,
+      "shapesPerFillLevel": [ "block/wood/trough/small/grainfill1", "block/wood/trough/small/grainfill1", "block/wood/trough/small/grainfill2", "block/wood/trough/small/grainfill2", "block/wood/trough/small/grainfill3", "block/wood/trough/small/grainfill3", "block/wood/trough/small/grainfill4", "block/wood/trough/small/grainfill4" ],
+      "textureCode": "contents-pressedmash-engkala"
+    },
+    "file": "game:blocktypes/wood/trough-small.json",
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/textures/contents-pressedmash-engkala",
+    "value": {
+      "base": "bdorchard:block/food/pie/fill-engkala",
+      "overlays": [ "block/wood/trough/small/shadow" ]
+    },
+    "file": "game:blocktypes/wood/trough-small.json",
+    "side": "server"
+  },
+  //
+  {
+    "op": "add",
+    "path": "/attributes/contentConfig/-",
+    "value": {
+      "code": "nectarinemash",
+      "content": {
+        "type": "item",
+        "code": "bdorchard:pressedmash-nectarine"
+      },
+      "quantityPerFillLevel": 1,
+      "maxFillLevels": 8,
+      "shapesPerFillLevel": [ "block/wood/trough/small/grainfill1", "block/wood/trough/small/grainfill1", "block/wood/trough/small/grainfill2", "block/wood/trough/small/grainfill2", "block/wood/trough/small/grainfill3", "block/wood/trough/small/grainfill3", "block/wood/trough/small/grainfill4", "block/wood/trough/small/grainfill4" ],
+      "textureCode": "contents-pressedmash-nectarine"
+    },
+    "file": "game:blocktypes/wood/trough-small.json",
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/textures/contents-pressedmash-nectarine",
+    "value": {
+      "base": "game:block/food/pie/fill-peach",
+      "overlays": [ "block/wood/trough/small/shadow" ]
+    },
+    "file": "game:blocktypes/wood/trough-small.json",
+    "side": "server"
+  },
+  //
+  {
+    "op": "add",
+    "path": "/attributes/contentConfig/-",
+    "value": {
+      "code": "sandpearmash",
+      "content": {
+        "type": "item",
+        "code": "bdorchard:pressedmash-sandpear"
+      },
+      "quantityPerFillLevel": 1,
+      "maxFillLevels": 8,
+      "shapesPerFillLevel": [ "block/wood/trough/small/grainfill1", "block/wood/trough/small/grainfill1", "block/wood/trough/small/grainfill2", "block/wood/trough/small/grainfill2", "block/wood/trough/small/grainfill3", "block/wood/trough/small/grainfill3", "block/wood/trough/small/grainfill4", "block/wood/trough/small/grainfill4" ],
+      "textureCode": "contents-pressedmash-sandpear"
+    },
+    "file": "game:blocktypes/wood/trough-small.json",
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/textures/contents-pressedmash-sandpear",
+    "value": {
+      "base": "game:block/food/pie/fill-pear",
+      "overlays": [ "block/wood/trough/small/shadow" ]
+    },
+    "file": "game:blocktypes/wood/trough-small.json",
+    "side": "server"
+  }
+  // END
+]

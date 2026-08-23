@@ -1,0 +1,41 @@
+[
+  {
+    "code": "cider",
+    "sealHours": 168,
+    "ingredients": [
+      {
+        "type": "item",
+        "code": "bdcrop:juiceportion-*",
+        "name": "fruit",
+        "allowedVariants": [ "cantaloupe", "honeydewmelon", "mirzamelon", "watermelon" ],
+        "litres": 0.01
+      }
+    ],
+    "output": {
+      "type": "item",
+      "code": "bdcrop:ciderportion-{fruit}",
+      "litres": 0.01
+    }
+  },
+  {
+    "code": "potato",
+    "sealHours": 336,
+    "ingredients": [
+      {
+        "type": "item",
+        "code": "game:waterportion",
+        "litres": 1
+      },
+      {
+        "type": "item",
+        "code": "bdcrop:vegetable-potato",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "type": "item",
+      "code": "bdcrop:ciderportion-potato",
+      "litres": 0.5
+    }
+  }
+]

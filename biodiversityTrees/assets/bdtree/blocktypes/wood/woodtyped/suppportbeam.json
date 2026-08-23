@@ -1,0 +1,21 @@
+{
+	"inheritFrom": "game:blocktypes/wood/woodtyped/suppportbeam",
+	"code": "supportbeam",
+  "tags": [ "supportbeam-wooden" ],
+	"variantgroups": [
+		{
+			"code": "wood",
+			"states": [],
+			"loadFromProperties": "bdtree:block/wood"
+		}
+	],
+	"creativeinventory": {
+		"general": [ "*" ],
+		"construction": [ "*" ],
+		"bdtree": [ "*" ]
+	},
+	"shape": { "base": "game:block/wood/supportbeam/16" },
+	"textures": {
+		"wood": { "base": "game:block/wood/debarked/{wood}" }
+	}
+}

@@ -1,0 +1,31 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "package",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "run",
+                "--project",
+                "${workspaceFolder}/CakeBuild/CakeBuild.csproj",
+                "--",
+                "--target=Default",
+                "--configuration=Debug"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "build",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "-c",
+                "Debug",
+                "${workspaceFolder}/CakeBuild/CakeBuild.csproj"
+            ],
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}

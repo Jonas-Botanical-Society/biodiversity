@@ -1,0 +1,63 @@
+[
+  // Add tomato hydration
+  {
+    "dependsOn": [ { "modid": "hydrateordiedrate" } ],
+    "file": "bdcrop:itemtypes/food/vegetable.json",
+    "op": "addmerge",
+    "path": "/attributes",
+    "side": "server",
+    "value": {
+      "hydrationByType": {
+        "@*-(tomato)": 50, // This is larger than normal as these are melons
+        "*": 0
+      }
+    }
+  },
+  // Fruit add hydration
+  {
+    "dependsOn": [ { "modid": "hydrateordiedrate" } ],
+    "file": "bdcrop:itemtypes/food/fruit.json",
+    "op": "addmerge",
+    "path": "/attributes",
+    "side": "server",
+    "value": {
+      "hydrationByType": {
+        "@*-(watermelon|honeydewmelon|cantaloupe|mirzamelon)": 200, // This is larger than normal as these are melons
+        "*": 50
+      }
+    }
+  },
+  // Raw juice hydration
+  {
+    "dependsOn": [ { "modid": "hydrateordiedrate" } ],
+    "file": "bdcrop:itemtypes/liquid/rawjuice.json",
+    "op": "addmerge",
+    "path": "/attributes",
+    "side": "server",
+    "value": {
+      "hydration": 900
+    }
+  },
+  // Wine hydration
+  {
+    "dependsOn": [ { "modid": "hydrateordiedrate" } ],
+    "file": "bdcrop:itemtypes/liquid/cider.json",
+    "op": "addmerge",
+    "path": "/attributes",
+    "side": "server",
+    "value": {
+      "hydration": 200
+    }
+  },
+  // Spirits hydration
+  {
+    "dependsOn": [ { "modid": "hydrateordiedrate" } ],
+    "file": "bdcrop:itemtypes/liquid/spirit.json",
+    "op": "addmerge",
+    "path": "/attributes",
+    "side": "server",
+    "value": {
+      "hydration": 10
+    }
+  }
+]

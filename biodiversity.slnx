@@ -1,0 +1,6 @@
+<Solution>
+  <Folder Name="/CakeBuild/">
+    <Project Path="CakeBuild/CakeBuild.csproj" />
+  </Folder>
+
+</Solution>

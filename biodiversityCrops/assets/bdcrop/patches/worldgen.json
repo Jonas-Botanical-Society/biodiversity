@@ -1,0 +1,16 @@
+[
+  {
+    "enabled": true,
+    "op": "addmerge",
+    "path": "/attributes/lootListByType/*-seed/-",
+    "value": {
+      "type": "item",
+      "chance": 1,
+      "minQuantity": 5,
+      "maxQuantity": 7,
+      "codes": [ "bdcrop:seeds-butternutsquash", "bdcrop:seeds-naplessquash", "bdcrop:seeds-watermelon", "bdcrop:seeds-mirzamelon", "bdcrop:seeds-honeydewmelon", "bdcrop:seeds-cantaloupe", "bdcrop:seeds-leek", "bdcrop:seeds-potato", "bdcrop:seeds-tomato" ]
+    },
+    "file": "game:blocktypes/clay/lootvessel.json",
+    "side": "Server"
+  }
+]

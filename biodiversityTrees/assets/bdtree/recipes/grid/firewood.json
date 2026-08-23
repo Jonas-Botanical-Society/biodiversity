@@ -1,0 +1,24 @@
+[
+	{
+		"ingredientPattern": "A\tL",
+		"ingredients": {
+			"A": { "type": "item", "tags": [ "tool-axe" ], "isTool": true },
+			"L": { "type": "block", "code": "bdtree:log-placed-*-ud", "allowedVariants": [ "ash", "azobe", "banyan", "beech", "bearnut", "bluemahoe", "catalpa", "cedar", "charred", "dalbergia", "douglasfir", "elm", "empresstree", "eucalyptus", "fir", "ghostgum", "ginkgo", "guajacum", "honeylocust", "horsechestnut", "rosewood", "kauri", "leadwood", "linden", "mahogany", "mangrove", "ohia", "poplar", "redcedar", "sal", "sapele", "satinash", "saxaul", "spruce", "spurgetree", "sycamore", "tamanu", "tigerwood", "tuja", "umnini", "willow", "yew" ] }
+		},
+		"width": 1,
+		"height": 2,
+		"output": { "type": "item", "code": "game:firewood", "quantity": 4 }
+	},
+	{
+		"ingredientPattern": "A\tL",
+		"ingredients": {
+			"A": { "type": "item", "tags": [ "tool-axe" ], "isTool": true },
+			"L": { "type": "block", "code": "bdtree:logsection-placed-*"
+			}
+		},
+		"width": 1,
+		"height": 2,
+		"output": { "type": "item", "code": "game:firewood", "quantity": 4
+		}
+	}
+]

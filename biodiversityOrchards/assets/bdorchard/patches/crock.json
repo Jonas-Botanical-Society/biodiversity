@@ -1,0 +1,24 @@
+[
+	{
+		"file": "game:blocktypes/clay/fired/crock.json",
+		"op": "addmerge",
+		"path": "/textures",
+		"value": { "labelbdorchard": { "base": "game:block/clay/crock/labelbdorchard" } }
+	},
+	{
+		"file": "game:blocktypes/clay/fired/crock.json",
+		"op": "addeach",
+		"path": "/attributes/labelNames/-",
+		"value": [
+			"apricot",
+			"avocado",
+			"engkala",
+			"fig",
+			"grapefruit",
+			"lemon",
+			"lime",
+			"nectarine",
+			"sandpear"
+		]
+	}
+]

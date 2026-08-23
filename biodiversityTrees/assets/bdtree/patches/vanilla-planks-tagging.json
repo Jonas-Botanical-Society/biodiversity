@@ -1,0 +1,26 @@
+﻿[
+  {
+    "op": "add",
+    "path": "/tagsbytype",
+    "value": {
+      "*-rotten": [],
+      "*-veryrotten": [],
+      "*-veryaged": [],
+      "*": [ "resource-plank" ]
+    },
+    "file": "game:itemtypes/resource/plank.json"
+  },
+  {
+    "op": "add",
+    "path": "/tagsbytype",
+    "value": {
+      "*-rotten": [],
+      "*-veryrotten": [],
+      "*-veryaged": [],
+      "*": [
+        "supportbeam-wooden"
+      ]
+    },
+    "file": "game:blocktypes/wood/woodtyped/suppportbeam.json"
+  }
+]

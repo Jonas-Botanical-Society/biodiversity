@@ -1,0 +1,19 @@
+{
+  "$schema": "https://moddbcdn.vintagestory.at/schema/modinfo.latest.json",
+  "type": "Content",
+  "modid": "bdorchard",
+  "name": "Biodiversity: Orchards",
+  "side": "Universal",
+  "authors": [
+    "Captanredbeard",
+    "WhiskeySunshine",
+    "The Last Thing"
+  ],
+  "contributors": [ "Pizza2004", "Greybones", "FuegoFish", "Emnierra", "AllégroSky", "Alcoraiden", "AcuteAangle", "Sigmadron" ],
+  "website": "https://discord.com/invite/w79wShAD8q",
+  "description": "Adds several new fruit trees for all your juicing and fruity needs. Part of the Biodiversity Suite",
+  "version": "1.0.5",
+  "dependencies": {
+    "biodiversity": "1.1.4"
+  }
+}

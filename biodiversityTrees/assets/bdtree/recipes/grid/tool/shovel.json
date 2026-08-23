@@ -1,0 +1,16 @@
+﻿{
+  "ingredientPattern": "_P_,_P_,PPP",
+  "ingredients": {
+    "P": {
+      "type": "item",
+      "code": "bdtree:plank-*"
+    }
+  },
+  "width": 3,
+  "height": 3,
+  "output": {
+    "type": "item",
+    "code": "game:snowshovel-oak",
+    "quantity": 1
+  }
+}

@@ -1,0 +1,144 @@
+{
+	code: "flower",
+	class: "BlockPlant",
+	behaviors: [ { name: "DropNotSnowCovered" } ],
+	variantgroups: [
+		{ code: "flower", states: [], loadFromProperties: "bdflower:block/flower" },
+		{ code: "cover", states: ["free", "snow"] }
+	],
+	attributes: {
+		butterflyFeedByType: {
+			"flower-horsetail-*": false,
+			"*": true
+		},
+		beeFeedByType: {
+			"flower-horsetail-*": false,
+			"*": true
+		},
+		reinforcable: true,
+		sitHeightByType: {
+			"flower-iris-*": 0.75
+		},
+		plantContainable: {
+			smallContainerByType: {
+				"*": {
+					shape: { "base": "game:block/clay/flowerpot/contents" },
+					textures: {
+						"north": { base: "block/plant/potted/{flower}" },
+						"south": { base: "block/plant/potted/{flower}" }
+					}
+				}
+			},
+			largeContainerByType: {
+				"*": {
+					shape: { base:  "game:block/clay/planter/contents" },
+					textures: {
+						"north": { base: "block/plant/potted/{flower}" },
+						"south": { base: "block/plant/potted/{flower}" }
+					}
+				}
+			}
+		},
+		drawnHeightByType: {
+			"flower-iris-*": 38,
+			"*": 48
+		},
+		allowOverlays: false
+	},
+	creativeinventory: {
+		"general": [ "*-free" ],
+		"flora": [ "*-free" ],
+		"bdflower": [ "*-free" ]
+	},
+	renderpass: "OpaqueNoCull",
+	drawtypeByType: {
+		"*-snow": "JSONAndSnowLayer",
+		"*": "JSON"
+	},
+	shapeByType: {
+		"flower-iris-*": { base: "game:block/plant/flower/1patch-cross-24x24" },
+		"*": { "base": "game:block/plant/flower/1patch-3faces-24x24" }
+	},
+	lod2shapeByType: {
+		"*": { "base": "game:block/plant/flower/1patch-cross-24x24" }
+	},
+	texturesByType: {
+		"*": {
+			north1: { base: "block/plant/flower/petal/{flower}*" },
+			south1: { base: "block/plant/flower/petal/{flower}*" },
+			northTinted1: { base: "block/plant/flower/stem/{flower}*" },
+			southTinted1: { base: "block/plant/flower/stem/{flower}*" },
+			north2: { base: "block/plant/flower/petal/{flower}*" },
+			south2: { base: "block/plant/flower/petal/{flower}*" },
+			northTinted2: { base: "block/plant/flower/stem/{flower}*" },
+			southTinted2: { base: "block/plant/flower/stem/{flower}*" },
+			north3: { base: "block/plant/flower/petal/{flower}*" },
+			south3: { base: "block/plant/flower/petal/{flower}*" },
+			northTinted3: { base: "block/plant/flower/stem/{flower}*" },
+			southTinted3: { base: "block/plant/flower/stem/{flower}*" },
+			flower2: { base: "block/plant/flower/petal/{flower}*" },
+			flower2Tinted: { base: "block/plant/flower/stem/{flower}*" }
+		}
+	},
+	randomDrawOffset: true,
+	blockmaterialByType: {
+		"*-free": "Plant",
+		"*": "Snow"
+	},
+	faceCullModeByType: {
+		"*-free": "Default",
+		"*": "MergeSnowLayer"
+	},
+	sideopaqueByType: {
+		"*-snow": { all: false, down: true },
+		"*": { all: false }
+	},
+	sidesolid: {
+		all: false
+	},
+	replaceable: 3000,
+	lightAbsorption: 0,
+	randomizeRotations: true,
+	resistance: 0.5,
+	collisionbox: null,
+	selectionboxByType: {
+	 	"flower-iris-*": { x1: 0.125, y1: 0, z1: 0.125, x2: 0.875, y2: 0.5, z2: 0.875 },
+	 	"*": { x1: 0.125, y1: 0, z1: 0.125, x2: 0.875, y2: 0.25, z2: 0.875 }
+	},
+	dropsByType: {
+
+	},
+	guitransformByType: {
+		"*": {
+			rotation: { x: 0, y: 0, z: 0 },
+			origin: { x: 0.5, y: 0.6, z: 0.5 }
+		}
+	},
+	tpHandTransformByType: {
+		"*": {
+			translation: { x: -1, y: -0.1, z: -1 },
+			rotation: { x: 71, y: 0, z: -84 },
+			origin: { x: 0.5, y: 0.1, z: 0.5 },
+			scale: 0.48
+		}
+	},
+	groundTransformByType: {
+		"flower-forgetmenot-*": {
+			scale: 2.64
+		}
+	},
+	sounds: {
+		"place": "game:block/plant",
+		"break": "game:block/plant",
+		"hit": "game:block/plant"
+	},
+	rainPermeableByType: {
+		"*": false
+	},
+	materialDensity: 200,
+	frostable: true,
+	combustibleProps: {
+		burnTemperature: 600,
+		burnDuration: 10,
+	}
+}

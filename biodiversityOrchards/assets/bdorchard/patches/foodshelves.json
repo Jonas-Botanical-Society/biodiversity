@@ -1,0 +1,40 @@
+﻿[
+  // Fruit-basket whitelist
+  {
+    "file": "foodshelves:config/restrictions/baskets/fruitbasket.json",
+    "op": "addmerge",
+    "path": "/CollectibleCodes",
+    "side": "server",
+    "dependsOn": [ { "modid": "foodshelves" } ],
+    "value": [
+      "bdorchard:fruit-apricot",
+      "bdorchard:fruit-avocado",
+      "bdorchard:fruit-engkala",
+      "bdorchard:fruit-fig",
+      "bdorchard:fruit-grapefruit",
+      "bdorchard:fruit-lemon",
+      "bdorchard:fruit-lime",
+      "bdorchard:fruit-nectarine",
+      "bdorchard:fruit-sandpear"
+    ]
+  },
+  // Fruit-cooler whitelist
+  {
+    "file": "foodshelves:config/restrictions/coolers/fruitcooler.json",
+    "op": "addmerge",
+    "path": "/CollectibleCodes",
+    "side": "server",
+    "dependsOn": [ { "modid": "foodshelves" } ],
+    "value": [
+      "bdorchard:fruit-apricot",
+      "bdorchard:fruit-avocado",
+      "bdorchard:fruit-engkala",
+      "bdorchard:fruit-fig",
+      "bdorchard:fruit-grapefruit",
+      "bdorchard:fruit-lemon",
+      "bdorchard:fruit-lime",
+      "bdorchard:fruit-nectarine",
+      "bdorchard:fruit-sandpear"
+    ]
+  }
+]

@@ -1,0 +1,44 @@
+{
+	"editor": {
+		"allAngles": false,
+		"entityTextureMode": false
+	},
+	"textureWidth": 16,
+	"textureHeight": 16,
+	"textureSizes": {
+	},
+	"textures": {
+		"labelbdorchard": "game:block/clay/crock/labelbdorchard"
+	},
+	"elements": [
+		{
+			"name": "origin",
+			"from": [ 8.0, 0.0, 8.0 ],
+			"to": [ 8.0, 0.0, 8.0 ],
+			"rotationOrigin": [ 8.0, 0.0, 8.0 ],
+			"faces": {
+				"north": { "texture": "#labelbdorchard", "uv": [ 0.0, 0.0, 0.0, 0.0 ], "enabled": false },
+				"east": { "texture": "#labelbdorchard", "uv": [ 0.5, -0.5, 0.5, -0.5 ], "enabled": false },
+				"south": { "texture": "#labelbdorchard", "uv": [ 0.0, 0.0, 0.0, 0.0 ], "enabled": false },
+				"west": { "texture": "#labelbdorchard", "uv": [ 0.0, 0.0, 0.0, 0.0 ], "enabled": false },
+				"up": { "texture": "#labelbdorchard", "uv": [ 0.0, 0.0, 0.0, 0.0 ], "enabled": false },
+				"down": { "texture": "#labelbdorchard", "uv": [ 0.0, 0.0, 0.0, 0.0 ], "enabled": false }
+			},
+			"children": [
+				{
+					"name": "label",
+					"from": [ -2.0, 1.0, 2.01 ],
+					"to": [ 2.0, 3.5, 2.51 ],
+					"rotationOrigin": [ -3.0, 0.4, 2.5 ],
+					"faces": {
+						"north": { "texture": "#labelbdorchard", "uv": [ 0.0, 0.0, 4.0, 2.5 ], "enabled": false },
+						"east": { "texture": "#labelbdorchard", "uv": [ 6.5, 5.0, 7.0, 7.5 ], "enabled": false },
+						"south": { "texture": "#labelbdorchard", "uv": [ 0.0, 5.0, 4.0, 7.5 ] },
+						"west": { "texture": "#labelbdorchard", "uv": [ 3.0, 2.0, 3.5, 4.5 ], "enabled": false },
+						"up": { "texture": "#labelbdorchard", "uv": [ 3.5, 3.0, 7.5, 3.5 ], "enabled": false },
+						"down": { "texture": "#labelbdorchard", "uv": [ 3.5, 6.5, 7.5, 7.0 ], "enabled": false }
+					}
+				}
+			]
+		}
+	]}

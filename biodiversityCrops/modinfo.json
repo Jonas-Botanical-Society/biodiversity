@@ -1,0 +1,18 @@
+{
+  "$schema": "https://moddbcdn.vintagestory.at/schema/modinfo.latest.json",
+  "type": "Content",
+  "modid": "bdcrop",
+  "name": "Biodiversity: Crops"
+    "Captanredbeard",
+    "WhiskeySunshine",
+    "The Last Thing",
+    "tet"
+  ],
+  "contributors": [ "Sigmadron", "Greybones", "Pizza2004", "FuegoFish", "AllégroSky", "Alcoraiden", "AcuteAangle", "Emnierra" ],
+  "website": "https://discord.com/invite/w79wShAD8q",
+  "description": "Adds several new growable crops on farmland tiles. Part of the Biodiversity Suite",
+  "version": "1.0.5",
+  "dependencies": {
+    "biodiversity": "1.1.4"
+  }
+}
