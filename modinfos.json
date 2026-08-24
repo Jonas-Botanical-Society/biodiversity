@@ -1,0 +1,92 @@
+{
+  "shared": {
+    "type": "Content",
+    "side": "universal",
+    "authors": [
+      "Captanredbeard",
+      "FuegoFish",
+      "The Last Thing"
+    ],
+    "contributors": [
+      "WhiskeySunshine",
+      "Sigmadron",
+      "Greybones",
+      "Pizza2004",
+      "AllégroSky",
+      "Alcoraiden",
+      "AcuteAangle",
+      "Emnierra"
+    ],
+    "website": "https://discord.com/invite/w79wShAD8q"
+  },
+  "submods": {
+    "biodiversityAquatic": {
+      "modid": "bdaqua",
+      "name": "Biodiversity: Aquatic Additions",
+      "description": "Adds several new water plants to oceans and rivers. Part of the Biodiversity Suite",
+      "version": "0.1.0",
+      "dependencies": {
+        "game": "1.22.0",
+        "biodiversity": "1.1.2"
+      }
+    },
+    "biodiversityCrops": {
+      "modid": "bdcrop",
+      "name": "Biodiversity: Crops",
+      "description": "Adds several new growable crops on farmland tiles. Part of the Biodiversity Suite",
+      "version": "1.0.5",
+      "dependencies": {
+        "biodiversity": "1.1.4"
+      }
+    },
+    "biodiversityFlowers": {
+      "modid": "bdflower",
+      "name": "Biodiversity: Flowers and Grass",
+      "description": "New decorative flowers and grasses to make your world more vibrant. Part of the Biodiversity Suite",
+      "version": "0.2.0",
+      "dependencies": {
+        "game": "1.22.0",
+        "biodiversity": "1.1.2"
+      }
+    },
+    "biodiversityHerbs": {
+      "modid": "bdherb",
+      "name": "Biodiversity: Herbs and Spices",
+      "description": "Adds many new herbs and roots for you to forage in the world. Part of the Biodiversity Suite",
+      "version": "0.2.0",
+      "dependencies": {
+        "game": "1.22.0",
+        "biodiversity": "1.1.4"
+      }
+    },
+    "biodiversityOrchards": {
+      "modid": "bdorchard",
+      "name": "Biodiversity: Orchards",
+      "description": "Adds several new fruit trees for all your juicing and fruity needs. Part of the Biodiversity Suite",
+      "version": "1.0.5",
+      "dependencies": {
+        "biodiversity": "1.1.4"
+      }
+    },
+    "biodiversityShrubs": {
+      "modid": "bdshrub",
+      "name": "Biodiversity: Shrubs and Berries",
+      "description": "Many new shrubs and berries for all your jams and treats. Part of the Biodiversity Suite",
+      "version": "0.2.0",
+      "dependencies": {
+        "game": "1.22.0",
+        "biodiversity": "1.1.4"
+      }
+    },
+    "biodiversityTrees": {
+      "modid": "bdtree",
+      "name": "Biodiversity: Trees",
+      "description": "Adds several new tree and leaf types to build with ingame. Part of the Biodiversity Suite",
+      "version": "1.1.0-pre.2",
+      "dependencies": {
+        "game": "1.22.0",
+        "biodiversity": "1.1.4"
+      }
+    }
+  }
+}

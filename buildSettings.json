@@ -1,0 +1,11 @@
+{
+"Aquatic": true,
+"Crops": true,
+"Flowers": true,
+"Herbs": true,
+"Orchards": true,
+"Shrubs": true,
+"Trees": true,
+
+"skipJSONValidation": false
+}

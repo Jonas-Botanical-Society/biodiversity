@@ -4,6 +4,9 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+        
+        
+
         {
             "name": "Launch Client (Debug)",
             "type": "coreclr",
@@ -21,7 +24,16 @@
                 // "--openWorld" , "modding test world",
                 "--tracelog",
                 "--addModPath",
-                "${workspaceFolder}/bin/Debug/Mods"
+                "${workspaceFolder}/bin/Debug/Mods",
+                "--addOrigin",
+                "${workspaceFolder}/biodiversityCore/assets",
+                "${workspaceFolder}/biodiversityAquatic/assets",
+                "${workspaceFolder}/biodiversityCrops/assets",
+                "${workspaceFolder}/biodiversityFlowers/assets",
+                "${workspaceFolder}/biodiversityHerbs/assets",
+                "${workspaceFolder}/biodiversityOrchards/assets",
+                "${workspaceFolder}/biodiversityShrubs/assets",
+                "${workspaceFolder}/biodiversityTrees/assets"
                 
             ],
             "console": "internalConsole",
@@ -42,7 +54,16 @@
             "args": [
                 "--tracelog",
                 "--addModPath",
-                "${workspaceFolder}/biodiversityCore/bin/Debug/Mods"
+                "${workspaceFolder}/biodiversityCore/bin/Debug/Mods",
+                "--addOrigin",
+                "${workspaceFolder}/biodiversityCore/assets",
+                "${workspaceFolder}/biodiversityAquatic/assets",
+                "${workspaceFolder}/biodiversityCrops/assets",
+                "${workspaceFolder}/biodiversityFlowers/assets",
+                "${workspaceFolder}/biodiversityHerbs/assets",
+                "${workspaceFolder}/biodiversityOrchards/assets",
+                "${workspaceFolder}/biodiversityShrubs/assets",
+                "${workspaceFolder}/biodiversityTrees/assets"
             ],
             "console": "internalConsole",
             "stopAtEntry": false

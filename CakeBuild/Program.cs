@@ -26,12 +26,11 @@ public static class Program
 
 public class BuildContext : FrostingContext
 {
-    public const string ProjectName = "modid";
+    public const string ProjectName = "biodiversityCore";
     public string BuildConfiguration { get; }
     public string Version { get; }
     public string Name { get; }
     public bool SkipJsonValidation { get; }
-
     public BuildContext(ICakeContext context)
         : base(context)
     {
@@ -39,7 +38,7 @@ public class BuildContext : FrostingContext
         SkipJsonValidation = context.Argument("skipJsonValidation", false);
         var modInfo = context.DeserializeJsonFromFile<ModInfo>($"../{ProjectName}/modinfo.json");
         Version = modInfo.Version;
-        Name = modInfo.ModID;
+        Name = ProjectName;
     }
 }
 
@@ -93,22 +92,32 @@ public sealed class BuildTask : FrostingTask<BuildContext>
 [IsDependentOn(typeof(BuildTask))]
 public sealed class PackageTask : FrostingTask<BuildContext>
 {
+
     public override void Run(BuildContext context)
     {
+
+
+
+
+
+
+
+
+        //Normal Packaging stuff from previois build script.
         context.EnsureDirectoryExists("../Releases");
         context.CleanDirectory("../Releases");
-        context.EnsureDirectoryExists($"../Releases/{context.Name}");
-        context.CopyFiles($"../{BuildContext.ProjectName}/bin/{context.BuildConfiguration}/Mods/mod/publish/*", $"../Releases/{context.Name}");
+        context.EnsureDirectoryExists($"../Releases/{BuildContext.ProjectName}");
+        context.CopyFiles($"../{BuildContext.ProjectName}/bin/{context.BuildConfiguration}/Mods/mod/publish/*", $"../Releases/{BuildContext.ProjectName}");
         if (context.DirectoryExists($"../{BuildContext.ProjectName}/assets"))
         {
-            context.CopyDirectory($"../{BuildContext.ProjectName}/assets", $"../Releases/{context.Name}/assets");
+            context.CopyDirectory($"../{BuildContext.ProjectName}/assets", $"../Releases/{BuildContext.ProjectName}/assets");
         }
-        context.CopyFile($"../{BuildContext.ProjectName}/modinfo.json", $"../Releases/{context.Name}/modinfo.json");
+        context.CopyFile($"../{BuildContext.ProjectName}/modinfo.json", $"../Releases/{BuildContext.ProjectName}/modinfo.json");
         if (context.FileExists($"../{BuildContext.ProjectName}/modicon.png"))
         {
-            context.CopyFile($"../{BuildContext.ProjectName}/modicon.png", $"../Releases/{context.Name}/modicon.png");
+            context.CopyFile($"../{BuildContext.ProjectName}/modicon.png", $"../Releases/{BuildContext.ProjectName}/modicon.png");
         }
-        context.Zip($"../Releases/{context.Name}", $"../Releases/{context.Name}_{context.Version}.zip");
+        context.Zip($"../Releases/{BuildContext.ProjectName}", $"../Releases/{BuildContext.ProjectName}_{context.Version}.zip");
     }
 }
 

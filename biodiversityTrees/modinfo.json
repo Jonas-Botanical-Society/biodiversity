@@ -1,8 +1,6 @@
 {
   "$schema": "https://moddbcdn.vintagestory.at/schema/modinfo.latest.json",
   "type": "Content",
-  "modid": "bdtree",
-  "name": "Biodiversity: Trees",
   "side": "universal",
   "authors": [
     "Captanredbeard",
@@ -11,9 +9,5 @@
   ],
   "contributors": [ "Sigmadron", "Greybones", "Pizza2004", "FuegoFish", "AllégroSky", "Alcoraiden", "AcuteAangle" ],
   "website": "https://discord.com/invite/w79wShAD8q",
-  "description": "Adds several new tree and leaf types to build with ingame. Part of the Biodiversity Suite",
-  "version": "1.1.0-pre.2",
-  "dependencies": {
-    "biodiversity": "1.1.4"
-  }
+
 }
