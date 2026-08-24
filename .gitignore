@@ -1,6 +1,5 @@
 bin/
 obj/
-CakeBuild/bin/*
-CakeBuild/obj/*
-CakeBuild/obj/Debug/CakeBuild.AssemblyInfoInputs.cache
-CakeBuild/obj/Debug/CakeBuild.AssemblyInfo.cs
+Cakebuild/bin
+Cakebuild/obj
+Releases/
