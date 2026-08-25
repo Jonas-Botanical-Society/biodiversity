@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="UserContentModel">
-    <attachedFolders />
+    <attachedFolders>
+      <Path>biodiversityAquatic</Path>
+      <Path>biodiversityCrops</Path>
+      <Path>biodiversityFlowers</Path>
+      <Path>biodiversityHerbs</Path>
+      <Path>biodiversityOrchards</Path>
+      <Path>biodiversityShrubs</Path>
+      <Path>biodiversityTrees</Path>
+    </attachedFolders>
     <explicitIncludes />
     <explicitExcludes />
   </component>
