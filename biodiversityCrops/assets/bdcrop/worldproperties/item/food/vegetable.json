@@ -2,7 +2,13 @@
   "code": "vegetable",
   "variants": [
     {
+      "code": "alfalfa"
+    },
+    {
       "code": "leek"
+    },
+    {
+      "code": "stubbleturnip"
     },
     {
       "code": "tomato"

@@ -22,7 +22,9 @@
       "code": "type",
       //"loadFromProperties": "bdcrop:item/food/vegetable",
       "states": [
+        "alfalfa",
         "leek",
+        "stubbleturnip",
         "tomato",
         "naplessquash",
         "butternutsquash"
@@ -37,9 +39,36 @@
       "groupBy": [ "vegetable-*" ]
     },
     "inContainerTextureByType": {
+      "*-alfalfa": { "base": "bdcrop:item/food/vegetable/{type}" },
       "*": { "base": "bdcrop:block/food/pie/fill-{type}" }
     },
     "inTrapTransformByType": {
+      "*-stubbleturnip": {
+        "small": {
+          "translation": {
+            "x": -0.1,
+            "y": -0.35,
+            "z": -0.3
+          },
+          "rotation": {
+            "x": -90,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "large": {
+          "translation": {
+            "x": -0.3,
+            "y": 0.34,
+            "z": -0.3
+          },
+          "rotation": {
+            "x": -90,
+            "y": 0,
+            "z": 0
+          }
+        }
+      },
       "*": {
         "translation": {
           "x": -0.15,
@@ -55,6 +84,26 @@
     }
   },
   "attributesByType": {
+    "*-alfalfa": {
+      "foodTags": [ "{type}" ],
+      "groundStorageTransform": {
+        "translation": {
+          "x": 0.05,
+          "y": -0.5,
+          "z": 0.1
+        },
+        "rotation": {
+          "x": 1,
+          "y": -44,
+          "z": -180
+        },
+        "scale": 0.5
+      },
+      "nutritionPropsWhenInMeal": {
+        "satiety": 10,
+        "foodcategory": "vegetable"
+      }
+    },
     "*-leek": {
       "foodTags": [ "{type}" ],
       "groundStorageTransform": {
@@ -75,6 +124,39 @@
       },
       "inPieProperties": {
         "texture": "bdcrop:block/food/pie/fill-leek",
+        "partType": "Filling",
+        "mixingCodes": [ "potpie", "vegetablepie" ]
+      },
+      "displayable": {
+        "shelf": {
+          "size": {
+            "width": 4,
+            "height": 4,
+            "length": 4
+          }
+        }
+      }
+    },
+    "*-stubbleturnip": {
+      "foodTags": [ "{type}" ],
+      "groundStorageTransform": {
+        "translation": {
+          "x": 0.1,
+          "y": -0.46,
+          "z": 0.1
+        },
+        "rotation": {
+          "x": 0,
+          "y": -60,
+          "z": -90
+        }
+      },
+      "nutritionPropsWhenInMeal": {
+        "satiety": 60,
+        "foodcategory": "vegetable"
+      },
+      "inPieProperties": {
+        "texture": "bdcrop:block/food/pie/fill-stubbleturnip",
         "partType": "Filling",
         "mixingCodes": [ "potpie", "vegetablepie" ]
       },
@@ -158,6 +240,14 @@
       "satiety": 140,
       "foodcategory": "Vegetable"
     },
+    "@*-stubbleturnip": {
+      "satiety": 50,
+      "foodcategory": "Vegetable"
+    },
+    "@*-alfalfa": {
+      "satiety": 10,
+      "foodcategory": "Vegetable"
+    },
     "*": {
       "satiety": 100,
       "foodcategory": "vegetable"
@@ -176,6 +266,18 @@
         "transitionRatio": 0.5
       }
     ],
+    "@*-alfalfa": [
+      {
+        "type": "Perish",
+        "freshHours": { "avg": 360 },
+        "transitionHours": { "avg": 180 },
+        "transitionedStack": {
+          "type": "item",
+          "code": "game:drygrass"
+        },
+        "transitionRatio": 1.0
+      }
+    ],
     "*": [
       {
         "type": "Perish",
@@ -191,6 +293,42 @@
   },
   "materialDensity": 600,
   "guiTransformByType": {
+    "*-alfalfa": {
+      "translation": {
+        "x": 6,
+        "y": 8,
+        "z": 0
+      },
+      "rotation": {
+        "x": -180,
+        "y": 18,
+        "z": 26
+      },
+      "origin": {
+        "x": 0.52,
+        "y": 0.17,
+        "z": 0.55
+      },
+      "scale": 1.72
+    },
+    "*-stubbleturnip": {
+      "translation": {
+        "x": 2,
+        "y": 2,
+        "z": 0
+      },
+      "rotation": {
+        "x": 180,
+        "y": 158,
+        "z": 38
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 0.23,
+        "z": 0.5
+      },
+      "scale": 3.6
+    },
     "*-tomato": {
       "rotation": {
         "x": 112,
@@ -264,6 +402,42 @@
     }
   },
   "tpHandTransformByType": {
+    "*-alfalfa": {
+      "translation": {
+        "x": -1.1,
+        "y": -0.1,
+        "z": -0.9
+      },
+      "rotation": {
+        "x": 7,
+        "y": 4,
+        "z": -166
+      },
+      "origin": {
+        "x": 0.36,
+        "y": 0.11,
+        "z": 0.45
+      },
+      "scale": 0.45
+    },
+    "*-stubbleturnip": {
+      "translation": {
+        "x": -0.68,
+        "y": -0.18,
+        "z": -0.6
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": -84
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 0.1,
+        "z": 0.5
+      },
+      "scale": 0.8
+    },
     "*-tomato": {
       "translation": {
         "x": -1.05,
@@ -338,6 +512,42 @@
     }
   },
   "groundTransformByType": {
+    "@*-(alfalfa)": {
+      "translation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "origin": {
+        "x": 0.47,
+        "y": 0,
+        "z": 0.5
+      },
+      "scale": 2.53
+    },
+    "*-(stubbleturnip)": {
+      "translation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 75
+      },
+      "origin": {
+        "x": 0.42,
+        "y": 0.21,
+        "z": 0.5
+      },
+      "scale": 3.8
+    },
     "@*-(tomato)": {
       "translation": {
         "x": 0,

@@ -9,7 +9,7 @@
       "bdcrop:vegetable-leek"
     ]
   },
-  // Tomato and Potato veg-basket whitelist
+  // Tomato, Stubble Turnip, and Potato veg-basket whitelist
   {
     "dependsOn": [ { "modid": "foodshelves" } ],
     "file": "foodshelves:config/restrictions/baskets/vegetablebasket.json",
@@ -17,7 +17,8 @@
     "path": "/GroupingCodes/standard",
     "value": [
       "bdcrop:vegetable-potato",
-      "bdcrop:vegetable-tomato"
+      "bdcrop:vegetable-tomato",
+      "bdcrop:vegetable-stubbleturnip"
     ]
   },
   // ===== Vegetable translations =====
@@ -84,6 +85,21 @@
         "y": 0.2,
         "z": 0
       }
+    }
+  },
+  // Stubble Turnip
+  {
+    "dependsOn": [ { "modid": "foodshelves" } ],
+    "file": "foodshelves:config/transformations/baskets/vegetablebasket.json",
+    "op": "add",
+    "path": "/bdcrop:vegetable-stubbleturnip",
+    "value": {
+      "origin": {
+        "x": 0.5,
+        "y": 0,
+        "z": 0.5
+      },
+      "scale": 1.3
     }
   },
   // Crop Seeds glass contanier whitelist

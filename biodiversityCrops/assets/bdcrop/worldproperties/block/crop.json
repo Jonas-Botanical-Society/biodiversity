@@ -2,10 +2,16 @@
     "code": "crop",
   "variants": [
     {
+      "code": "alfalfa"
+    },
+    {
       "code": "potato"
     },
     {
       "code": "leek"
+    },
+    {
+      "code": "stubbleturnip"
     },
     {
       "code": "tomato"

@@ -1,0 +1,44 @@
+{
+	"editor": {
+		"collapsedPaths": "Root/origin2",
+		"allAngles": false,
+		"entityTextureMode": false
+	},
+	"textureWidth": 16,
+	"textureHeight": 16,
+	"textureSizes": {
+	},
+	"textures": {
+		"contents": "bdcrop:block/alfalfa/strawfill-alfalfa"
+	},
+	"elements": [
+		{
+			"name": "origin",
+			"from": [ 0.0, 0.0, 1.0 ],
+			"to": [ 0.0, 0.0, 1.0 ],
+			"rotationOrigin": [ 8.0, 0.0, 8.0 ],
+			"faces": {
+				"north": { "texture": "#null", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "enabled": false },
+				"east": { "texture": "#null", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "enabled": false },
+				"south": { "texture": "#null", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "enabled": false },
+				"west": { "texture": "#null", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "enabled": false },
+				"up": { "texture": "#null", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "enabled": false },
+				"down": { "texture": "#null", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "enabled": false }
+			},
+			"children": [
+				{
+					"name": "grain fill",
+					"from": [ 2.0, 1.5, 4.0 ],
+					"to": [ 14.0, 1.5, 10.0 ],
+					"faces": {
+						"north": { "texture": "#null", "uv": [ 0.0, 0.0, 12.0, 0.5 ], "enabled": false },
+						"east": { "texture": "#null", "uv": [ 0.0, 0.0, 6.0, 0.5 ], "enabled": false },
+						"south": { "texture": "#null", "uv": [ 0.0, 0.0, 12.0, 0.5 ], "enabled": false },
+						"west": { "texture": "#null", "uv": [ 0.0, 0.0, 6.0, 0.5 ], "enabled": false },
+						"up": { "texture": "#contents", "uv": [ 0.0, 0.0, 12.0, 6.0 ] },
+						"down": { "texture": "#null", "uv": [ 0.0, 0.0, 12.0, 6.0 ], "enabled": false }
+					}
+				}
+			]
+		}
+	]}

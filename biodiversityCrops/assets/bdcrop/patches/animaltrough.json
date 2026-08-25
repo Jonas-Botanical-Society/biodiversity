@@ -1,5 +1,33 @@
 [
   // Large Animal Trough
+  // alfalfa
+  {
+    "op": "add",
+    "path": "/attributes/contentConfig/-",
+    "value": {
+      "code": "alfalfa",
+      "content": {
+        "type": "item",
+        "code": "bdcrop:vegetable-alfalfa"
+      },
+      "quantityPerFillLevel": 4,
+      "maxFillLevels": 8,
+      "shapesPerFillLevel": [ "block/wood/trough/large/alfalfafill1", "block/wood/trough/large/alfalfafill1", "block/wood/trough/large/alfalfafill2", "block/wood/trough/large/alfalfafill2", "block/wood/trough/large/alfalfafill3", "block/wood/trough/large/alfalfafill3", "block/wood/trough/large/alfalfafill4", "block/wood/trough/large/alfalfafill4" ],
+      "textureCode": "contents-vegetable-alfalfa"
+    },
+    "file": "game:blocktypes/wood/trough-large.json",
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/textures/contents-vegetable-alfalfa",
+    "value": {
+      "base": "bdcrop:block/alfalfa/strawfill-alfalfa"
+      //"overlays": [ "block/wood/trough/large/shadow" ]
+    },
+    "file": "game:blocktypes/wood/trough-large.json",
+    "side": "server"
+  },
   // leek
   {
     "op": "add",
@@ -23,6 +51,34 @@
     "path": "/textures/contents-vegetable-leek",
     "value": {
       "base": "bdcrop:block/food/pie/fill-leek",
+      "overlays": [ "block/wood/trough/large/shadow" ]
+    },
+    "file": "game:blocktypes/wood/trough-large.json",
+    "side": "server"
+  },
+  // stubbleturnip
+  {
+    "op": "add",
+    "path": "/attributes/contentConfig/-",
+    "value": {
+      "code": "stubbleturnip",
+      "content": {
+        "type": "item",
+        "code": "bdcrop:vegetable-stubbleturnip"
+      },
+      "quantityPerFillLevel": 2,
+      "maxFillLevels": 8,
+      "shapesPerFillLevel": [ "block/wood/trough/large/grainfill1", "block/wood/trough/large/grainfill1", "block/wood/trough/large/grainfill2", "block/wood/trough/large/grainfill2", "block/wood/trough/large/grainfill3", "block/wood/trough/large/grainfill3", "block/wood/trough/large/grainfill4", "block/wood/trough/large/grainfill4" ],
+      "textureCode": "contents-vegetable-stubbleturnip"
+    },
+    "file": "game:blocktypes/wood/trough-large.json",
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/textures/contents-vegetable-stubbleturnip",
+    "value": {
+      "base": "bdcrop:block/food/pie/fill-stubbleturnip",
       "overlays": [ "block/wood/trough/large/shadow" ]
     },
     "file": "game:blocktypes/wood/trough-large.json",
@@ -84,6 +140,7 @@
     "file": "game:blocktypes/wood/trough-large.json",
     "side": "server"
   },
+  // Watermelon Mash
   {
     "op": "add",
     "path": "/attributes/contentConfig/-",
@@ -95,7 +152,7 @@
       },
       "quantityPerFillLevel": 2,
       "maxFillLevels": 8,
-      "shapesPerFillLevel": [ "block/wood/trough/large/grainfill1", "block/wood/trough/large/grainfill1", "block/wood/trough/large/grainfill2", "block/wood/trough/large/grainfill2", "block/wood/trough/large/grainfill3", "block/wood/trough/large/grainfill3", "block/wood/trough/large/grainfill4", "block/wood/trough/large/grainfill4" ],
+      "shapesPerFillLevel": [ "block/wood/trough/large/berryfill1", "block/wood/trough/large/berryfill1", "block/wood/trough/large/berryfill2", "block/wood/trough/large/berryfill2", "block/wood/trough/large/berryfill3", "block/wood/trough/large/berryfill3", "block/wood/trough/large/berryfill4", "block/wood/trough/large/berryfill4" ],
       "textureCode": "contents-pressedmash-watermelon"
     },
     "file": "game:blocktypes/wood/trough-large.json",
@@ -111,6 +168,7 @@
     "file": "game:blocktypes/wood/trough-large.json",
     "side": "server"
   },
+  // Honeydew Melon Mash
   {
     "op": "add",
     "path": "/attributes/contentConfig/-",
@@ -122,7 +180,7 @@
       },
       "quantityPerFillLevel": 2,
       "maxFillLevels": 8,
-      "shapesPerFillLevel": [ "block/wood/trough/large/grainfill1", "block/wood/trough/large/grainfill1", "block/wood/trough/large/grainfill2", "block/wood/trough/large/grainfill2", "block/wood/trough/large/grainfill3", "block/wood/trough/large/grainfill3", "block/wood/trough/large/grainfill4", "block/wood/trough/large/grainfill4" ],
+      "shapesPerFillLevel": [ "block/wood/trough/large/berryfill1", "block/wood/trough/large/berryfill1", "block/wood/trough/large/berryfill2", "block/wood/trough/large/berryfill2", "block/wood/trough/large/berryfill3", "block/wood/trough/large/berryfill3", "block/wood/trough/large/berryfill4", "block/wood/trough/large/berryfill4" ],
       "textureCode": "contents-pressedmash-honeydewmelon"
     },
     "file": "game:blocktypes/wood/trough-large.json",
@@ -138,6 +196,7 @@
     "file": "game:blocktypes/wood/trough-large.json",
     "side": "server"
   },
+  // Mirza Melon Mash
   {
     "op": "add",
     "path": "/attributes/contentConfig/-",
@@ -149,7 +208,7 @@
       },
       "quantityPerFillLevel": 2,
       "maxFillLevels": 8,
-      "shapesPerFillLevel": [ "block/wood/trough/large/grainfill1", "block/wood/trough/large/grainfill1", "block/wood/trough/large/grainfill2", "block/wood/trough/large/grainfill2", "block/wood/trough/large/grainfill3", "block/wood/trough/large/grainfill3", "block/wood/trough/large/grainfill4", "block/wood/trough/large/grainfill4" ],
+      "shapesPerFillLevel": [ "block/wood/trough/large/berryfill1", "block/wood/trough/large/berryfill1", "block/wood/trough/large/berryfill2", "block/wood/trough/large/berryfill2", "block/wood/trough/large/berryfill3", "block/wood/trough/large/berryfill3", "block/wood/trough/large/berryfill4", "block/wood/trough/large/berryfill4" ],
       "textureCode": "contents-pressedmash-mirzamelon"
     },
     "file": "game:blocktypes/wood/trough-large.json",
@@ -165,8 +224,8 @@
     "file": "game:blocktypes/wood/trough-large.json",
     "side": "server"
   },
+  // Canteloupe Melon Mash
   {
-    "enabled": false,
     "op": "add",
     "path": "/attributes/contentConfig/-",
     "value": {
@@ -177,14 +236,13 @@
       },
       "quantityPerFillLevel": 2,
       "maxFillLevels": 8,
-      "shapesPerFillLevel": [ "block/wood/trough/large/grainfill1", "block/wood/trough/large/grainfill1", "block/wood/trough/large/grainfill2", "block/wood/trough/large/grainfill2", "block/wood/trough/large/grainfill3", "block/wood/trough/large/grainfill3", "block/wood/trough/large/grainfill4", "block/wood/trough/large/grainfill4" ],
+      "shapesPerFillLevel": [ "block/wood/trough/large/berryfill1", "block/wood/trough/large/berryfill1", "block/wood/trough/large/berryfill2", "block/wood/trough/large/berryfill2", "block/wood/trough/large/berryfill3", "block/wood/trough/large/berryfill3", "block/wood/trough/large/berryfill4", "block/wood/trough/large/berryfill4" ],
       "textureCode": "contents-pressedmash-cantaloupe"
     },
     "file": "game:blocktypes/wood/trough-large.json",
     "side": "server"
   },
   {
-    "enabled": false,
     "op": "add",
     "path": "/textures/contents-pressedmash-cantaloupe",
     "value": {
@@ -196,6 +254,35 @@
   },
 
   // Small animal trough
+  // alfalfa
+  {
+    "op": "add",
+    "path": "/attributes/contentConfig/-",
+    "value": {
+      "code": "alfalfa",
+      "content": {
+        "type": "item",
+        "code": "bdcrop:vegetable-alfalfa"
+      },
+      "quantityPerFillLevel": 2,
+      "maxFillLevels": 8,
+      "shapesPerFillLevel": [ "block/wood/trough/small/alfalfafill1", "block/wood/trough/small/alfalfafill1", "block/wood/trough/small/alfalfafill2", "block/wood/trough/small/alfalfafill2", "block/wood/trough/small/alfalfafill3", "block/wood/trough/small/alfalfafill3", "block/wood/trough/small/alfalfafill4", "block/wood/trough/small/alfalfafill4" ],
+      "textureCode": "contents-vegetable-alfalfa"
+
+    },
+    "file": "game:blocktypes/wood/trough-small.json",
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/textures/contents-vegetable-alfalfa",
+    "value": {
+      "base": "bdcrop:block/alfalfa/strawfill-alfalfa"
+      //"overlays": [ "block/wood/trough/small/shadow" ]
+    },
+    "file": "game:blocktypes/wood/trough-small.json",
+    "side": "server"
+  },
   // leek
   {
     "op": "add",
@@ -219,6 +306,34 @@
     "path": "/textures/contents-vegetable-leek",
     "value": {
       "base": "bdcrop:block/food/pie/fill-leek",
+      "overlays": [ "block/wood/trough/small/shadow" ]
+    },
+    "file": "game:blocktypes/wood/trough-small.json",
+    "side": "server"
+  },
+  // stubbleturnip
+  {
+    "op": "add",
+    "path": "/attributes/contentConfig/-",
+    "value": {
+      "code": "stubbleturnip",
+      "content": {
+        "type": "item",
+        "code": "bdcrop:vegetable-stubbleturnip"
+      },
+      "quantityPerFillLevel": 1,
+      "maxFillLevels": 8,
+      "shapesPerFillLevel": [ "block/wood/trough/small/grainfill1", "block/wood/trough/small/grainfill1", "block/wood/trough/small/grainfill2", "block/wood/trough/small/grainfill2", "block/wood/trough/small/grainfill3", "block/wood/trough/small/grainfill3", "block/wood/trough/small/grainfill4", "block/wood/trough/small/grainfill4" ],
+      "textureCode": "contents-vegetable-stubbleturnip"
+    },
+    "file": "game:blocktypes/wood/trough-small.json",
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/textures/contents-vegetable-stubbleturnip",
+    "value": {
+      "base": "bdcrop:block/food/pie/fill-stubbleturnip",
       "overlays": [ "block/wood/trough/small/shadow" ]
     },
     "file": "game:blocktypes/wood/trough-small.json",
@@ -292,7 +407,7 @@
       },
       "quantityPerFillLevel": 1,
       "maxFillLevels": 8,
-      "shapesPerFillLevel": [ "block/wood/trough/small/grainfill1", "block/wood/trough/small/grainfill1", "block/wood/trough/small/grainfill2", "block/wood/trough/small/grainfill2", "block/wood/trough/small/grainfill3", "block/wood/trough/small/grainfill3", "block/wood/trough/small/grainfill4", "block/wood/trough/small/grainfill4" ],
+      "shapesPerFillLevel": [ "block/wood/trough/small/berryfill1", "block/wood/trough/small/berryfill1", "block/wood/trough/small/berryfill2", "block/wood/trough/small/berryfill2", "block/wood/trough/small/berryfill3", "block/wood/trough/small/berryfill3", "block/wood/trough/small/berryfill4", "block/wood/trough/small/berryfill4" ],
       "textureCode": "contents-pressedmash-watermelon"
     },
     "file": "game:blocktypes/wood/trough-small.json",
@@ -319,7 +434,7 @@
       },
       "quantityPerFillLevel": 1,
       "maxFillLevels": 8,
-      "shapesPerFillLevel": [ "block/wood/trough/small/grainfill1", "block/wood/trough/small/grainfill1", "block/wood/trough/small/grainfill2", "block/wood/trough/small/grainfill2", "block/wood/trough/small/grainfill3", "block/wood/trough/small/grainfill3", "block/wood/trough/small/grainfill4", "block/wood/trough/small/grainfill4" ],
+      "shapesPerFillLevel": [ "block/wood/trough/small/berryfill1", "block/wood/trough/small/berryfill1", "block/wood/trough/small/berryfill2", "block/wood/trough/small/berryfill2", "block/wood/trough/small/berryfill3", "block/wood/trough/small/berryfill3", "block/wood/trough/small/berryfill4", "block/wood/trough/small/berryfill4" ],
       "textureCode": "contents-pressedmash-mirzamelon"
     },
     "file": "game:blocktypes/wood/trough-small.json",
@@ -347,7 +462,7 @@
       },
       "quantityPerFillLevel": 1,
       "maxFillLevels": 8,
-      "shapesPerFillLevel": [ "block/wood/trough/small/grainfill1", "block/wood/trough/small/grainfill1", "block/wood/trough/small/grainfill2", "block/wood/trough/small/grainfill2", "block/wood/trough/small/grainfill3", "block/wood/trough/small/grainfill3", "block/wood/trough/small/grainfill4", "block/wood/trough/small/grainfill4" ],
+      "shapesPerFillLevel": [ "block/wood/trough/small/berryfill1", "block/wood/trough/small/berryfill1", "block/wood/trough/small/berryfill2", "block/wood/trough/small/berryfill2", "block/wood/trough/small/berryfill3", "block/wood/trough/small/berryfill3", "block/wood/trough/small/berryfill4", "block/wood/trough/small/berryfill4" ],
       "textureCode": "contents-pressedmash-cantaloupe"
     },
     "file": "game:blocktypes/wood/trough-small.json",
@@ -375,7 +490,7 @@
       },
       "quantityPerFillLevel": 1,
       "maxFillLevels": 8,
-      "shapesPerFillLevel": [ "block/wood/trough/small/grainfill1", "block/wood/trough/small/grainfill1", "block/wood/trough/small/grainfill2", "block/wood/trough/small/grainfill2", "block/wood/trough/small/grainfill3", "block/wood/trough/small/grainfill3", "block/wood/trough/small/grainfill4", "block/wood/trough/small/grainfill4" ],
+      "shapesPerFillLevel": [ "block/wood/trough/small/berryfill1", "block/wood/trough/small/berryfill1", "block/wood/trough/small/berryfill2", "block/wood/trough/small/berryfill2", "block/wood/trough/small/berryfill3", "block/wood/trough/small/berryfill3", "block/wood/trough/small/berryfill4", "block/wood/trough/small/berryfill4" ],
       "textureCode": "contents-pressedmash-honeydewmelon"
     },
     "file": "game:blocktypes/wood/trough-small.json",

@@ -5,42 +5,44 @@
 	"variantgroups": [
 		{
 			"code": "type",
-			"states": [ "tomato" ]
+			"states": [ "stubbleturnip" ]
 		},
 		{
 			"code": "stage",
-			"states": [ "1", "2", "3", "4", "5", "6", "7" ]
+			"states": [ "1", "2", "3", "4", "5" ]
 		}
 	],
 	"creativeinventory": {
-		"general": [ "" ],
-		"plants": [ "" ],
-		"bdcrop": [ "" ]
+		"general": [ "*" ],
+		"plants": [ "*" ],
+		"bdcrop": [ "*" ]
 	},
 	"renderpass": "OpaqueNoCull",
-	"shapeByType": { 
-		"*": { "base": "bdcrop:block/plant/crop/tomato/crosstomato" }
+	"shapeByType": {
+		"*": { "base": "bdcrop:block/plant/crop/stubbleturnip/stage{stage}" }
 	},
 	"blockmaterial": "Plant",
 	"randomizeRotations": true,
-	"textures": {
-		"e" : { "base": "bdcrop:block/plant/crop/tomato/e{stage}" },
-		"s" : { "base": "bdcrop:block/plant/crop/tomato/s{stage}" }
-		//"oak" : { base: "game:block/wood/oak" },
+	"texturesByType": {
+		"*": {
+			"bulb": { "base": "bdcrop:block/plant/crop/stubbleturnip/stubbler" },
+			"e": { "base": "bdcrop:block/plant/crop/stubbleturnip/e{stage}" },
+			"s": { "base": "bdcrop:block/plant/crop/stubbleturnip/s{stage}" }
+		}
 	},
 	"attributes": {
 		"foodTags": [ "nibbleCrop" ],
 		"butterflyFeedByType": {
-			"*-4": true,
-			"*-5": true,
-			"*": false
+			"*-1": false,
+			"*-5": false,
+			"*": true
 		},
 		"beeFeedByType": {
-			"*-4": true,
-			"*-5": true,
-			"*": false
+			"*-1": false,
+			"*-5": false,
+			"*": true
 		},
-		"sitHeight": -2.0,
+		"sitHeight": 0.55,
 		"tickGrowthProbability": 0.05,
 		"handbook": {
 			"include": true
@@ -62,52 +64,51 @@
 	},
 	"rainPermeable": false,
 	"dropsByType": {
-		"*-6": [
+		"*-4": [
 			{
 				"type": "item",
-				"code": "vegetable-tomato",
+				"code": "bdcrop:seeds-stubbleturnip",
+				"quantity": { "avg": 0.99 }
+			},
+			{
+				"type": "item",
+				"code": "bdcrop:vegetable-stubbleturnip",
 				"quantity": {
-					"avg": 3,
+					"avg": 2,
 					"var": 1
 				}
-			},
-			{ 
-				"type": "item",
-				"code": "seeds-tomato",
-				"quantity": { "avg": 1.0 }  
 			}
 		],
-		"*-7": [
+		"*-5": [
 			{
 				"type": "item",
-				"code": "vegetable-tomato",
-				"quantity": {
-					"avg": 16,
-					"var": 4
-				}
+				"code": "bdcrop:seeds-stubbleturnip",
+				"quantity": { "avg": 1.2 }
 			},
-			{ 
+			{
 				"type": "item",
-				"code": "seeds-tomato",
-				"quantity": { "avg": 1.2 }  
+				"code": "bdcrop:vegetable-stubbleturnip",
+				"quantity": {
+					"avg": 6,
+					"var": 1
+				}
 			}
 		],
 		"*": [
-			{ 
+			{
 				"type": "item",
-				"code": "seeds-tomato",
-				"quantity": { "avg": 0.99 }  
+				"code": "bdcrop:seeds-stubbleturnip",
+				"quantity": { "avg": 0.7 }
 			}
 		]
 	},
 	"cropProps": {
-		// Tomatoes require Phosphorous. (FEDCO catalog)
+		// Driller Turnips is a potasium fixer
 		"requiredNutrient": "P",
-		"nutrientConsumption": 35,
-		"growthStages": 7,
-		"totalGrowthMonths": 1.2,
-		"coldDamageBelow": -1,
-		"heatDamageAbove": 40
+		"nutrientConsumption": -7,
+		"growthStages": 5,
+		"totalGrowthMonths": 0.8,
+		"heatDamageAbove": 27
 	},
 	"collisionbox": null,
 	"selectionbox": {
@@ -121,7 +122,7 @@
 	"materialDensity": 200,
 	"combustibleProps": {
 		"burnTemperature": 600,
-		"burnDuration": 10,
+		"burnDuration": 10
 	},
 	"frostable": true
 }

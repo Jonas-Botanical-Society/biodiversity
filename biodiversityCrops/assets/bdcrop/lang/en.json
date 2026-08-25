@@ -13,25 +13,36 @@
   "item-seeds-honeydewmelon": "Honeydew melon seeds",
   "item-seeds-mirzamelon": "Mirza melon seeds",
 
+  "item-seeds-alfalfa": "Alfalfa seeds",
+  "itemdesc-seeds-alfalfa": "A cover crop, can be feed to animals.  Adds Nitrogen to soil",
   "item-seeds-leek": "Leek seeds",
   "item-seeds-potato": "Potato seeds",
+  "item-seeds-stubbleturnip": "Driller Radish seeds",
   "item-seeds-tomato": "Tomato seeds",
   "item-seeds-butternutsquash": "Butternut squash seeds",
   "item-seeds-naplessquash": "Naples long squash seeds",
 
   //Block Crops
+  "block-crop-alfalfa-*": "Growing alfalfa",
   "block-crop-leek-*": "Growing leeks",
   "block-crop-potato-*": "Growing potatoes",
+  "block-crop-stubbleturnip-*": "Growing driller radishes",
   "block-crop-tomato-*": "Growing tomatoes",
+  "block-crop-alfalfa-8": "Mature alfalfa",
   "block-crop-leek-7": "Mature leeks",
   "block-crop-potato-7": "Mature potatoes",
+  "block-crop-stubbleturnip-5": "Mature driller radishes",
   "block-crop-tomato-7": "Mature tomatoes",
 
   //Food
+  "item-vegetable-alfalfa": "Alfalfa Bundle",
+  "itemdesc-vegetable-alfalfa": "A fodder crop to feed to animals.  You can still eat this, if your desperate.",
   "item-vegetable-leek": "Leek",
   "itemdesc-vegetable-leek": "A green vegetable related to onions, keeps quite well.",
   "item-vegetable-potato": "Potato",
   "itemdesc-vegetable-potato": "A tuber that grows underground, a favorite of all seraphs.",
+  "item-vegetable-stubbleturnip": "Driller Radishes",
+  "itemdesc-vegetable-stubbleturnip": "Also called Daikon Radish or Tillage Radish.  This cover crop breaks up soil to increase nutrients",
   "item-vegetable-tomato": "Tomatoes",
   "itemdesc-vegetable-tomato": "A summer vegetable best eaten fresh, does not keep long.  So enjoy this bite of summer.",
   "item-vegetable-butternutsquash": "Butternut squash chunk",
@@ -41,6 +52,15 @@
 
 
   //Vanilla Cooking
+
+  "game:recipeingredient-item-vegetable-alfalfa": "alfalfa",
+  "game:recipeingredient-item-vegetable-alfalfa-insturmentalcase": "alfalfa",
+  "bdcrop:recipeingredient-item-vegetable-alfalfa": "alfalfa",
+  "bdcrop:recipeingredient-item-vegetable-alfalfa-insturmentalcase": "alfalfa",
+  "game:meal-ingredient-stew-primary-vegetable-alfalfa": "alfalfa",
+  "game:meal-ingredient-stew-secondary-vegetable-alfalfa": "alfalfa",
+  "game:meal-ingredient-soup-primary-vegetable-alfalfa": "alfalfa",
+
   "game:recipeingredient-item-vegetable-leek": "leek",
   "game:recipeingredient-item-vegetable-leek-insturmentalcase": "leek",
   "bdcrop:recipeingredient-item-vegetable-leek": "leek",
@@ -52,6 +72,18 @@
   "pie-single-bdcrop:vegetable-leek-partbaked": "Leek pie (part-baked)",
   "pie-single-bdcrop:vegetable-leek-perfect": "Leek pie",
   "pie-single-bdcrop:vegetable-leek-charred": "Leek pie (charred)",
+
+  "game:recipeingredient-item-vegetable-stubbleturnip": "driller radish",
+  "game:recipeingredient-item-vegetable-stubbleturnip-insturmentalcase": "driller radish",
+  "bdcrop:recipeingredient-item-vegetable-stubbleturnip": "driller radish",
+  "bdcrop:recipeingredient-item-vegetable-stubbleturnip-insturmentalcase": "driller radish",
+  "game:meal-ingredient-stew-primary-vegetable-stubbleturnip": "driller radish",
+  "game:meal-ingredient-stew-secondary-vegetable-stubbleturnip": "driller radish",
+  "game:meal-ingredient-soup-primary-vegetable-stubbleturnip": "driller radish",
+  "pie-single-bdcrop:vegetable-stubbleturnip-raw": "Driller Radish pie (raw)",
+  "pie-single-bdcrop:vegetable-stubbleturnip-partbaked": "Driller Radish pie (part-baked)",
+  "pie-single-bdcrop:vegetable-stubbleturnip-perfect": "Driller Radish pie",
+  "pie-single-bdcrop:vegetable-stubbleturnip-charred": "Driller Radish pie (charred)",
 
   "game:recipeingredient-item-vegetable-tomato": "tomato",
   "game:recipeingredient-item-vegetable-tomato-insturmentalcase": "tomato",
