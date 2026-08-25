@@ -722,7 +722,7 @@
       },
       "A": {
         "type": "block",
-        "code": "*:logsection-placed-*-ud"
+        "code": "logsection-placed-*-ud"
       },
       "S": {
         "type": "item",

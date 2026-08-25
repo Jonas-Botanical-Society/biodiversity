@@ -6,13 +6,14 @@
     "file": "game:blocktypes/clay/fired/pot",
     "op": "addmerge",
     "path": "/textures",
-    "value": { "fruit-apricot": { "base": "bdorchard:block/food/pie/fill-apricot" },
-     "fruit-fig": { "base": "bdorchard:block/food/pie/fill-fig" },
-     "fruit-grapefruit": { "base": "bdorchard:block/food/pie/fill-grapefruit" },
-     "fruit-lemon": { "base": "bdorchard:block/food/pie/fill-lemon" },
-     "fruit-lime": { "base": "bdorchard:block/food/pie/fill-lime" },
-     "fruit-nectarine": { "base": "bdorchard:block/food/pie/fill-nectarine" },
-     "fruit-sandpear": { "base": "bdorchard:block/food/pie/fill-sandpear" }
+    "value": {
+      "fruit-apricot": { "base": "bdorchard:block/food/pie/fill-apricot" },
+      "fruit-fig": { "base": "bdorchard:block/food/pie/fill-fig" },
+      "fruit-grapefruit": { "base": "bdorchard:block/food/pie/fill-grapefruit" },
+      "fruit-lemon": { "base": "bdorchard:block/food/pie/fill-lemon" },
+      "fruit-lime": { "base": "bdorchard:block/food/pie/fill-lime" },
+      "fruit-nectarine": { "base": "bdorchard:block/food/pie/fill-nectarine" },
+      "fruit-sandpear": { "base": "bdorchard:block/food/pie/fill-sandpear" }
     }
   },
   {
@@ -122,6 +123,23 @@
       {
         "type": "item",
         "code": "bdorchard:fruit-sandpear",
+        "shapeElement": "bowl/fruit"
+      }
+    ],
+    "side": "server"
+  },
+  //
+  // Add fruit to meat stew recipies
+  //
+  // All fruits cause that is what the people want...
+  {
+    "file": "game:recipes/cooking/meatystew.json",
+    "op": "addeach",
+    "path": "/ingredients/7/validStacks/-",
+    "value": [
+      {
+        "type": "item",
+        "code": "bdorchard:fruit-*",
         "shapeElement": "bowl/fruit"
       }
     ],

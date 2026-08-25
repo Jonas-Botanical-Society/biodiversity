@@ -21,7 +21,7 @@
 			},
 			"isOpaqueByType": {
 				"*": false
-			},			
+			},
 			"allowSpill": true,
 			"whenSpilled": { 
 				"action": "DropContents",

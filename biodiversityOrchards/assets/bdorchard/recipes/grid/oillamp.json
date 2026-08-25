@@ -1,0 +1,189 @@
+[
+  {
+    "ingredientPattern": "BF",
+    "width": 2,
+    "height": 1,
+    "enabled": true,
+    "shapeless": true,
+    "ingredients": {
+      "B": {
+        "type": "block",
+        "code": "game:oillamp-genie-*-fired",
+        "name": "color"
+      },
+      "F": {
+        "type": "block",
+        "code": "game:bowl-*-fired"
+      }
+    },
+    "attributes": {
+      "liquidContainerProps": {
+        "requiresContent": {
+          "type": "item",
+          "code": "bdorchard:oilportion-avocado"
+        },
+        "requiresLitres": 0.5
+      }
+    },
+    "name": "bdor_avocado_oillamp_bowl",
+    "output": {
+      "type": "block",
+      "code": "game:oillamp-{color}-up"
+    }
+  },
+  {
+    "ingredientPattern": "BF",
+    "ingredients": {
+      "B": {
+        "type": "block",
+        "code": "game:oillamp-genie-*-fired",
+        "name": "color"
+      },
+      "F": {
+        "type": "block",
+        "code": "game:woodbucket"
+      }
+    },
+    "attributes": {
+      "liquidContainerProps": {
+        "requiresContent": {
+          "type": "item",
+          "code": "bdorchard:oilportion-avocado"
+        },
+        "requiresLitres": 0.5
+      }
+    },
+    "width": 2,
+    "height": 1,
+    "shapeless": true,
+    "name": "bdor_avocado_oillamp_buck",
+    "output": {
+      "type": "block",
+      "code": "game:oillamp-{color}-up"
+    }
+  },
+  {
+    "ingredientPattern": "BF",
+    "ingredients": {
+      "B": {
+        "type": "block",
+        "code": "game:oillamp-genie-*-fired",
+        "name": "color"
+      },
+      "F": {
+        "type": "block",
+        "code": "game:jug-*-fired"
+      }
+    },
+    "attributes": {
+      "liquidContainerProps": {
+        "requiresContent": {
+          "type": "item",
+          "code": "bdorchard:oilportion-avocado"
+        },
+        "requiresLitres": 0.5
+      }
+    },
+    "width": 2,
+    "height": 1,
+    "shapeless": true,
+    "name": "bdor_avocado_oillamp_jug",
+    "output": {
+      "type": "block",
+      "code": "game:oillamp-{color}-up"
+    }
+  },
+  {
+    "ingredientPattern": "BF",
+    "ingredients": {
+      "B": {
+        "type": "block",
+        "code": "game:oillamp-genie-*-fired",
+        "name": "color"
+      },
+      "F": {
+        "type": "block",
+        "code": "game:bowl-*-fired"
+      }
+    },
+    "attributes": {
+      "liquidContainerProps": {
+        "requiresContent": {
+          "type": "item",
+          "code": "bdorchard:oilportion-engkala"
+        },
+        "requiresLitres": 0.5
+      }
+    },
+    "width": 2,
+    "height": 1,
+    "shapeless": true,
+    "name": "bdor_engkala_oillamp_bowl",
+    "output": {
+      "type": "block",
+      "code": "game:oillamp-{color}-up"
+    }
+  },
+  {
+    "ingredientPattern": "BF",
+    "ingredients": {
+      "B": {
+        "type": "block",
+        "code": "game:oillamp-genie-*-fired",
+        "name": "color"
+      },
+      "F": {
+        "type": "block",
+        "code": "game:woodbucket"
+      }
+    },
+    "attributes": {
+      "liquidContainerProps": {
+        "requiresContent": {
+          "type": "item",
+          "code": "bdorchard:oilportion-engkala"
+        },
+        "requiresLitres": 0.5
+      }
+    },
+    "width": 2,
+    "height": 1,
+    "shapeless": true,
+    "name": "bdor_engkala_oillamp_buck",
+    "output": {
+      "type": "block",
+      "code": "game:oillamp-{color}-up"
+    }
+  },
+  {
+    "ingredientPattern": "BF",
+    "ingredients": {
+      "B": {
+        "type": "block",
+        "code": "game:oillamp-genie-*-fired",
+        "name": "color"
+      },
+      "F": {
+        "type": "block",
+        "code": "game:jug-*-fired"
+      }
+    },
+    "attributes": {
+      "liquidContainerProps": {
+        "requiresContent": {
+          "type": "item",
+          "code": "bdorchard:oilportion-engkala"
+        },
+        "requiresLitres": 0.5
+      }
+    },
+    "width": 2,
+    "height": 1,
+    "shapeless": true,
+    "name": "bdor_engkala_oillamp_jug",
+    "output": {
+      "type": "block",
+      "code": "game:oillamp-{color}-up"
+    }
+  }
+]

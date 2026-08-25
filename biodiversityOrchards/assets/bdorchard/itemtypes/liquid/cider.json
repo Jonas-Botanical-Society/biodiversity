@@ -124,5 +124,17 @@
       "y": -1,
       "z": -1.4
     }
-  }
+  },
+  "transitionableProps": [
+    {
+      "type": "Perish",
+      "freshHours": { "avg": 3360 },
+      "transitionHours": { "avg": 48 },
+      "transitionedStack": {
+        "type": "item",
+        "code": "game:rot"
+      },
+      "transitionRatio": 0.005
+    }
+  ]
 }

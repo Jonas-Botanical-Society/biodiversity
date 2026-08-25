@@ -164,6 +164,11 @@
   "pie-single-bdorchard:fruit-avocado-perfect": "Avocado pie",
   "pie-single-bdorchard:fruit-avocado-charred": "Avocado pie (charred)",
 
+  "game:recipeingredient-item-fruit-engkala": "engkala",
+  "game:recipeingredient-item-fruit-engkala-insturmentalcase": "engkala",
+  "bdorchard:recipeingredient-item-fruit-engkala": "engkala",
+  "bdorchard:recipeingredient-item-fruit-engkala-insturmentalcase": "engkala",
+
   "game:recipeingredient-item-fruit-fig": "fig",
   "game:recipeingredient-item-fruit-fig-insturmentalcase": "fig",
   "bdorchard:recipeingredient-item-fruit-fig": "fig",
