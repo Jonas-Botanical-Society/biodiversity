@@ -1,0 +1,16 @@
+[
+  {
+    "id": "oilportion-avocado",
+    "treatmentStatTag": "oil",
+    "dryingHours": 24,
+    "isLiquid": true,
+    "litersUsed": 0.1
+  },
+  {
+    "id": "oilportion-engkala",
+    "treatmentStatTag": "oil",
+    "dryingHours": 24,
+    "isLiquid": true,
+    "litersUsed": 0.1
+  }
+]
