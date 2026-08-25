@@ -9,7 +9,7 @@
                 "build",
                 "-c",
                 "Debug",
-                "${workspaceFolder}/biodiversityCore/Core.csproj"
+                "${workspaceFolder}/biodiversityCore/biodiversityCore.csproj"
             ],
             "problemMatcher": "$msCompile"
         },
