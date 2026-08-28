@@ -1,0 +1,32 @@
+{
+  "code": "type",
+  "variants": [
+    {
+      "code": "maize"
+    },
+    {
+      "code": "buckwheat"
+    },
+    {
+      "code": "millet"
+    },
+    {
+      "code": "sorghum"
+    },
+    {
+      "code": "oat"
+    },
+    {
+      "code": "barley"
+    },
+    {
+      "code": "quinoa"
+    },
+    {
+      "code": "emmer"
+    },
+    {
+      "code": "kamut"
+    }
+  ]
+}
