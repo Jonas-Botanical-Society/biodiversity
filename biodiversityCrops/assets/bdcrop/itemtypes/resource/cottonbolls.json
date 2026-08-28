@@ -1,0 +1,4 @@
+{
+    code: "cottonbolls",
+    creativeinventory: { "general": ["*"], "items": ["*"],"bdcrop":["*"] },
+}

@@ -1,0 +1,59 @@
+{
+	code: "cottonfibers",
+	shape: { base: "game:item/resource/flaxfibers" },
+	creativeinventory: { "general": ["*"], "items": ["*"],	"bdcrop": [ "*" ] },
+	behaviors: [
+		{ name: "GroundStorable", 
+			properties: {
+				layout: 'Stacking',
+				placeRemoveSound: 'sounds/block/plant',
+				stackingModel: 'item/resource/flaxfibers-pile',
+				modelItemsToStackSizeRatio: 14,
+				stackingCapacity: 30,
+				transferQuantity: 1,
+				bulkTransferQuantity: 6,
+				collisionBox: { x1: 0, y1: 0, z1: 0, x2: 1, y2: 0.13, z2: 1 },
+				cbScaleYByLayer: 0.13
+			}
+		}
+	],
+	attributes: {
+		displaycaseable: true, 
+		shelvable: true,
+        displayable: {
+            shelf: {
+                size: { width: 8, height: 2, length: 6 }
+            }
+        },
+		onDisplayTransform: {
+			rotation: { x: 0, y: -90, z: 0 },
+			origin: { x: 0.5, y: 0, z: 0.5 },
+			scale: 0.55
+		},
+		groundStorageTransform: {
+			translation: { x: 0, y: -0.1, z: 0 },
+			rotation: { x: 0, y: 42, z: 0 },
+			scale: 0.82
+		},
+		inContainerTexture: { base: "game:item/resource/fibers" }
+	},
+	maxstacksize: 64,
+	materialDensity: 120,
+	guiTransform: {
+		rotation: { x: 105, y: 40, z: 9 },
+		origin: { x: 0.57, y: 0.37, z: 0.42 },
+		scale: 2.2
+	},
+	tpHandTransform: {
+		translation: { x: -0.66, y: 0, z: -0.63 },
+		rotation: { x: 70, y: 5, z: -5 },
+		origin: { x: 0.5, y: -0, z: 0.5 },
+		scale: 0.8
+	},
+	groundTransform: {
+		translation: { x: 0, y: 0.18, z: 0 },
+		rotation: { x: 1, y: 0, z: 0 },
+		origin: { x: 0.5, y: 0.22, z: 0.5299 },
+		scale: 4
+	}
+}

@@ -1,0 +1,7 @@
+{
+    code: "maizeear",
+    variantgroups: [
+        { code: "type", states: ["husked","unhusked"] }
+    ],
+    creativeinventory: { "general": ["*"], "items": ["*"],"bdcrop":["*"] },
+}
