@@ -13,9 +13,9 @@
 		}
 	],
 	"creativeinventory": {
-		"general": [ "*" ],
-		"plants": [ "*" ],
-		"bdcrop": [ "*" ]
+		"general": [ "" ],
+		"plants": [ "" ],
+		"bdcrop": [ "" ]
 	},
 	"renderpass": "OpaqueNoCull",
 	"shapeByType": {
