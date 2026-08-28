@@ -1,0 +1,24 @@
+[
+  {
+    "ingredientPattern": "KC",
+    "width": 2,
+    "height": 1,
+    "shapeless": true,
+    "ingredients": {
+      "K": {
+        "type": "item",
+        "code": "game:knife-*",
+        "isTool": true
+      },
+      "C": {
+        "type": "item",
+        "code": "maizeear-unhusked"
+      }
+    },
+    "output": {
+      "type": "item",
+      "code": "maizeear-husked",
+      "quantity": 1
+    }
+  }
+]
