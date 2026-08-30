@@ -8,6 +8,8 @@
     <BuildSettingsTemplatePath>$(SolutionDir)buildSettings_template.yml</BuildSettingsTemplatePath>
     <OutputPath>$(ModsRootPath)\biodiversityCore</OutputPath>
     <Nullable>disable</Nullable>
+    <DisableFastUpToDateCheck>true</DisableFastUpToDateCheck>
+    <RunPostBuildEvent>Always</RunPostBuildEvent>
   </PropertyGroup>
 
   <PropertyGroup Condition="Exists('$(BuildSettingsFilePath)')">
@@ -64,37 +66,37 @@
 </ItemGroup>
 
 <ItemGroup>
-  <AquaticModFiles Include="$(SolutionDir)biodiversityAquatic\*.*"/>
-  <CropsModFiles Include="$(SolutionDir)biodiversityCrops\*.*"/>
-  <FlowersModFiles Include="$(SolutionDir)biodiversityFlowers\*.*"/>
-  <HerbsModFiles Include="$(SolutionDir)biodiversityHerbs\*.*"/>
-  <OrchardsModFiles Include="$(SolutionDir)biodiversityOrchards\*.*"/>
-  <ShrubsModFiles Include="$(SolutionDir)biodiversityShrubs\*.*"/>
-  <TreesModFiles Include="$(SolutionDir)biodiversityTrees\*.*"/>
+  <AquaticModFiles Include="$(SolutionDir)biodiversityAquatic\*.*" />
+  <CropsModFiles Include="$(SolutionDir)biodiversityCrops\*.*" />
+  <FlowersModFiles Include="$(SolutionDir)biodiversityFlowers\*.*" />
+  <HerbsModFiles Include="$(SolutionDir)biodiversityHerbs\*.*" />
+  <OrchardsModFiles Include="$(SolutionDir)biodiversityOrchards\*.*" />
+  <ShrubsModFiles Include="$(SolutionDir)biodiversityShrubs\*.*" />
+  <TreesModFiles Include="$(SolutionDir)biodiversityTrees\*.*" />
 </ItemGroup>
 
 <Target Name="EnsureBuildSettingsExists" Condition="!Exists('$(BuildSettingsFilePath)')">
-  <Copy SourceFiles="$(BuildSettingsTemplatePath)" DestinationFiles="$(BuildSettingsFilePath)"/>
+  <Copy SourceFiles="$(BuildSettingsTemplatePath)" DestinationFiles="$(BuildSettingsFilePath)" />
 </Target>
 
-<Target Name="ClearOutputFolder" BeforeTargets="Run">
-  <RemoveDir Directories="$(ModsRootPath)\biodiversityAquatic"/>
-  <RemoveDir Directories="$(ModsRootPath)\biodiversityCrops"/>
-  <RemoveDir Directories="$(ModsRootPath)\biodiversityFlowers"/>
-  <RemoveDir Directories="$(ModsRootPath)\biodiversityHerbs"/>
-  <RemoveDir Directories="$(ModsRootPath)\biodiversityOrchards"/>
-  <RemoveDir Directories="$(ModsRootPath)\biodiversityShrubs"/>
-  <RemoveDir Directories="$(ModsRootPath)\biodiversityTrees"/>
+<Target Name="ClearOutputFolder" AfterTargets="PostBuildEvent">
+  <RemoveDir Directories="$(ModsRootPath)\biodiversityAquatic" />
+  <RemoveDir Directories="$(ModsRootPath)\biodiversityCrops" />
+  <RemoveDir Directories="$(ModsRootPath)\biodiversityFlowers" />
+  <RemoveDir Directories="$(ModsRootPath)\biodiversityHerbs" />
+  <RemoveDir Directories="$(ModsRootPath)\biodiversityOrchards" />
+  <RemoveDir Directories="$(ModsRootPath)\biodiversityShrubs" />
+  <RemoveDir Directories="$(ModsRootPath)\biodiversityTrees" />
 </Target>
 
 <Target Name="CopySubMods" AfterTargets="ClearOutputFolder">
-  <Copy Condition="$([System.IO.File]::ReadAllText('$(BuildSettingsFilePath)').Contains('Aquatic: true'))" SourceFiles="@(AquaticModFiles)" DestinationFolder="$(ModsRootPath)\biodiversityAquatic"/>
-  <Copy Condition="$([System.IO.File]::ReadAllText('$(BuildSettingsFilePath)').Contains('Crops: true'))" SourceFiles="@(CropsModFiles)" DestinationFolder="$(ModsRootPath)\biodiversityCrops"/>
-  <Copy Condition="$([System.IO.File]::ReadAllText('$(BuildSettingsFilePath)').Contains('Flowers: true'))" SourceFiles="@(FlowersModFiles)" DestinationFolder="$(ModsRootPath)\biodiversityFlowers"/>
-  <Copy Condition="$([System.IO.File]::ReadAllText('$(BuildSettingsFilePath)').Contains('Herbs: true'))" SourceFiles="@(HerbsModFiles)" DestinationFolder="$(ModsRootPath)\biodiversityHerbs"/>
-  <Copy Condition="$([System.IO.File]::ReadAllText('$(BuildSettingsFilePath)').Contains('Orchards: true'))" SourceFiles="@(OrchardsModFiles)" DestinationFolder="$(ModsRootPath)\biodiversityOrchards"/>
-  <Copy Condition="$([System.IO.File]::ReadAllText('$(BuildSettingsFilePath)').Contains('Shrubs: true'))" SourceFiles="@(ShrubsModFiles)" DestinationFolder="$(ModsRootPath)\biodiversityShrubs"/>
-  <Copy Condition="$([System.IO.File]::ReadAllText('$(BuildSettingsFilePath)').Contains('Trees: true'))" SourceFiles="@(TreesModFiles)" DestinationFolder="$(ModsRootPath)\biodiversityTrees"/>
+  <Copy Condition="$([System.IO.File]::ReadAllText('$(BuildSettingsFilePath)').Contains('Aquatic: true'))" SourceFiles="@(AquaticModFiles)" DestinationFolder="$(ModsRootPath)\biodiversityAquatic" />
+  <Copy Condition="$([System.IO.File]::ReadAllText('$(BuildSettingsFilePath)').Contains('Crops: true'))" SourceFiles="@(CropsModFiles)" DestinationFolder="$(ModsRootPath)\biodiversityCrops" />
+  <Copy Condition="$([System.IO.File]::ReadAllText('$(BuildSettingsFilePath)').Contains('Flowers: true'))" SourceFiles="@(FlowersModFiles)" DestinationFolder="$(ModsRootPath)\biodiversityFlowers" />
+  <Copy Condition="$([System.IO.File]::ReadAllText('$(BuildSettingsFilePath)').Contains('Herbs: true'))" SourceFiles="@(HerbsModFiles)" DestinationFolder="$(ModsRootPath)\biodiversityHerbs" />
+  <Copy Condition="$([System.IO.File]::ReadAllText('$(BuildSettingsFilePath)').Contains('Orchards: true'))" SourceFiles="@(OrchardsModFiles)" DestinationFolder="$(ModsRootPath)\biodiversityOrchards" />
+  <Copy Condition="$([System.IO.File]::ReadAllText('$(BuildSettingsFilePath)').Contains('Shrubs: true'))" SourceFiles="@(ShrubsModFiles)" DestinationFolder="$(ModsRootPath)\biodiversityShrubs" />
+  <Copy Condition="$([System.IO.File]::ReadAllText('$(BuildSettingsFilePath)').Contains('Trees: true'))" SourceFiles="@(TreesModFiles)" DestinationFolder="$(ModsRootPath)\biodiversityTrees" />
 </Target>
 
 </Project>
