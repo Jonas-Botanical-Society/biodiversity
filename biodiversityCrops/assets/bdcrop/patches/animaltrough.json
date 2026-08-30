@@ -28,6 +28,34 @@
     "file": "game:blocktypes/wood/trough-large.json",
     "side": "server"
   },
+  // buckwheat
+  {
+    "op": "add",
+    "path": "/attributes/contentConfig/-",
+    "value": {
+      "code": "buckwheat",
+      "content": {
+        "type": "item",
+        "code": "bdcrop:grain-buckwheat"
+      },
+      "quantityPerFillLevel": 2,
+      "maxFillLevels": 8,
+      "shapesPerFillLevel": [ "block/wood/trough/large/grainfill1", "block/wood/trough/large/grainfill1", "block/wood/trough/large/grainfill2", "block/wood/trough/large/grainfill2", "block/wood/trough/large/grainfill3", "block/wood/trough/large/grainfill3", "block/wood/trough/large/grainfill4", "block/wood/trough/large/grainfill4" ],
+      "textureCode": "contents-grain-buckwheat"
+    },
+    "file": "game:blocktypes/wood/trough-large.json",
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/textures/contents-grain-buckwheat",
+    "value": {
+      "base": "bdcrop:block/food/grain/buckwheat",
+      "overlays": [ "block/wood/trough/large/shadow" ]
+    },
+    "file": "game:blocktypes/wood/trough-large.json",
+    "side": "server"
+  },
   // leek
   {
     "op": "add",
@@ -279,6 +307,34 @@
     "value": {
       "base": "bdcrop:block/alfalfa/strawfill-alfalfa"
       //"overlays": [ "block/wood/trough/small/shadow" ]
+    },
+    "file": "game:blocktypes/wood/trough-small.json",
+    "side": "server"
+  },
+  // buckwheat
+  {
+    "op": "add",
+    "path": "/attributes/contentConfig/-",
+    "value": {
+      "code": "buckwheat",
+      "content": {
+        "type": "item",
+        "code": "bdcrop:grain-buckwheat"
+      },
+      "quantityPerFillLevel": 1,
+      "maxFillLevels": 8,
+      "shapesPerFillLevel": [ "block/wood/trough/small/grainfill1", "block/wood/trough/small/grainfill1", "block/wood/trough/small/grainfill2", "block/wood/trough/small/grainfill2", "block/wood/trough/small/grainfill3", "block/wood/trough/small/grainfill3", "block/wood/trough/small/grainfill4", "block/wood/trough/small/grainfill4" ],
+      "textureCode": "contents-grain-buckwheat"
+    },
+    "file": "game:blocktypes/wood/trough-small.json",
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/textures/contents-grain-buckwheat",
+    "value": {
+      "base": "bdcrop:block/food/grain/buckwheat",
+      "overlays": [ "block/wood/trough/small/shadow" ]
     },
     "file": "game:blocktypes/wood/trough-small.json",
     "side": "server"

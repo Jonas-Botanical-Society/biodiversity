@@ -4,7 +4,7 @@
     {
       "code": "fruit",
       "loadFromProperties": "bdcrop:item/food/fruit",
-      "states": ["potato"]
+      "states": ["potato", "buckwheat"]
     }
   ],
   "class": "ItemLiquidPortion",
@@ -27,6 +27,10 @@
       "texturebytype": {
         "*-potato": {
           "base": "game:block/food/pie/fill-potato",
+          "alpha": 100
+        },
+        "*-buckwheat": {
+          "base": "game:block/food/pie/fill-bushmeat",
           "alpha": 100
         },
         "*": {
@@ -56,6 +60,10 @@
   "texturebytype": {
     "*-potato": {
       "base": "game:block/food/pie/fill-potato",
+      "alpha": 100
+    },
+    "*-buckwheat": {
+      "base": "game:block/food/pie/fill-bushmeat",
       "alpha": 100
     },
     "*": {

@@ -21,6 +21,17 @@
       "bdcrop:vegetable-stubbleturnip"
     ]
   },
+  // Buckwheat Jar whitelist
+  {
+    "dependsOn": [ { "modid": "foodshelves" } ],
+    "file": "foodshelves:config/restrictions/general/liquidystuff.json",
+    "op": "addmerge",
+    "side": "server",
+    "path": "/CollectibleCodes",
+    "value": [
+      "bdcrop:grain-buckwheat"
+    ]
+  },
   // ===== Vegetable translations =====
   // Leek
   {
@@ -102,6 +113,16 @@
       "scale": 1.3
     }
   },
+  // ===== Seed and Flour patches =====
+  // Flour bag label
+  {
+    "dependsOn": [ { "modid": "foodshelves" } ],
+    "file": "foodshelves:blocktypes/other/floursack.json",
+    "op": "addmerge",
+    "side": "server",
+    "path": "/attributes/variantTextures/seed/-",
+    "value": "bdcrop:item/resource/seeds/{seed}"
+  },
   // Crop Seeds glass contanier whitelist
   {
     "dependsOn": [ { "modid": "foodshelves" } ],
@@ -112,7 +133,40 @@
       "bdcrop:seeds-*"
     ]
   },
-  // Seed Bags
+  // Seed Bag Texture for seed bins
+  {
+    "dependsOn": [ { "modid": "foodshelves" } ],
+    "file": "foodshelves:blocktypes/glassware/seedbins.json",
+    "op": "addmerge",
+    "side": "server",
+    "path": "/attributes/variantTextures/seed0/-",
+    "value": "bdcrop:item/resource/seeds/{seed0}"
+  },
+  {
+    "dependsOn": [ { "modid": "foodshelves" } ],
+    "file": "foodshelves:blocktypes/glassware/seedbins.json",
+    "op": "addmerge",
+    "side": "server",
+    "path": "/attributes/variantTextures/seed1/-",
+    "value": "bdcrop:item/resource/seeds/{seed1}"
+  },
+  {
+    "dependsOn": [ { "modid": "foodshelves" } ],
+    "file": "foodshelves:blocktypes/glassware/seedbins.json",
+    "op": "addmerge",
+    "side": "server",
+    "path": "/attributes/variantTextures/seed2/-",
+    "value": "bdcrop:item/resource/seeds/{seed2}"
+  },
+  {
+    "dependsOn": [ { "modid": "foodshelves" } ],
+    "file": "foodshelves:blocktypes/glassware/seedbins.json",
+    "op": "addmerge",
+    "side": "server",
+    "path": "/attributes/variantTextures/seed3/-",
+    "value": "bdcrop:item/resource/seeds/{seed3}"
+  },
+  // Seed Bags for seed shelf
   {
     "dependsOn": [ { "modid": "foodshelves" } ],
     "file": "foodshelves:config/restrictions/shelves/seedshelf.json",

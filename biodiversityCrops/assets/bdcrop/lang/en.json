@@ -15,28 +15,43 @@
 
   "item-seeds-alfalfa": "Alfalfa seeds",
   "itemdesc-seeds-alfalfa": "A cover crop, can be feed to animals.  Adds Nitrogen to soil",
+  "item-seeds-buckwheat": "Buckwheat seeds",
+  "itemdesc-seeds-buckwheat": "A cover crop, can be feed to animals.  Adds Phosphorus to soil",
   "item-seeds-leek": "Leek seeds",
   "item-seeds-potato": "Potato seeds",
   "item-seeds-stubbleturnip": "Driller Radish seeds",
+  "itemdesc-seeds-stubbleturnip": "A cover crop, can be feed to animals.  Adds Potasium to soil",
   "item-seeds-tomato": "Tomato seeds",
   "item-seeds-butternutsquash": "Butternut squash seeds",
   "item-seeds-naplessquash": "Naples long squash seeds",
 
   //Block Crops
   "block-crop-alfalfa-*": "Growing alfalfa",
+  "block-crop-buckwheat-*": "Growing buckwheat",
   "block-crop-leek-*": "Growing leeks",
   "block-crop-potato-*": "Growing potatoes",
   "block-crop-stubbleturnip-*": "Growing driller radishes",
   "block-crop-tomato-*": "Growing tomatoes",
+
   "block-crop-alfalfa-8": "Mature alfalfa",
+  "block-crop-buckwheat-9": "Mature buckwheat",
   "block-crop-leek-7": "Mature leeks",
   "block-crop-potato-7": "Mature potatoes",
   "block-crop-stubbleturnip-5": "Mature driller radishes",
   "block-crop-tomato-7": "Mature tomatoes",
 
+  "cropprop-type-alfalfa": "Alfalfa",
+  "cropprop-type-buckwheat": "Buckwheat",
+  "cropprop-type-leeks": "Leeks",
+  "cropprop-type-potato": "Potato",
+  "cropprop-type-stubbleturnip": "Driller Radishes",
+  "cropprop-type-tomato": "Tomato",
+
   //Food
   "item-vegetable-alfalfa": "Alfalfa Bundle",
   "itemdesc-vegetable-alfalfa": "A fodder crop to feed to animals.  You can still eat this, if your desperate.",
+  "item-grain-buckwheat": "Buckwheat grain",
+  "itemdesc-grain-buckwheat": "Not a true grain but the seed of the sorrel plant family.",
   "item-vegetable-leek": "Leek",
   "itemdesc-vegetable-leek": "A green vegetable related to onions, keeps quite well.",
   "item-vegetable-potato": "Potato",
@@ -60,6 +75,18 @@
   "game:meal-ingredient-stew-primary-vegetable-alfalfa": "alfalfa",
   "game:meal-ingredient-stew-secondary-vegetable-alfalfa": "alfalfa",
   "game:meal-ingredient-soup-primary-vegetable-alfalfa": "alfalfa",
+
+  "game:recipeingredient-item-grain-buckwheat": "buckwheat",
+  "game:recipeingredient-item-grain-buckwheat-insturmentalcase": "buckwheat",
+  "bdcrop:recipeingredient-item-grain-buckwheat": "buckwheat",
+  "bdcrop:recipeingredient-item-grain-buckwheat-insturmentalcase": "buckwheat",
+  "game:meal-ingredient-porridge-primary-grain-buckwheat": "buckwheat",
+  "game:meal-ingredient-porridge-secondary-grain-buckwheat": "buckwheat",
+  "bdcrop:item-flour-buckwheat": "Buckwheat flour",
+  "bdcrop:item-dough-buckwheat": "Buckwheat dough",
+  "bdcrop:item-bread-buckwheat-perfect": "Buckwheat bread",
+  "bdcrop:item-bread-buckwheat-partbaked": "Buckwheat bread (part-baked)",
+  "bdcrop:item-bread-buckwheat-charred": "Buckwheat bread (charred)",
 
   "game:recipeingredient-item-vegetable-leek": "leek",
   "game:recipeingredient-item-vegetable-leek-insturmentalcase": "leek",
@@ -173,6 +200,11 @@
   "bdcrop:item-ciderportion-potato-disc": "Potato mash to distill into vodka. You can drink this but is disgusting",
   "bdcrop:item-spiritportion-potato": "Potato vodka",
   "bdcrop:incontainer-item-spiritportion-potato": "Potato vodka",
+
+  "bdcrop:item-ciderportion-buckwheat": "Buckwheat ale",
+  "bdcrop:incontainer-item-ciderportion-buckwheat": "Buckwheat ale",
+  "bdcrop:item-spiritportion-buckwheat": "Buckwheat bourbon",
+  "bdcrop:incontainer-item-spiritportion-buckwheat": "Buckwheat bourbon",
 
   //Modded Cooking Items
   //"bdcrop:item-vegetable-bakedpotato": "Baked potato",

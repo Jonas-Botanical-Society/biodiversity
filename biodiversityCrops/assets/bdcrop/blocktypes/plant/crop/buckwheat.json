@@ -1,0 +1,124 @@
+{
+	"code": "crop",
+	"class": "BlockCrop",
+	"behaviors": [ { "name": "Unstable" } ],
+	"variantgroups": [
+		{
+			"code": "type",
+			"states": [ "buckwheat" ]
+		},
+		{
+			"code": "stage",
+			"states": [ "1", "2", "3", "4", "5", "6", "7", "8", "9" ]
+		}
+	],
+	"creativeinventory": {
+		"general": [ "" ],
+		"plants": [ "" ],
+		"bdcrop": [ "*" ]
+	},
+	"renderpass": "OpaqueNoCull",
+	"shape": { "base": "bdcrop:block/plant/crop/densebuckwheat" },
+	"blockmaterial": "Plant",
+	"randomizeRotations": false,
+	"textures": {
+		"buckwheat_E": { "base": "bdcrop:block/plant/crop/{type}/buckwheat_E{stage}" },
+		"buckwheat_N": { "base": "bdcrop:block/plant/crop/{type}/buckwheat_N{stage}" }
+	},
+	"attributes": {
+		"foodTags": [ "nibbleCrop" ],
+		"butterflyFeedByType": {
+			"*-1": false,
+			"*-9": false,
+			"*": true
+		},
+		"beeFeedByType": {
+			"*-1": false,
+			"*-9": false,
+			"*": true
+		},
+		"sitHeight": 0.55,
+		"tickGrowthProbability": 0.05,
+		"handbook": {
+			"include": true
+		}
+	},
+	"sideopaque": {
+		"all": false
+	},
+	"sidesolid": {
+		"all": false
+	},
+	"replaceable": 3000,
+	"lightAbsorption": 0,
+	"resistance": 0.5,
+	"sounds": {
+		"place": "game:block/plant",
+		"break": "game:block/plant",
+		"hit": "game:block/plant"
+	},
+	"rainPermeable": false,
+	"dropsByType": {
+		"*-9": [
+			{
+				"type": "item",
+				"code": "bdcrop:seeds-buckwheat",
+				"quantity": { "avg": 1.2 }
+			},
+			{
+				"type": "item",
+				"code": "bdcrop:grain-buckwheat",
+				"quantity": {
+					"avg": 4,
+					"var": 0.5
+				}
+			}
+		],
+		"*-8": [
+			{
+				"type": "item",
+				"code": "bdcrop:seeds-buckwheat",
+				"quantity": { "avg": 1.0 }
+			},
+			{
+				"type": "item",
+				"code": "bdcrop:grain-buckwheat",
+				"quantity": {
+					"avg": 3,
+					"var": 0.5
+				}
+			}
+		],
+		"*": [
+			{
+				"type": "item",
+				"code": "bdcrop:seeds-buckwheat",
+				"quantity": { "avg": 0.7 }
+			}
+		]
+	},
+	"cropProps": {
+		// Buckwheat is a Phosphorus fixer
+		"requiredNutrient": "P",
+		"nutrientConsumption": -12,
+		"growthStages": 9,
+		"totalGrowthMonths": 1.78,
+		"coldDamageBelow": 5,
+		"heatDamageAbove": 45
+	},
+	"collisionbox": null,
+	"selectionbox": {
+		"x1": 0.0625,
+		"y1": 0,
+		"z1": 0.0625,
+		"x2": 0.9375,
+		"y2": 0.25,
+		"z2": 0.9375
+	},
+	"materialDensity": 200,
+	"combustibleProps": {
+		"burnTemperature": 600,
+		"burnDuration": 10
+	},
+	"frostable": true
+}

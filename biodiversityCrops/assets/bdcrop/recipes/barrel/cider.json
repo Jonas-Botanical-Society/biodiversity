@@ -37,5 +37,26 @@
       "code": "bdcrop:ciderportion-potato",
       "litres": 0.5
     }
+  },
+  {
+    "code": "buckwheat",
+    "sealHours": 336,
+    "ingredients": [
+      {
+        "type": "item",
+        "code": "game:waterportion",
+        "litres": 1
+      },
+      {
+        "type": "item",
+        "code": "bdcrop:flour-buckwheat",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "type": "item",
+      "code": "bdcrop:ciderportion-buckwheat",
+      "litres": 0.2
+    }
   }
 ]

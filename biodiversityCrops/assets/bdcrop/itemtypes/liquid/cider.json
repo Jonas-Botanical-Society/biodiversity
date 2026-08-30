@@ -4,7 +4,7 @@
     {
       "code": "fruit",
       "loadFromProperties": "bdcrop:item/food/fruit",
-      "states": [ "potato" ]
+      "states": ["potato", "buckwheat" ]
     }
   ],
   "class": "ItemLiquidPortion",
@@ -28,6 +28,13 @@
         },
         "ratio": 0.05
       },
+      "*-ciderportion-buckwheat": {
+        "distilledStack": {
+          "type": "item",
+          "code": "spiritportion-buckwheat"
+        },
+        "ratio": 0.05
+      },
       "*": {
         "distilledStack": {
           "type": "item",
@@ -42,6 +49,10 @@
       "texturebytype": {
         "*-potato": {
           "base": "game:block/food/pie/fill-potato",
+          "alpha": 200
+        },
+        "*-buckwheat": {
+          "base": "game:block/food/pie/fill-bushmeat",
           "alpha": 200
         },
         "*": {
@@ -64,6 +75,7 @@
           "intoxication": 0.15,
           "foodcategorybytype": {
             "*-potato": "Vegetable",
+            "*-buckwheat": "Grain",
             "*": "Fruit"
           }
         }
@@ -74,6 +86,10 @@
   "texturebytype": {
     "*-potato": {
       "base": "game:block/food/pie/fill-potato",
+      "alpha": 200
+    },
+    "*-buckwheat": {
+      "base": "game:block/food/pie/fill-bushmeat",
       "alpha": 200
     },
     "*": {

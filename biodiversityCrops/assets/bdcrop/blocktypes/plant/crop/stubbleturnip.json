@@ -104,7 +104,7 @@
 	},
 	"cropProps": {
 		// Driller Turnips is a potasium fixer
-		"requiredNutrient": "P",
+		"requiredNutrient": "K",
 		"nutrientConsumption": -7,
 		"growthStages": 5,
 		"totalGrowthMonths": 0.8,
