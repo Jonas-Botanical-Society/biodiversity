@@ -1,0 +1,38 @@
+{
+	"code": "clover",
+	"class": "BlockPlant",
+	"behaviors": [ { "name": "UnstableFalling" } ],
+	"creativeinventory": { "general": ["*"], "flora": ["*"],"plants":["*"],"bdflower": ["*"] },
+	"renderpass": "OpaqueNoCull",
+	"attributes": {
+		"butterflyFeed": true,
+		"beeFeed": true
+	},
+	
+	"shape": { "base": "block/plant/groundcover/clover1",
+			   "alternates": [ {"base": "block/plant/groundcover/clover2"}, {"base": "block/plant/groundcover/clover3"} ]
+	},
+	"textures": {
+		"clover": { "base": "block/plant/flower/clover" }
+	},
+	"doNotRenderAtLod2": true,
+	"randomDrawOffset": true,
+	"randomizeRotations": true,
+	"resistance": 0.5,
+	"replaceable": 3000,
+	"lightAbsorption": 0,
+	"blockmaterial": "Plant",
+	"sideopaque": {
+		"all": false
+	},
+	"sidesolid": {
+		"all": false
+	},
+	"sounds": {
+		"place": "game:block/plant",
+		"break": "game:block/plant",
+		"hit": "game:block/plant",
+	},
+	"collisionbox": null,
+	"selectionbox": { "x1": 0, "y1": 0, "z1": 0, "x2": 1, "y2": 0.125, "z2": 1 }
+}
