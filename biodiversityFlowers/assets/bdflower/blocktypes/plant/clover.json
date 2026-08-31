@@ -1,6 +1,17 @@
 {
-	"code": "clover",
+	"code": "flower",
 	"class": "BlockPlant",
+	"behaviors": [ { "name": "DropNotSnowCovered" } ],
+  "variantgroups": [
+    {
+      "code": "flower",
+      "states": [ "clover" ]
+    },
+    {
+      "code": "cover",
+      "states": [ "free", "snow" ]
+    }
+  ],
 	"behaviors": [ { "name": "UnstableFalling" } ],
 	"creativeinventory": { "general": ["*"], "flora": ["*"],"plants":["*"],"bdflower": ["*"] },
 	"renderpass": "OpaqueNoCull",
@@ -15,12 +26,36 @@
 	"textures": {
 		"clover": { "base": "block/plant/flower/clover" }
 	},
+	  "blockmaterialByType": {
+    "*-free": "Plant",
+    "*": "Snow"
+  },
+    "renderpass": "OpaqueNoCull",
+  "drawtypeByType": {
+    "*-snow": "JSONAndSnowLayer",
+    "*": "JSON"
+  },
+  "faceCullModeByType": {
+    "*-free": "Default",
+    "*": "MergeSnowLayer"
+  },
+  "sideopaqueByType": {
+    "*-snow": {
+      "all": false,
+      "down": true
+    },
+    "*": { "all": false }
+  },
+  "sidesolid": {
+    "all": false
+  },
 	"doNotRenderAtLod2": true,
 	"randomDrawOffset": true,
 	"randomizeRotations": true,
 	"resistance": 0.5,
 	"replaceable": 3000,
 	"lightAbsorption": 0,
+	"frostable": true,
 	"blockmaterial": "Plant",
 	"sideopaque": {
 		"all": false
