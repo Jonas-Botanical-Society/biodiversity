@@ -8,6 +8,7 @@
             "name": "Core - Client (launchSettings)",
             "type": "dotnet",
             "request": "launch",
+            "preLaunchTask": "build",
             "projectPath": "${workspaceFolder}/biodiversityCore/biodiversityCore.csproj"
         },
         {
