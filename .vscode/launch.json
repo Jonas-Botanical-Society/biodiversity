@@ -5,6 +5,12 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Core - Client (launchSettings)",
+            "type": "dotnet",
+            "request": "launch",
+            "projectPath": "${workspaceFolder}/biodiversityCore/biodiversityCore.csproj"
+        },
+        {
             "name": "Launch Client (Debug)",
             "type": "coreclr",
             "request": "launch",
@@ -21,17 +27,7 @@
                 // "--openWorld" , "modding test world",
                 "--tracelog",
                 "--addModPath",
-                "${workspaceFolder}/bin/Debug/Mods",
-                "--addOrigin",
-                "${workspaceFolder}/biodiversityCore/assets",
-                "${workspaceFolder}/biodiversityAquatic/assets",
-                "${workspaceFolder}/biodiversityCrops/assets",
-                "${workspaceFolder}/biodiversityFlowers/assets",
-                "${workspaceFolder}/biodiversityHerbs/assets",
-                "${workspaceFolder}/biodiversityOrchards/assets",
-                "${workspaceFolder}/biodiversityShrubs/assets",
-                "${workspaceFolder}/biodiversityTrees/assets"
-                
+                "${workspaceFolder}/bin/Debug/Mods"
             ],
             "console": "internalConsole",
             "stopAtEntry": false
