@@ -3,9 +3,10 @@
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
-    <ModsRootPath>$(SolutionDir)bin\$(Configuration)\Mods</ModsRootPath>
-    <BuildSettingsFilePath>$(SolutionDir)buildSettings.yml</BuildSettingsFilePath>
-    <BuildSettingsTemplatePath>$(SolutionDir)buildSettings_template.yml</BuildSettingsTemplatePath>
+    <SolutionDirPath>$(MSBuildProjectDirectory)\..\</SolutionDirPath>
+    <ModsRootPath>$(SolutionDirPath)bin\$(Configuration)\Mods</ModsRootPath>
+    <BuildSettingsFilePath>$(SolutionDirPath)buildSettings.yml</BuildSettingsFilePath>
+    <BuildSettingsTemplatePath>$(SolutionDirPath)buildSettings_template.yml</BuildSettingsTemplatePath>
     <OutputPath>$(ModsRootPath)\biodiversityCore</OutputPath>
     <Nullable>disable</Nullable>
     <DisableFastUpToDateCheck>true</DisableFastUpToDateCheck>
@@ -13,13 +14,13 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="Exists('$(BuildSettingsFilePath)')">
-    <AquaticSubModAssetPath Condition="$([System.IO.File]::ReadAllText('$(BuildSettingsFilePath)').Contains('Aquatic: true'))">"$(SolutionDir)biodiversityAquatic\assets"</AquaticSubModAssetPath>
-    <CropsSubModAssetPath Condition="$([System.IO.File]::ReadAllText('$(BuildSettingsFilePath)').Contains('Crops: true'))">"$(SolutionDir)biodiversityCrops\assets"</CropsSubModAssetPath>
-    <FlowersSubModAssetPath Condition="$([System.IO.File]::ReadAllText('$(BuildSettingsFilePath)').Contains('Flowers: true'))">"$(SolutionDir)biodiversityCrops\assets"</FlowersSubModAssetPath>
-    <HerbsSubModAssetPath Condition="$([System.IO.File]::ReadAllText('$(BuildSettingsFilePath)').Contains('Herbs: true'))">$(SolutionDir)biodiversityHerbs\assets</HerbsSubModAssetPath>
-    <OrchardsSubModAssetPath Condition="$([System.IO.File]::ReadAllText('$(BuildSettingsFilePath)').Contains('Orchards: true'))">$(SolutionDir)biodiversityOrchards\assets</OrchardsSubModAssetPath>
-    <ShrubsSubModAssetPath Condition="$([System.IO.File]::ReadAllText('$(BuildSettingsFilePath)').Contains('Shrubs: true'))">$(SolutionDir)biodiversityShrubs\assets</ShrubsSubModAssetPath>
-    <TreesSubModAssetPath Condition="$([System.IO.File]::ReadAllText('$(BuildSettingsFilePath)').Contains('Trees: true'))">$(SolutionDir)biodiversityTrees\assets</TreesSubModAssetPath>
+    <AquaticSubModAssetPath Condition="$([System.IO.File]::ReadAllText('$(BuildSettingsFilePath)').Contains('Aquatic: true'))">"$(SolutionDirPath)biodiversityAquatic\assets"</AquaticSubModAssetPath>
+    <CropsSubModAssetPath Condition="$([System.IO.File]::ReadAllText('$(BuildSettingsFilePath)').Contains('Crops: true'))">"$(SolutionDirPath)biodiversityCrops\assets"</CropsSubModAssetPath>
+    <FlowersSubModAssetPath Condition="$([System.IO.File]::ReadAllText('$(BuildSettingsFilePath)').Contains('Flowers: true'))">"$(SolutionDirPath)biodiversityCrops\assets"</FlowersSubModAssetPath>
+    <HerbsSubModAssetPath Condition="$([System.IO.File]::ReadAllText('$(BuildSettingsFilePath)').Contains('Herbs: true'))">$(SolutionDirPath)biodiversityHerbs\assets</HerbsSubModAssetPath>
+    <OrchardsSubModAssetPath Condition="$([System.IO.File]::ReadAllText('$(BuildSettingsFilePath)').Contains('Orchards: true'))">$(SolutionDirPath)biodiversityOrchards\assets</OrchardsSubModAssetPath>
+    <ShrubsSubModAssetPath Condition="$([System.IO.File]::ReadAllText('$(BuildSettingsFilePath)').Contains('Shrubs: true'))">$(SolutionDirPath)biodiversityShrubs\assets</ShrubsSubModAssetPath>
+    <TreesSubModAssetPath Condition="$([System.IO.File]::ReadAllText('$(BuildSettingsFilePath)').Contains('Trees: true'))">$(SolutionDirPath)biodiversityTrees\assets</TreesSubModAssetPath>
   </PropertyGroup>
 
   <ItemGroup>
@@ -66,13 +67,13 @@
 </ItemGroup>
 
 <ItemGroup>
-  <AquaticModFiles Include="$(SolutionDir)biodiversityAquatic\*.*" />
-  <CropsModFiles Include="$(SolutionDir)biodiversityCrops\*.*" />
-  <FlowersModFiles Include="$(SolutionDir)biodiversityFlowers\*.*" />
-  <HerbsModFiles Include="$(SolutionDir)biodiversityHerbs\*.*" />
-  <OrchardsModFiles Include="$(SolutionDir)biodiversityOrchards\*.*" />
-  <ShrubsModFiles Include="$(SolutionDir)biodiversityShrubs\*.*" />
-  <TreesModFiles Include="$(SolutionDir)biodiversityTrees\*.*" />
+  <AquaticModFiles Include="$(SolutionDirPath)biodiversityAquatic\*.*" />
+  <CropsModFiles Include="$(SolutionDirPath)biodiversityCrops\*.*" />
+  <FlowersModFiles Include="$(SolutionDirPath)biodiversityFlowers\*.*" />
+  <HerbsModFiles Include="$(SolutionDirPath)biodiversityHerbs\*.*" />
+  <OrchardsModFiles Include="$(SolutionDirPath)biodiversityOrchards\*.*" />
+  <ShrubsModFiles Include="$(SolutionDirPath)biodiversityShrubs\*.*" />
+  <TreesModFiles Include="$(SolutionDirPath)biodiversityTrees\*.*" />
 </ItemGroup>
 
 <Target Name="EnsureBuildSettingsExists" Condition="!Exists('$(BuildSettingsFilePath)')">
