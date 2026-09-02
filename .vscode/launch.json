@@ -9,7 +9,16 @@
             "type": "dotnet",
             "request": "launch",
             "preLaunchTask": "build",
-            "projectPath": "${workspaceFolder}/biodiversityCore/biodiversityCore.csproj"
+            "projectPath": "${workspaceFolder}/biodiversityCore/biodiversityCore.csproj",
+            "launchConfigurationId": "TargetFramework=net10.0;Client"
+        },
+        {
+            "name": "Core - Server (launchSettings)",
+            "type": "dotnet",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "projectPath": "${workspaceFolder}/biodiversityCore/biodiversityCore.csproj",
+            "launchConfigurationId": "TargetFramework=net10.0;Server"
         },
         {
             "name": "Launch Client (Debug)",
