@@ -111,7 +111,7 @@
 		plantContainable: {
 			largeContainer: {
 				shapeByType: {
-					"*": { base:  "game:block/plant/sapling/plaintree/potted/{wood}-large" }
+					"*": { base:  "block/plant/sapling/plaintree/potted/{wood}-large" }
 				}
 			}
 		}
