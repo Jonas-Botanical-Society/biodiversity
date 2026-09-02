@@ -1,0 +1,232 @@
+{
+  "Priority": 5,
+  "Patches": [
+    //Juices and alcohol
+    {
+      "Code": "bdcrop:juiceportion-*",
+      "hydration": 0.0,
+      "IsBoiling": false,
+      "hydrationByType": {
+        "*": 950.0,
+        "bdcrop:juiceportion-cranberry": 900.0,
+        "bdcrop:juiceportion-blueberry": 1000.0,
+        "bdcrop:juiceportion-pinkapple": 1050.0,
+        "bdcrop:juiceportion-lychee": 1250.0,
+        "bdcrop:juiceportion-redcurrant": 1100.0,
+        "bdcrop:juiceportion-breadfruit": 800.0,
+        "bdcrop:juiceportion-pineapple": 1250.0,
+        "bdcrop:juiceportion-blackcurrant": 1100.0,
+        "bdcrop:juiceportion-saguaro": 1300.0,
+        "bdcrop:juiceportion-whitecurrant": 1100.0,
+        "bdcrop:juiceportion-redapple": 1200.0,
+        "bdcrop:juiceportion-yellowapple": 1200.0,
+        "bdcrop:juiceportion-apple": 1200.0,
+        "bdcrop:juiceportion-cherry": 1100.0,
+        "bdcrop:juiceportion-peach": 1250.0,
+        "bdcrop:juiceportion-pear": 1250.0,
+        "bdcrop:juiceportion-orange": 1300.0,
+        "bdcrop:juiceportion-mango": 1250.0,
+        "bdcrop:juiceportion-pomegranate": 1150.0,
+        "bdcrop:juiceportion-redgrapes": 1250.0,
+        "bdcrop:juiceportion-greengrapes": 1250.0
+      }
+    },
+    {
+      "Code": "bdcrop:alcoholportion",
+      "hydration": -40.0,
+      "IsBoiling": false,
+      "hydrationByType": null
+    },
+    {
+      "Code": "bdcrop:ciderportion-*",
+      "hydration": 0.0,
+      "IsBoiling": false,
+      "hydrationByType": {
+        "*": 800.0
+      }
+    },
+
+    //Breads and doughs
+    {
+      "Code": "bdcrop:bread-*",
+      "hydration": 0.0,
+      "IsBoiling": false,
+      "hydrationByType": {
+        "*": -50.0,
+        "bdcrop:bread-spelt": -50.0,
+        "bdcrop:bread-rye": -50.0,
+        "bdcrop:bread-flax": -40.0,
+        "bdcrop:bread-rice": -60.0,
+        "bdcrop:bread-cassava": -50.0,
+        "bdcrop:bread-amaranth": -40.0,
+        "bdcrop:bread-sunflower": -50.0,
+        "bdcrop:bread-spelt-partbaked": -40.0,
+        "bdcrop:bread-rye-partbaked": -40.0,
+        "bdcrop:bread-flax-partbaked": -35.0,
+        "bdcrop:bread-rice-partbaked": -50.0,
+        "bdcrop:bread-cassava-partbaked": -40.0,
+        "bdcrop:bread-amaranth-partbaked": -35.0,
+        "bdcrop:bread-sunflower-partbaked": -40.0,
+        "bdcrop:bread-spelt-perfect": -50.0,
+        "bdcrop:bread-rye-perfect": -50.0,
+        "bdcrop:bread-flax-perfect": -40.0,
+        "bdcrop:bread-rice-perfect": -60.0,
+        "bdcrop:bread-cassava-perfect": -50.0,
+        "bdcrop:bread-amaranth-perfect": -40.0,
+        "bdcrop:bread-sunflower-perfect": -50.0,
+        "bdcrop:bread-spelt-charred": -80.0,
+        "bdcrop:bread-rye-charred": -100.0,
+        "bdcrop:bread-flax-charred": -70.0,
+        "bdcrop:bread-rice-charred": -80.0,
+        "bdcrop:bread-cassava-charred": -80.0,
+        "bdcrop:bread-amaranth-charred": -70.0,
+        "bdcrop:bread-sunflower-charred": -80.0
+      }
+    },
+    {
+      "Code": "bdcrop:dough-*",
+      "hydration": 0.0,
+      "IsBoiling": false,
+      "hydrationByType": {
+        "*": 5.0,
+        "bdcrop:dough-maize": 5.0
+      }
+    },
+    {
+      "Code": "bdcrop:grain-*",
+      "hydration": 0.0,
+      "IsBoiling": false,
+      "hydrationByType": {
+        "*": -30.0
+      }
+    },
+    {
+      "Code": "bdcrop:legume-*",
+      "hydration": 0.0,
+      "IsBoiling": false,
+      "hydrationByType": {
+        "*": -30.0
+      }
+    },
+
+    //Vegetables and fruits
+    {
+      "Code": "bdcrop:vegetable-*",
+      "hydration": 0.0,
+      "IsBoiling": false,
+      "hydrationByType": {
+        "*": 20.0
+      }
+    },
+    {
+      "Code": "bdcrop:pickledvegetable-*",
+      "hydration": 0.0,
+      "IsBoiling": false,
+      "hydrationByType": {
+        "*": 30.0
+      }
+    },
+    {
+      "Code": "bdcrop:fruit-*",
+      "hydration": 0.0,
+      "IsBoiling": false,
+      "hydrationByType": {
+        "*": 40.0,
+        "bdcrop:fruit-cranberry": 40.0,
+        "bdcrop:fruit-blueberry": 40.0,
+        "bdcrop:fruit-pinkapple": 30.0,
+        "bdcrop:fruit-lychee": 30.0,
+        "bdcrop:fruit-redcurrant": 40.0,
+        "bdcrop:fruit-breadfruit": 5.0,
+        "bdcrop:fruit-pineapple": 35.0,
+        "bdcrop:fruit-blackcurrant": 40.0,
+        "bdcrop:fruit-saguaro": 60.0,
+        "bdcrop:fruit-whitecurrant": 40.0,
+        "bdcrop:fruit-redapple": 30.0,
+        "bdcrop:fruit-yellowapple": 30.0,
+        "bdcrop:fruit-cherry": 40.0,
+        "bdcrop:fruit-peach": 50.0,
+        "bdcrop:fruit-pear": 35.0,
+        "bdcrop:fruit-orange": 35.0,
+        "bdcrop:fruit-mango": 50.0,
+        "bdcrop:fruit-pomegranate": 40.0,
+        "bdcrop:fruit-redgrapes": 40.0,
+        "bdcrop:fruit-greengrapes": 40.0
+      }
+    },
+
+
+    //Orchards
+
+    {
+      "Code": "bdorchard:vegetable-*",
+      "hydration": 0.0,
+      "IsBoiling": false,
+      "hydrationByType": {
+        "*": 20.0
+      }
+    },
+    {
+      "Code": "bdorchard:fruit-*",
+      "hydration": 0.0,
+      "IsBoiling": false,
+      "hydrationByType": {
+        "*": 40.0
+      }
+    },
+    {
+      "Code": "bdorchard:pickledcitrus-*",
+      "hydration": 0.0,
+      "IsBoiling": false,
+      "hydrationByType": {
+        "*": 40.0
+      }
+    },
+
+
+    //Juices and alcohol
+    {
+      "Code": "bdorchard:juiceportion-*",
+      "hydration": 0.0,
+      "IsBoiling": false,
+      "hydrationByType": {
+        "*": 950.0,
+        "bdcrop:juiceportion-cranberry": 900.0,
+        "bdcrop:juiceportion-blueberry": 1000.0,
+        "bdcrop:juiceportion-pinkapple": 1050.0,
+        "bdcrop:juiceportion-lychee": 1250.0,
+        "bdcrop:juiceportion-redcurrant": 1100.0,
+        "bdcrop:juiceportion-breadfruit": 800.0,
+        "bdcrop:juiceportion-pineapple": 1250.0,
+        "bdcrop:juiceportion-blackcurrant": 1100.0,
+        "bdcrop:juiceportion-saguaro": 1300.0,
+        "bdcrop:juiceportion-whitecurrant": 1100.0,
+        "bdcrop:juiceportion-redapple": 1200.0,
+        "bdcrop:juiceportion-yellowapple": 1200.0,
+        "bdcrop:juiceportion-apple": 1200.0,
+        "bdcrop:juiceportion-cherry": 1100.0,
+        "bdcrop:juiceportion-peach": 1250.0,
+        "bdcrop:juiceportion-pear": 1250.0,
+        "bdcrop:juiceportion-orange": 1300.0,
+        "bdcrop:juiceportion-mango": 1250.0,
+        "bdcrop:juiceportion-pomegranate": 1150.0,
+        "bdcrop:juiceportion-redgrapes": 1250.0,
+        "bdcrop:juiceportion-greengrapes": 1250.0
+      }
+    },
+    {
+      "Code": "bdorchard:alcoholportion",
+      "hydration": -40.0,
+      "IsBoiling": false,
+      "hydrationByType": null
+    },
+    {
+      "Code": "bdorchard:ciderportion-*",
+      "hydration": 0.0,
+      "IsBoiling": false,
+      "hydrationByType": {
+        "*": 800.0
+      }
+    },
+  ]
+}
