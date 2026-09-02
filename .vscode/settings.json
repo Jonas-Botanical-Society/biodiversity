@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "**/assets/**/*.json": "json5",
+        "**/bin/**/*.json": "json5"-
+    }
+}
