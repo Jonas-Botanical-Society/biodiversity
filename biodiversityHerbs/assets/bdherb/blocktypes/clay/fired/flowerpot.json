@@ -1,0 +1,90 @@
+{
+	code: "herbflowerpot",
+	class: "biodiversity.BlockPlantContainer",
+	entityClass: "biodiversity.PlantContainer",
+	behaviors: [{name: "UnstableFalling", properties: { attachmentArea: { x1: 5, y1: 0, z1: 5, x2: 10, y2: 0, z2: 10 } }}],
+	variantgroups: [
+		{ code: "color", states: ["blue", "fire", "black", "brown", "cream", "earthyorange", "gray", "orange", "red", "tan", ] },
+		{ code: "state", states: ["fired"] }
+	],
+	shape: { base: "game:block/clay/flowerpot/empty" },
+	textures: { 
+		sides: { base: "game:block/clay/hardened/{color}", overlays: [ "game:block/clay/overlay/flowerpot-sides" ] },
+		topbottom: { base: "game:block/clay/hardened/{color}", overlays: [ "game:block/clay/overlay/flowerpot-topbot" ] },
+		soil: { base: "game:block/soil/fertmedium" }
+	},
+	attributes: {
+		sitHeight: 0.75,
+		plantContainerSize: "small",
+		filledShape: { base: "game:block/clay/herbflowerpot/full" },
+		fillHeight: 0.375,
+		onTongTransform: {
+			translation: { x: -1.4, y: -1.12, z: -1.11 },
+			rotation: { x: -83, y: -16, z: -4 },
+			scale: 0.57
+		},
+		handbook: {
+			groupBy: ["flowerpot-*-{state}"]
+		},
+		onMetalTongTransform: {
+			translation: { x: -1.8, y: -0.75, z: -0.91 },
+			rotation: { x: -97, y: -14, z: 92 },
+			origin: { x: 0.5, y: 0.2, z: 0.5 },
+			scale: 0.57
+		},
+		allowOverlays: false,
+		shelvable: true,
+		onshelfTransform: {
+			origin: { x: 0.5, y: 0, z: 0.5 },
+			scale: 0.85
+		},
+        displayable: {
+            shelf: {
+                size: { width: 6, height: 7, length: 6 },
+				behavior: "Stacking",
+				category: "flowerpot",
+                randYRotAngle: 8
+            }
+        }
+	},
+	doNotRenderAtLod2: true,
+	creativeinventory: { "general": ["*"], "bdherb": ["*"] },
+	blockmaterial: "Ceramic",
+	replaceable: 900,
+	resistance: 1.5,
+	lightAbsorption: 1,
+	maxStackSize: 8,
+	sidesolid: {
+		all: false
+	},
+	sideopaque: {
+		all: false
+	},
+	emitsideao: {
+		all: false
+	},
+	sounds: {
+		"walk": "game:walk/stone",
+		"break": "game:block/ceramicplace",
+		"hit": "game:block/ceramichit",
+		"place": "game:lock/ceramicplace"
+	},
+	collisionbox: {
+		x1: 0.3125, y1: 0, z1: 0.3125,
+		x2: 0.6875, y2: 0.4375, z2: 0.6875
+	},
+	selectionbox: {
+		x1: 0.3125, y1: 0, z1: 0.3125,
+		x2: 0.6875, y2: 0.4375, z2: 0.6875
+	},
+	tpHandTransform: {
+		translation: { x: -1.25, y: -0.56, z: -1.16 },
+		rotation: { x: -111, y: 65, z: -95 },
+		origin: { x: 0.5, y: 0.2, z: 0.5 },
+		scale: 0.45
+	},
+	guiTransform: {
+		origin: { x: 0.5, y: 0.3, z: 0.5 },
+		scale: 1.5
+	}
+}
