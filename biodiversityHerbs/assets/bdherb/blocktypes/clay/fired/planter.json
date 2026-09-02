@@ -1,0 +1,76 @@
+{
+	code: "herbclayplanter",
+	class: "BlockPlantContainer",
+	entityClass: "PlantContainer",
+	behaviors: [{name: "UnstableFalling"}],
+	variantgroups: [
+		{ code: "color", states: ["blue", "fire", "black", "brown", "cream", "earthyorange", "gray", "orange", "red", "tan", ] },
+		{ code: "state", states: ["fired"] }
+	],
+	shape: { base: "block/clay/planter/empty" },
+	textures: { 
+		sides: {  base: "block/clay/hardened/{color}", overlays: [ "block/clay/overlay/planter" ]},
+		ceramic: {  base: "block/clay/hardened/{color}" },
+		soil: { base: "block/clay/planter/soil" }
+	},
+	attributes: {
+		tempGlowMode: 1,
+		sitHeight: 0.75,
+		plantContainerSize: "large",
+		filledShape: { base: "block/clay/planter/full" },
+		fillHeight: 0.5,
+		onTongTransform: {
+			translation: { x: -1.8, y: -1.25, z: -0.52 },
+			rotation: { x: 9, y: 7, z: 68 },
+			scale: 0.6
+		},
+		handbook: {
+			groupBy: ["clayplanter-*-{state}"]
+		},
+		onMetalTongTransform: {
+			translation: { x: -1.44, y: -1.28, z: -0.72 },
+			rotation: { x: -4, y: 7, z: 68 },
+			scale: 0.6
+		},
+		allowOverlays: false
+	},
+	creativeinventory: { "general": ["*"], "bdherb": ["*"] },
+	heldTpIdleAnimation: "holdunderarm",
+	blockmaterial: "Ceramic",
+	replaceable: 900,
+	resistance: 1.5,
+	lightAbsorption: 1,
+	maxStackSize: 8,
+	sidesolid: {
+		all: false
+	},	
+	sideopaque: {
+		all: false
+	},
+	emitsideao: {
+		all: false
+	},
+	sounds: {
+		"walk": "walk/stone",
+		"break": "block/ceramicplace",
+		"hit": "block/ceramichit",
+		"place": "block/ceramicplace"
+	},
+	collisionbox: {
+		x1: 0.125, y1: 0, z1: 0.125,
+		x2: 0.875, y2: 0.5625, z2: 0.875
+	},
+	selectionbox: {
+		x1: 0.125, y1: 0, z1: 0.125,
+		x2: 0.875, y2: 0.5625, z2: 0.875
+	},
+	guiTransform: {
+		origin: { x: 0.5, y: 0.4, z: 0.5 },
+		scale: 1.42
+	},
+	tpHandTransform: {
+		translation: { x: -1.1, y: -0.5, z: -1 },
+		rotation: { x: 0, y: -86, z: -84 },
+		scale: 0.47
+	}
+}
