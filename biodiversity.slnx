@@ -1,4 +1,9 @@
 <Solution>
+    <Folder Name="/Solution Items/">
+        <File Path=".editorconfig" />
+        <File Path="buildSettings.yml" />
+        <File Path="modinfoSettings-WIP.json" />
+    </Folder>
     <Project Path="biodiversityCore/biodiversityCore.csproj" />
     <Project Path="CakeBuild/CakeBuild.csproj" />
 </Solution>
