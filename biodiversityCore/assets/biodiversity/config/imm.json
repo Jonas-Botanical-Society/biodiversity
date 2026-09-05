@@ -1,0 +1,10 @@
+{
+    "Dependencies": [
+        {
+            "ModId": "wildcraftfruit",
+            "Severity": "Error",
+            "Label": "Incompatible with Wildcraft: Fruits and Deez Nuts",
+            "Description": "This mod is incompatible with Wildcraft: Fruits and Nuts due to severe feature overlap.Remove one of the two mods to avoid broken content or unexpected behavior.",
+        },
+    ],
+}
