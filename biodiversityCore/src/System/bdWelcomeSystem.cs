@@ -11,6 +11,13 @@ using Vintagestory.API.Config;
 using biodiversity;
 using ProperVersion;
 
+/* The Welcome Message for Biodiversity has been disabled until further notice.
+ * Players and servers have been finding it confusing and also annoying at times to get a message from a mod related server when their community discordd isn't publisized in the same manner.
+ * 
+ * Before re-enabling, we need to reword the message to better reflect that BD is a mod promoting their own discord, and also add in a serversided toggle to disable it.
+ *
+*/
+
 namespace biodiversity.src.System
 {
     public class bdWelcomeSystem : ModSystem
@@ -21,7 +28,7 @@ namespace biodiversity.src.System
 
         public override double ExecuteOrder()
         {
-            return 0.11;
+            return 0.099;
         }
 
         public override void StartClientSide(ICoreClientAPI api)
@@ -34,7 +41,7 @@ namespace biodiversity.src.System
                 .HandleWith(OnWelcomeMsgDisable);
 
            // versionInstalledSubmods(api);
-            api.Event.PlayerJoin += Event_WelcomeMessage;
+            //api.Event.PlayerJoin += Event_WelcomeMessage;
         }
         private TextCommandResult OnWelcomeMsgDisable(TextCommandCallingArgs args)
         {
