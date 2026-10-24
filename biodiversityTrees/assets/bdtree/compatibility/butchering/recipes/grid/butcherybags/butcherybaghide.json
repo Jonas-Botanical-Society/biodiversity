@@ -1,0 +1,130 @@
+[
+	{
+		"ingredientPattern": "FTF,KTP",
+		"ingredients": {
+			"T": {
+				"type": "item",
+				"code": "game:hide-pelt-huge",
+				"quantity": 1
+			},
+			"F": {
+				"type": "item",
+				"code": "game:flaxtwine",
+				"quantity": 2
+			},
+			"K": {
+				"type": "item",
+				"code": "game:knife-generic-*",
+				"Istool": true
+			},
+			"P": {
+				"type": "item",
+				"code": "bdtree:plank-*",
+				"quantity": 8
+			}
+		},
+		"width": 3,
+		"height": 2,
+		"output": {
+			"type": "item",
+			"code": "butchering:butcherybag-standard",
+			"quantity": 1
+		}
+	},
+	{
+		"ingredientPattern": "FTF,KTP",
+		"ingredients": {
+			"T": {
+				"type": "item",
+				"code": "game:hide-pelt-large",
+				"quantity": 2
+			},
+			"F": {
+				"type": "item",
+				"code": "game:flaxtwine",
+				"quantity": 2
+			},
+			"K": {
+				"type": "item",
+				"code": "game:knife-generic-*",
+				"Istool": true
+			},
+			"P": {
+				"type": "item",
+				"code": "bdtree:plank-*",
+				"quantity": 8
+			}
+		},
+		"width": 3,
+		"height": 2,
+		"output": {
+			"type": "item",
+			"code": "butchering:butcherybag-standard",
+			"quantity": 1
+		}
+	},
+	{
+		"ingredientPattern": "FTF,KTP",
+		"ingredients": {
+			"T": {
+				"type": "item",
+				"code": "game:hide-pelt-medium",
+				"quantity": 3
+			},
+			"F": {
+				"type": "item",
+				"code": "game:flaxtwine",
+				"quantity": 2
+			},
+			"K": {
+				"type": "item",
+				"code": "game:knife-generic-*",
+				"Istool": true
+			},
+			"P": {
+				"type": "item",
+				"code": "bdtree:plank-*",
+				"quantity": 8
+			}
+		},
+		"width": 3,
+		"height": 2,
+		"output": {
+			"type": "item",
+			"code": "butchering:butcherybag-standard",
+			"quantity": 1
+		}
+	},
+	{
+		"ingredientPattern": "FTF,KTP",
+		"ingredients": {
+			"T": {
+				"type": "item",
+				"code": "game:hide-pelt-small",
+				"quantity": 4
+			},
+			"F": {
+				"type": "item",
+				"code": "game:flaxtwine",
+				"quantity": 2
+			},
+			"K": {
+				"type": "item",
+				"code": "game:knife-generic-*",
+				"Istool": true
+			},
+			"P": {
+				"type": "item",
+				"code": "bdtree:plank-*",
+				"quantity": 8
+			}
+		},
+		"width": 3,
+		"height": 2,
+		"output": {
+			"type": "item",
+			"code": "butchering:butcherybag-standard",
+			"quantity": 1
+		}
+	}
+]

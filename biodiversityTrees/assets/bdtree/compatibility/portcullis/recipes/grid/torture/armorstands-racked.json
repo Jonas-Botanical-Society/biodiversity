@@ -1,0 +1,21 @@
+[
+  {
+    "enabled": true,
+    "name": "Racked Armorstand",
+    "ingredientPattern": "SAH,RCN,MPI",
+    "ingredients": {
+	  "C": { "type": "block", "code": "game:clutter", "attributes": { "type": "bed/bed-metal" }, "quantity": 1 },
+	  "R": { "type": "item", "code": "game:rope", "quantity": 2 },
+	  "S": { "type": "item", "tags": ["tool-saw"], "isTool": true, "toolDurabilityCost": 14 },
+	  "P": { "type": "item", "code": "bdtree:plank-*","name": "wood", "quantity": 4 },
+	  "N": { "type": "item", "code": "game:metalnailsandstrips-*", "quantity": 3, "allowedVariants": ["copper", "tinbronze", "bismuth", "bismuthbronze", "blackbronze", "brass", "silver", "gold", "iron", "meteoriciron", "steel", "molybdochalkos", "electrum"] },
+	  "M": { "type": "item", "code": "game:metalplate-*", "name": "metal", "allowedVariants": ["copper", "blackbronze", "tinbronze", "bismuthbronze", "iron", "silver", "gold", "meteoriciron", "steel", "electrum" ], "quantity": 3 }, 
+	  "I": { "type": "item", "code": "game:rod-iron", "quantity": 3 },
+      "H": { "type": "item", "code": "game:hammer-*", "isTool": true, "toolDurabilityCost": 5 },
+	  "A": { "type": "item", "code": "portcullis:armorstands-tortured", "quantity": 1 }
+    },
+    "width": 3,
+    "height": 3,
+    "output": { "type": "item", "code": "portcullis:armorstands-racked", "quantity": 1 }
+  }
+]

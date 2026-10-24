@@ -1,0 +1,101 @@
+[
+  {
+    "code": "cartsideboard1",
+    "ingredientPattern": "WWW,RSR",
+    "ingredients": {
+      "S": {
+        "type": "item",
+        "code": "cartwrightscaravan:cartschematics-carts",
+        "returnedStack": {
+          "type": "item",
+          "code": "cartwrightscaravan:cartschematics-carts"
+        }
+      },
+      "W": {
+        "type": "block",
+        "code": "bdtree:supportbeam-*",
+        "quantity": 2
+      },
+      "R": {
+        "type": "item",
+        "code": "game:metalnailsandstrips-*",
+        "name": "metal",
+        "quantity": 1
+      }
+    },
+    "width": 3,
+    "height": 2,
+    "recipeGroup": 4,
+    "shapeless": false,
+    "output": {
+      "type": "item",
+      "code": "cartwrightscaravan:cartsideboard-wood-short"
+    }
+  },
+  {
+    "code": "cartsideboard2",
+    "ingredientPattern": "WWW,RSR,WWW",
+    "ingredients": {
+      "S": {
+        "type": "item",
+        "code": "cartwrightscaravan:cartschematics-carts",
+        "returnedStack": {
+          "type": "item",
+          "code": "cartwrightscaravan:cartschematics-carts"
+        }
+      },
+      "W": {
+        "type": "block",
+        "code": "bdtree:supportbeam-*",
+        "quantity": 2
+      },
+      "R": {
+        "type": "item",
+        "code": "game:metalnailsandstrips-*",
+        "name": "metal",
+        "quantity": 2
+      }
+    },
+    "width": 3,
+    "height": 3,
+    "recipeGroup": 5,
+    "shapeless": false,
+    "output": {
+      "type": "item",
+      "code": "cartwrightscaravan:cartsideboard-wood-tall"
+    }
+  },
+  {
+    "code": "cartsideboard3",
+    "ingredientPattern": "W_W,RSR,W_W",
+    "ingredients": {
+      "S": {
+        "type": "item",
+        "code": "cartwrightscaravan:cartschematics-carts",
+        "returnedStack": {
+          "type": "item",
+          "code": "cartwrightscaravan:cartschematics-carts"
+        }
+      },
+      "W": {
+        "type": "block",
+        "code": "bdtree:supportbeam-*",
+        "quantity": 2
+      },
+      "R": {
+        "type": "item",
+        "code": "game:metalnailsandstrips-*",
+        "name": "metal",
+        "quantity": 2
+      }
+    },
+    "width": 3,
+    "height": 3,
+    "recipeGroup": 6,
+    "shapeless": false,
+    "output": {
+      "type": "item",
+      "code": "cartwrightscaravan:cartsideboard-wood-crossedinside"
+    }
+  }
+]

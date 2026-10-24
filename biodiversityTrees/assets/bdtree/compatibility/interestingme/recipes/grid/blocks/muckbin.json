@@ -1,0 +1,11 @@
+{
+	ingredientPattern: "_N_,PNP,NPN",
+	ingredients: {
+		"P": { type: "item", code: "bdtree:plank-*", quantity: 3 },
+		"N": { type: "item", code: "game:metalnailsandstrips-*" }
+
+	},
+	width: 3,
+	height: 3,
+	output: { type: "block", code: "interestingme:muckbin", quantity: 1 }
+}

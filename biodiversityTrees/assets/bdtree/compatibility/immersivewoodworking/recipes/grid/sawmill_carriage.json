@@ -1,0 +1,13 @@
+{
+	enabled: false,
+	ingredientPattern: "PWP,PRP,PGP",
+	ingredients: {
+		"P": { type: "item", code: "bdtree:plank-*", name: "wood" },
+		"W": { type: "item", tags: ["tool-saw"], isTool: true },
+		"R": { type: "item", code: "game:rope" },
+		"G": { type: "item", code: "game:gear-rusty" }
+	},
+	width: 3,
+	height: 3,
+	output: { type: "item", code: "immersivewoodworking:sawmillcarriage", quantity: 1 }
+}

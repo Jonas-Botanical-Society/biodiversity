@@ -1,0 +1,19 @@
+﻿[
+	{
+        "enabled": true,
+		"name": "Switch Lever 4 - Contruction",
+		recipeGroup: 0,
+		"ingredientPattern": "NWH,PRL",
+        "width": 3,
+        "height": 2,
+        "ingredients": {
+            "H": { "type": "item", "code": "game:hammer-*", "isTool": true, "toolDurabilityCost": 5 },
+			"W": { "type": "item", "code": "bdtree:plank-*","name": "wood", "quantity": 4 },
+            "R": { "type": "item", "code": "game:rod-*", "name": "metal", "allowedVariants": [ "tinbronze", "bismuthbronze", "blackbronze"] },
+			"N": { "type": "item", "code": "game:metalnailsandstrips-*", "quantity": 4, "name": "nails", "allowedVariants": ["copper", "tinbronze", "bismuth", "bismuthbronze", "blackbronze", "brass", "silver", "gold", "iron", "meteoriciron", "steel", "molybdochalkos", "electrum"] },
+			"P": { "type": "item", "code": "game:metalplate-*", "allowedVariants": ["tinbronze", "bismuthbronze", "blackbronze"] },
+			"L": { "type": "item", "code": "game:leather-normal-plain","quantity": 1 }
+        },
+        "output": { "type": "block", "code": "portcullis:switch-switch-north"} 
+    }
+]

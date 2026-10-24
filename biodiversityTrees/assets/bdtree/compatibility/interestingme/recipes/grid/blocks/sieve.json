@@ -1,0 +1,10 @@
+{
+	ingredientPattern: "PPP,PSP,PPP",
+	ingredients: {
+		"S": { type: "block", code: "game:sieve-linen" },
+		"P": { type: "item", code: "bdtree:plank-*", quantity: 2 }
+	},
+	width: 3,
+	height: 3,
+	output: { type: "block", code: "interestingme:sieve", quantity: 1 }
+}

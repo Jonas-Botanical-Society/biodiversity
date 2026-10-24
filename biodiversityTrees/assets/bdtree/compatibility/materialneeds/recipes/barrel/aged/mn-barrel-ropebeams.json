@@ -1,0 +1,32 @@
+[
+	{
+	"code": "supportrope-one-old",
+	"ingredients":
+			[
+		{ "type": "item", "code": "game:vinegarportion", "litres": 1, "consumeLitres": 1 },
+		{ "type": "block", "code": "game:supportrope-one-new", "name": "wood", "quantity": 1 }
+			],
+	"output":
+		{ "type": "block", "code": "game:supportrope-one-old", "quantity": 1 }, "requiresSeal": true, "sealHours": 4
+	},
+	{
+	"code": "supportrope-two-old",
+	"ingredients":
+			[
+		{ "type": "item", "code": "game:vinegarportion", "litres": 1, "consumeLitres": 1 },
+		{ "type": "block", "code": "game:supportrope-two-new", "name": "wood", "quantity": 1 }
+			],
+	"output":
+		{ "type": "block", "code": "game:supportrope-two-old", "quantity": 1 }, "requiresSeal": true, "sealHours": 4
+	},
+	{
+	"code": "supportrope-three-old",
+	"ingredients":
+			[
+		{ "type": "item", "code": "game:vinegarportion", "litres": 1, "consumeLitres": 1 },
+		{ "type": "block", "code": "game:supportrope-three-new", "name": "wood", "quantity": 1 }
+			],
+	"output":
+		{ "type": "block", "code": "game:supportrope-three-old", "quantity": 1 }, "requiresSeal": true, "sealHours": 4
+	},
+]

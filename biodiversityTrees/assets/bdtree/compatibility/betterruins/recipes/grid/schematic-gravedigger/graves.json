@@ -1,0 +1,30 @@
+[
+    {
+        ingredientPattern: "XC,_W,_B",
+        "recipeGroup": 333,
+        ingredients: {
+            "X": {type: "Item", code: "betterruins:br-schematic-gravedigger", "consume": false },
+            "C": {type: "Item", code: "game:chisel-*", isTool: true, toolDurabilityCost: 5 },
+            "W": {type: "Item", code: "bdtree:plank-*" , quantity: 3},
+            "B": {type: "Item", code: "game:stone-*" , quantity: 8 }
+            
+        },
+        width: 2,
+        height: 3,
+        output: {type: "Block", code: "game:clutter", attributes: { "type": "gravestone-3"  , "collected": true} }
+    },
+    {
+        ingredientPattern: "XC,_W,_B",
+        "recipeGroup": 333,
+        ingredients: {
+            "X": {type: "Item", code: "betterruins:br-schematic-gravedigger", "consume": false },
+            "C": {type: "Item", code: "game:chisel-*", isTool: true, toolDurabilityCost: 5 },
+            "W": {type: "Item", code: "bdtree:plank-*" , quantity: 3},
+            "B": {type: "Item", code: "game:stone-*" , quantity: 8 }
+            
+        },
+        width: 2,
+        height: 3,
+        output: {type: "Block", code: "game:clutter", attributes: { "type": "gravestone-3" } }
+    }
+]

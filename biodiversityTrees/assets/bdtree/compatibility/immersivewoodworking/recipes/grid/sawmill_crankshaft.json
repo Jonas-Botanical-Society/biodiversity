@@ -1,0 +1,11 @@
+{
+	enabled: false,
+	ingredientPattern: "PNP,P_P,PNP",
+	ingredients: {
+		"P": { type: "item", code: "bdtree:plank-*",               name: "wood" },
+		"N": { type: "item", code: "game:metalnailsandstrips-*", name: "metal" }
+	},
+	width: 3,
+	height: 3,
+	output: { type: "item", code: "immersivewoodworking:sawmillcrankshaft", quantity: 1 }
+}

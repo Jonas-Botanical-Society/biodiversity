@@ -1,0 +1,11 @@
+{
+	ingredientPattern: "PPP,PCP",
+	ingredients: {
+		"P": { type: "item", code: "bdtree:plank-*" },
+		"G": { type: "item", code: "game:gear-rusty" },
+		"C": { type: "block", code: "interestingme:conveyor-flat-north" }
+	},
+	width: 3,
+	height: 2,
+	output: { type: "block", code: "interestingme:conveyor-split-north", quantity: 1 }
+}

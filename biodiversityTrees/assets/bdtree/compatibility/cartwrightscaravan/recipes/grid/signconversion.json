@@ -1,0 +1,48 @@
+[
+  {
+    "code": "signglasswood",
+    "ingredientPattern": "SC",
+    "ingredients": {
+      "S": {
+        "type": "item",
+        "code": "cartwrightscaravan:cartsign-single-oak-glass-*",
+        "name": "overlay"
+      },
+      "C": {
+        "type": "block",
+        "code": "bdtree:planks-*-ud"
+      }
+    },
+    "width": 1,
+    "height": 2,
+    "recipeGroup": 1,
+    "shapeless": true,
+    "output": {
+      "type": "item",
+      "code": "cartwrightscaravan:cartsign-single-oak-wood-{overlay}"
+    }
+  },
+  {
+    "code": "signgclothwood",
+    "ingredientPattern": "SC",
+    "ingredients": {
+      "S": {
+        "type": "item",
+        "code": "cartwrightscaravan:cartsign-single-oak-cloth-*",
+        "name": "overlay"
+      },
+      "C": {
+        "type": "block",
+        "code": "bdtree:planks-*-ud"
+      }
+    },
+    "width": 1,
+    "height": 2,
+    "recipeGroup": 2,
+    "shapeless": true,
+    "output": {
+      "type": "item",
+      "code": "cartwrightscaravan:cartsign-single-oak-wood-{overlay}"
+    }
+  }
+]

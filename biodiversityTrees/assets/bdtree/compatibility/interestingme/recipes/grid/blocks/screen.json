@@ -1,0 +1,11 @@
+{
+	ingredientPattern: "SMS,PPP,PPS",
+	ingredients: {
+		"S": { type: "block", code: "bdtree:supportbeam-*", quantity: 2 },
+		"P": { type: "item", code: "bdtree:plank-*", quantity: 4 },
+		"M": { type: "item", code: "game:rod-tinbronze", quantity: 7 }
+	},
+	width: 3,
+	height: 3,
+	output: { type: "block", code: "interestingme:screen-north", quantity: 1 }
+}

@@ -1,0 +1,167 @@
+[
+  {
+    "code": "basiccanopycloth",
+    "ingredientPattern": "LLL,WSW",
+    "ingredients": {
+      "L": {
+        "type": "block",
+        "code": "game:linen-normal-down",
+        "quantity": 4
+      },
+      "S": {
+        "type": "item",
+        "code": "cartwrightscaravan:cartschematics-carts",
+        "returnedStack": {
+          "type": "item",
+          "code": "cartwrightscaravan:cartschematics-carts"
+        }
+      },
+      "W": {
+        "type": "block",
+        "code": "bdtree:supportbeam-*",
+        "quantity": 8
+      }
+    },
+    "width": 3,
+    "height": 2,
+    "recipeGroup": 2,
+    "shapeless": false,
+    "output": {
+      "type": "item",
+      "code": "cartwrightscaravan:cartcanopy-basic-normal"
+    }
+  },
+  {
+    "code": "cartcanopyleather",
+    "ingredientPattern": "LLL,WSW",
+    "ingredients": {
+      "L": {
+        "type": "item",
+        "code": "game:leather-normal-plain",
+        "quantity": 4
+      },
+      "S": {
+        "type": "item",
+        "code": "cartwrightscaravan:cartschematics-carts",
+        "returnedStack": {
+          "type": "item",
+          "code": "cartwrightscaravan:cartschematics-carts"
+        }
+      },
+      "W": {
+        "type": "block",
+        "code": "bdtree:supportbeam-*",
+        "quantity": 8
+      }
+    },
+    "width": 3,
+    "height": 2,
+    "recipeGroup": 2,
+    "shapeless": false,
+    "output": {
+      "type": "item",
+      "code": "cartwrightscaravan:cartcanopy-leather-brown"
+    }
+  },
+  {
+    "code": "cartcanopyleather2",
+    "ingredientPattern": "LLL,WSW",
+    "ingredients": {
+      "L": {
+        "type": "item",
+        "code": "game:leather-sturdy-plain",
+        "quantity": 4
+      },
+      "S": {
+        "type": "item",
+        "code": "cartwrightscaravan:cartschematics-carts",
+        "returnedStack": {
+          "type": "item",
+          "code": "cartwrightscaravan:cartschematics-carts"
+        }
+      },
+      "W": {
+        "type": "block",
+        "code": "bdtree:supportbeam-*",
+        "quantity": 8
+      }
+    },
+    "width": 3,
+    "height": 2,
+    "recipeGroup": 2,
+    "shapeless": false,
+    "output": {
+      "type": "item",
+      "code": "cartwrightscaravan:cartcanopy-leather-normal"
+    }
+  },
+  {
+    "code": "closedcanopycloth",
+    "ingredientPattern": "LLL,L_L,WSW",
+    "ingredients": {
+      "L": {
+        "type": "block",
+        "code": "game:linen-normal-down",
+        "quantity": 3
+      },
+      "S": {
+        "type": "item",
+        "code": "cartwrightscaravan:cartschematics-carts",
+        "returnedStack": {
+          "type": "item",
+          "code": "cartwrightscaravan:cartschematics-carts"
+        }
+      },
+      "W": {
+        "type": "block",
+        "code": "bdtree:supportbeam-*",
+        "quantity": 8
+      }
+    },
+    "width": 3,
+    "height": 3,
+    "recipeGroup": 2,
+    "shapeless": false,
+    "output": {
+      "type": "item",
+      "code": "cartwrightscaravan:cartcanopy-closed-normal"
+    }
+  },
+  {
+    "code": "ornatecanopycloth",
+    "ingredientPattern": "LGL,WSW,LGL",
+    "ingredients": {
+      "L": {
+        "type": "block",
+        "code": "game:linen-normal-down",
+        "quantity": 3
+      },
+      "S": {
+        "type": "item",
+        "code": "cartwrightscaravan:cartschematics-carts",
+        "returnedStack": {
+          "type": "item",
+          "code": "cartwrightscaravan:cartschematics-carts"
+        }
+      },
+      "W": {
+        "type": "block",
+        "code": "bdtree:supportbeam-*",
+        "quantity": 8
+      },
+      "G": {
+        "type": "item",
+        "code": "game:ingot-gold",
+        "quantity": 1
+      }
+    },
+    "width": 3,
+    "height": 3,
+    "recipeGroup": 2,
+    "shapeless": false,
+    "output": {
+      "type": "item",
+      "code": "cartwrightscaravan:cartcanopy-ornate-normal"
+    }
+  }
+]

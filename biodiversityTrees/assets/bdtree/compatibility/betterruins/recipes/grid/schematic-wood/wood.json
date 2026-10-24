@@ -1,0 +1,28 @@
+[
+    {
+        "ingredientPattern": "XLH,LDL,NLN",
+        "ingredients": {
+            "X": {type: "Item", code: "betterruins:br-schematic-wood", "consume": false },
+            "H": {type: "Item", code: "game:hammer-*", "isTool": true, toolDurabilityCost: 4},
+            "D": {type: "Block", code: "bdtree:debarkedlog-*-ud" },
+            "L": {type: "Item", code: "game:leather-normal-plain"},
+            "N": {type: "Item", code: "game:metalnailsandstrips-*"}
+        },
+        "width": 3,
+        "height": 3,
+        "output": {type: "Block", code: "game:leather"}
+    },
+    {
+		"ingredientPattern": "HLX",
+        "recipeGroup": 333,
+		"ingredients": {
+			"H": { type: "item", code: "game:saw-*", isTool: true  },
+			"L": { type: "block", code: "bdtree:debarkedlog-*-ud", name: "wood" },
+            "X": {type: "Item", code: "betterruins:br-schematic-wood", "consume": false },
+
+		},
+		"width": 3,
+		"height": 1,
+		"output": { type: "block", code: "bdtree:supportbeam-{wood}", quantity: 9  }
+	}
+]

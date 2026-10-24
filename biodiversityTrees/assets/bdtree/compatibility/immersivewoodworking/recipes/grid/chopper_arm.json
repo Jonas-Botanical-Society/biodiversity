@@ -1,0 +1,13 @@
+{
+	enabled: false,
+	ingredientPattern: "HN_,_P_,PSP",
+	ingredients: {
+		"H": { type: "item", tags: ["tool-hammer"], isTool: true, toolDurabilityCost: 0 },
+		"N": { type: "item", code: "game:metalnailsandstrips-*", name: "metal" },
+		"P": { type: "item", code: "bdtree:plank-*",               name: "wood" },
+		"S": { type: "item", code: "game:metalplate-*" }
+	},
+	width: 3,
+	height: 3,
+	output: { type: "item", code: "immersivewoodworking:chopperarm", quantity: 1 }
+}

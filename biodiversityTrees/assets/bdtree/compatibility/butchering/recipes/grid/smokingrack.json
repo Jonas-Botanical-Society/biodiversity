@@ -1,0 +1,26 @@
+[
+	{
+		"ingredientPattern": "HPH,SRS,HPH",
+		"ingredients": {
+			"P": { "type": "item", "code": "bdtree:plank-*", "quantity": 4 },
+			"H": { "type": "item", "code": "butchering:hook-*", "quantity": 4, "allowedVariants": ["copper", "tinbronze", "bismuthbronze", "blackbronze"] },
+			"R": { "type": "item", "code": "game:resin", "quantity": 1 },
+			"S": { "type": "item", "code": "game:stick", "quantity": 8 }
+		},
+		"width": 3,
+		"height": 3,
+		"output": { "type": "block", "code": "butchering:smokingrack-copper-north", "quantity": 1  }
+	},
+	{
+		"ingredientPattern": "HPH,SRS,HPH",
+		"ingredients": {
+			"P": { "type": "item", "code": "bdtree:plank-*", "quantity": 4 },
+			"H": { "type": "item", "code": "butchering:hook-*", "quantity": 4, "allowedVariants": ["iron"] },
+			"R": { "type": "item", "code": "game:resin", "quantity": 1 },
+			"S": { "type": "item", "code": "game:stick", "quantity": 8 }
+		},
+		"width": 3,
+		"height": 3,
+		"output": { "type": "block", "code": "butchering:smokingrack-iron-north", "quantity": 1  }
+	}
+]

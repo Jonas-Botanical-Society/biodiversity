@@ -1,0 +1,172 @@
+[
+  {
+    "ingredientPattern": "HX_,PCP,RSW",
+    "recipeGroup": 1,
+    "ingredients": {
+      "X": { "type": "item", "code": "game:saw-*", "isTool": true },
+      "H": { "type": "item", "code": "game:hammer-*", "isTool": true },
+      "C": { "type": "item", "code": "game:chisel-*", "isTool": true },
+      "S": { "type": "block", "code": "bdtree:log-placed-*-ud", "name": "wood" },
+      "R": { "type": "item", "code": "game:resin" },
+      "P": { "type": "item", "code": "game:stick" },
+      "W": { "type": "block", "code": "game:woodbucket" }
+    },
+    "attributes": {
+      "liquidContainerProps": {
+        "requiresContent": { "type": "item", "code": "expandedfoods:foodoilportion-flax" },
+        "requiresLitres": 0.2
+      }
+    },
+    "width": 3,
+    "height": 3,
+    "output": { "type": "block", "code": "game:angledgears-s", "quantity": 1 }
+  },
+  {
+    "ingredientPattern": "HX_,PCP,RSW",
+    "recipeGroup": 1,
+    "ingredients": {
+      "X": { "type": "item", "code": "game:saw-*", "isTool": true },
+      "H": { "type": "item", "code": "game:hammer-*", "isTool": true },
+      "C": { "type": "item", "code": "game:chisel-*", "isTool": true },
+      "S": { "type": "block", "code": "bdtree:log-placed-*-ud", "name": "wood" },
+      "R": { "type": "item", "code": "game:resin" },
+      "P": { "type": "item", "code": "game:stick" },
+      "W": { "type": "block", "code": "game:woodbucket" }
+    },
+    "attributes": {
+      "liquidContainerProps": {
+        "requiresContent": { "type": "item", "code": "expandedfoods:foodoilportion-rice" },
+        "requiresLitres": 0.2
+      }
+    },
+    "width": 3,
+    "height": 3,
+    "output": { "type": "block", "code": "game:angledgears-s", "quantity": 1 }
+  },
+  {
+    "ingredientPattern": "HX_,PCP,RSW",
+    "recipeGroup": 1,
+    "ingredients": {
+      "X": { "type": "item", "code": "game:saw-*", "isTool": true },
+      "H": { "type": "item", "code": "game:hammer-*", "isTool": true },
+      "C": { "type": "item", "code": "game:chisel-*", "isTool": true },
+      "S": { "type": "block", "code": "bdtree:log-placed-*-ud", "name": "wood" },
+      "R": { "type": "item", "code": "game:resin" },
+      "P": { "type": "item", "code": "game:stick" },
+      "W": { "type": "block", "code": "game:woodbucket" }
+    },
+    "attributes": {
+      "liquidContainerProps": {
+        "requiresContent": { "type": "item", "code": "expandedfoods:foodoilportion-seed" },
+        "requiresLitres": 0.2
+      }
+    },
+    "width": 3,
+    "height": 3,
+    "output": { "type": "block", "code": "game:angledgears-s", "quantity": 1 }
+  },
+  {
+    "ingredientPattern": "HX_,PCP,RSW",
+    "recipeGroup": 1,
+    "ingredients": {
+      "X": { "type": "item", "code": "game:saw-*", "isTool": true },
+      "H": { "type": "item", "code": "game:hammer-*", "isTool": true },
+      "C": { "type": "item", "code": "game:chisel-*", "isTool": true },
+      "S": { "type": "block", "code": "bdtree:log-placed-*-ud", "name": "wood" },
+      "R": { "type": "item", "code": "game:resin" },
+      "P": { "type": "item", "code": "game:stick" },
+      "W": { "type": "block", "code": "game:woodbucket" }
+    },
+    "attributes": {
+      "liquidContainerProps": {
+        "requiresContent": { "type": "item", "code": "expandedfoods:foodoilportion-soy" },
+        "requiresLitres": 0.2
+      }
+    },
+    "width": 3,
+    "height": 3,
+    "output": { "type": "block", "code": "game:angledgears-s", "quantity": 1 }
+  },
+  {
+    "ingredientPattern": "HX_,PCP,RSW",
+    "recipeGroup": 1,
+    "ingredients": {
+      "X": { "type": "item", "code": "game:saw-*", "isTool": true },
+      "H": { "type": "item", "code": "game:hammer-*", "isTool": true },
+      "C": { "type": "item", "code": "game:chisel-*", "isTool": true },
+      "S": { "type": "block", "code": "bdtree:log-placed-*-ud", "name": "wood" },
+      "R": { "type": "item", "code": "game:resin" },
+      "P": { "type": "item", "code": "game:stick" },
+      "W": { "type": "block", "code": "game:woodbucket" }
+    },
+    "attributes": {
+      "liquidContainerProps": {
+        "requiresContent": { "type": "item", "code": "expandedfoods:foodoilportion-sunflower" },
+        "requiresLitres": 0.2
+      }
+    },
+    "width": 3,
+    "height": 3,
+    "output": { "type": "block", "code": "game:angledgears-s", "quantity": 1 }
+  },
+  {
+    "ingredientPattern": "HX_,PCP,RSW",
+    "recipeGroup": 1,
+    "ingredients": {
+      "X": { "type": "item", "code": "game:saw-*", "isTool": true },
+      "H": { "type": "item", "code": "game:hammer-*", "isTool": true },
+      "C": { "type": "item", "code": "game:chisel-*", "isTool": true },
+      "S": { "type": "block", "code": "bdtree:log-placed-*-ud", "name": "wood" },
+      "R": { "type": "item", "code": "game:resin" },
+      "P": { "type": "item", "code": "game:stick" },
+      "W": { "type": "block", "code": "game:woodbucket" }
+    },
+    "attributes": {
+      "liquidContainerProps": {
+        "requiresContent": { "type": "item", "code": "expandedfoods:foodoilportion-peanut" },
+        "requiresLitres": 0.2
+      }
+    },
+    "width": 3,
+    "height": 3,
+    "output": { "type": "block", "code": "game:angledgears-s", "quantity": 1 }
+  },
+  {
+    "ingredientPattern": "HX_,PCP,RSW",
+    "recipeGroup": 1,
+    "ingredients": {
+      "X": { "type": "item", "code": "game:saw-*", "isTool": true },
+      "H": { "type": "item", "code": "game:hammer-*", "isTool": true },
+      "C": { "type": "item", "code": "game:chisel-*", "isTool": true },
+      "S": { "type": "block", "code": "bdtree:log-placed-*-ud", "name": "wood" },
+      "R": { "type": "item", "code": "game:resin" },
+      "P": { "type": "item", "code": "game:stick" },
+      "W": { "type": "block", "code": "game:woodbucket" }
+    },
+    "attributes": {
+      "liquidContainerProps": {
+        "requiresContent": { "type": "item", "code": "expandedfoods:foodoilportion-olive" },
+        "requiresLitres": 0.2
+      }
+    },
+    "width": 3,
+    "height": 3,
+    "output": { "type": "block", "code": "game:angledgears-s", "quantity": 1 }
+  },
+  {
+    "ingredientPattern": "HX_,PCP,RSW",
+    "recipeGroup": 2,
+    "ingredients": {
+      "X": { "type": "item", "code": "game:saw-*", "isTool": true },
+      "H": { "type": "item", "code": "game:hammer-*", "isTool": true },
+      "C": { "type": "item", "code": "game:chisel-*", "isTool": true },
+      "S": { "type": "block", "code": "bdtree:log-placed-*-ud", "name": "wood" },
+      "R": { "type": "item", "code": "game:resin" },
+      "P": { "type": "item", "code": "game:stick" },
+      "W": { "type": "block", "code": "expandedfoods:hardlard", "quantity":  2 }
+    },
+    "width": 3,
+    "height": 3,
+    "output": { "type": "block", "code": "game:angledgears-s", "quantity": 1 }
+  }
+]

@@ -1,0 +1,21 @@
+﻿[
+    {
+        "enabled": true,
+		"name": "Guillotine - Contruction",
+		"ingredientPattern": "SHW,RLA,NPB",
+        "width": 3,
+        "height": 3,
+        "ingredients":{
+			"S": { "type": "item", "code": "game:saw-*", "isTool": true, "toolDurabilityCost": 60 },
+			"H": { "type": "item", "code": "game:hammer-*", "isTool": true, "toolDurabilityCost": 6},
+			"W": { "type": "item", "code": "bdtree:plank-*", "quantity": 12 },		
+			"R": { "type": "item", "code": "game:rope", "quantity": 2 },
+			"L": { "type": "block", "code": "bdtree:log-placed-*-ud", "quantity": 12 },
+			"A": { "type": "block", "code": "game:woodenaxle-ud" },		
+			"N": { "type": "item", "code": "game:metalnailsandstrips-{metal}", "quantity": 5 },
+			"P": { "type": "item", "code": "game:metalplate-copper" },
+			"B": { "type": "block", "code": "game:rock-*", "name": "rock", "allowedVariants": ["andesite", "granite", "basalt", "peridotite"]  }
+		},
+		 "output": { "type": "block", "code": "portcullis:guillotine-north"} 
+    }
+]

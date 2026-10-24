@@ -1,0 +1,13 @@
+{
+	enabled: false,
+	ingredientPattern: "BBB,BPB,SHS",
+	ingredients: {
+		"B": { type: "block", code: "bdtree:supportbeam-*", name: "beam" },
+		"P": { type: "item",  code: "bdtree:plank-*",       name: "wood" },
+		"S": { type: "item",  code: "game:metalplate-*" },
+		"H": { type: "item",  tags: ["tool-hammer"], isTool: true, toolDurabilityCost: 0 }
+	},
+	width: 3,
+	height: 3,
+	output: { type: "block", code: "immersivewoodworking:chopper-frame-north", quantity: 1 }
+}

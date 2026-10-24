@@ -1,0 +1,34 @@
+[
+	{
+		"enabled": true,
+		"name": "Portcullis AxleLever log-placed - Contruction",
+		ingredientPattern: "HL_,CL_,SFR",
+		ingredients: {
+			"H": { type: "item", tags: ["tool-hammer"], isTool: true, toolDurabilityCost: 60 },
+			"C": { type: "item", tags: ["tool-chisel"], isTool: true, toolDurabilityCost: 40 },
+			"S": { type: "block", code: "bdtree:log-placed-*-ud" },
+			"F": { type: "block", code: "game:woodenaxle-ud" },
+			"L": { type: "item", code: "game:leather-normal-plain", quantity: 1 },
+			"R": { type: "item", code: "game:resin", quantity: 2 }
+		},
+		width: 3,
+		height: 3,
+		output: { type: "block", code: "portcullis:axlelever-north", quantity: 1 }
+	},
+	{
+		"enabled": true,
+		"name": "Portcullis AxleLever logsection - Contruction",
+		ingredientPattern: "HL_,CL_,SFR",
+		ingredients: {
+			"H": { type: "item", tags: ["tool-hammer"], isTool: true, toolDurabilityCost: 60 },
+			"C": { type: "item", tags: ["tool-chisel"], isTool: true, toolDurabilityCost: 40 },
+			"S": { type: "block", code: "bdtree:logsection-placed-*-ud" },
+			"F": { type: "block", code: "game:woodenaxle-ud" },
+			"L": { type: "item", code: "game:leather-normal-plain", quantity: 1 },
+			"R": { type: "item", code: "game:resin", quantity: 2 }
+		},
+		width: 3,
+		height: 3,
+		output: { type: "block", code: "portcullis:axlelever-north", quantity: 1 }
+	}
+]

@@ -1,0 +1,11 @@
+{
+	ingredientPattern: "SNS,PPP,S_S",
+	ingredients: {
+		"S": { type: "item", code: "bdtree:plank-*", quantity: 4 },
+		"P": { type: "item", code: "bdtree:plank-*" },
+		"N": { type: "item", code: "game:metalnailsandstrips-*", quantity: 2 }
+	},
+	width: 3,
+	height: 3,
+	output: { type: "block", code: "interestingme:sluice-baffles-north", quantity: 1 }
+}

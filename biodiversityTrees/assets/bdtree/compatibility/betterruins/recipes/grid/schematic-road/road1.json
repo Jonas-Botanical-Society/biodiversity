@@ -1,0 +1,54 @@
+[
+ 
+    {
+        ingredientPattern: "L_,SX",
+        "recipeGroup": 333,
+        ingredients: {
+            "X": {type: "Item", code: "betterruins:br-schematic-road", "consume": false },
+            "L": { type: "item", code: "game:stone-*", name: "rock", quantity: 4 },
+            "S": { type: "block", code: "game:soil-*" },
+            
+        },
+        width: 2,
+        height: 2,
+        output: { type: "block", code: "game:stonepath-free", quantity: 4 }
+    },
+    {
+        ingredientPattern: "LSL,_X_",
+        "recipeGroup": 333,
+        ingredients: {
+            "X": {type: "Item", code: "betterruins:br-schematic-road", "consume": false },
+            "L": { type: "item", code: "game:stone-*", name: "rock", quantity: 1 },
+            "S": { type: "block", code: "game:soil-*" },
+            "C": { type: "item", code: "game:shovel-*", name: "metal", isTool: true},
+        },
+        width: 3,
+        height: 2,
+        output: { type: "block", code: "game:stonepathslab-free", quantity: 4 }
+    },
+    {
+        ingredientPattern: "LM_,SX_",
+        "recipeGroup": 333,
+        ingredients: {
+            "X": {type: "Item", code: "betterruins:br-schematic-road", "consume": false },
+            "L": { type: "item", code: "game:stone-*", name: "rock", quantity: 3 },
+            "M": { type: "item", code: "game:stone-*", name: "rock", quantity: 1 },
+            "S": { type: "block", code: "game:soil-*" },
+        },
+        width: 3,
+        height: 2,
+        output: { type: "block", code: "game:stonepathstairs-up-north-free", quantity: 4 }
+    },
+    {
+        ingredientPattern: "SPX",
+        "recipeGroup": 333,
+        ingredients: {
+            "S": { type: "item", code: "game:saw-*", isTool: true },
+            "X": {type: "Item", code: "betterruins:br-schematic-road", "consume": false },
+            "P": { type: "item", code: "game:plank-*", "name": "wood" , quantity: 2 , "allowedVariants": ["aged", "birch", "oak", "maple", "pine", "acacia", "kapok", "baldcypress", "larch", "redwood", "ebony", "walnut", "purpleheart"] }
+        },
+        width: 3,
+        height: 1,
+        output: { type: "block", code: "game:woodenpath-{wood}-ns", quantity: 4  }
+    }
+]

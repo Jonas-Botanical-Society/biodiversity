@@ -1,0 +1,80 @@
+[
+    {
+        "ingredientPattern": "BXB,BBB,S_S",
+        "recipeGroup": 333,
+        "ingredients": {
+            "X": {"type": "Item", "code": "betterruins:br-schematic-carpenter", "consume": false },
+            "S": {"type": "Item", "code": "game:stick" },
+            "B": {"type": "Item", "code": "bdtree:plank-*" , "quantity": 1}
+            
+        },
+        "width": 3,
+        "height": 3,
+        "output": {"type": "Block", "code": "game:clutter", "attributes": { "type": "angledstall1x1-crude" , "collected": true} }
+    },
+    {
+        "ingredientPattern": "BXB,BBB,S_S",
+        "recipeGroup": 333,
+        "ingredients": {
+            "X": {"type": "Item", "code": "betterruins:br-schematic-carpenter", "consume": false },
+            "S": {"type": "Block", "code": "game:supportbeam-oak" },
+            "B": {"type": "Item", "code": "bdtree:plank-*" , "quantity": 1}
+            
+        },
+        "width": 3,
+        "height": 3,
+        "output": {"type": "Block", "code": "game:clutter", "attributes": { "type": "angledstall1x1-plain" , "collected": true} }
+    },
+    {
+        "ingredientPattern": "BBB,SXS",
+        "recipeGroup": 333,
+        "ingredients": {
+            "X": {"type": "Item", "code": "betterruins:br-schematic-carpenter", "consume": false },
+            "S": {"type": "Block", "code": "game:supportbeam-oak" },
+            "B": {"type": "Item", "code": "bdtree:plank-*" , "quantity": 1}
+            
+        },
+        "width": 3,
+        "height": 2,
+        "output": {"type": "Block", "code": "game:clutter", "attributes": { "type": "table1x1-plain" , "collected": true} }
+    },
+    {
+        "ingredientPattern": "BXB,BBB,S_S",
+        "recipeGroup": 333,
+        "ingredients": {
+            "X": {"type": "Item", "code": "betterruins:br-schematic-carpenter", "consume": false },
+            "S": {"type": "Item", "code": "game:stick" },
+            "B": {"type": "Item", "code": "bdtree:plank-*" , "quantity": 1}
+            
+        },
+        "width": 3,
+        "height": 3,
+        "output": {"type": "Block", "code": "game:clutter", "attributes": { "type": "angledstall1x1-crude" } }
+    },
+    {
+        "ingredientPattern": "BXB,BBB,S_S",
+        "recipeGroup": 333,
+        "ingredients": {
+            "X": {"type": "Item", "code": "betterruins:br-schematic-carpenter", "consume": false },
+            "S": {"type": "Block", "code": "game:supportbeam-oak" },
+            "B": {"type": "Item", "code": "bdtree:plank-*" , "quantity": 1}
+            
+        },
+        "width": 3,
+        "height": 3,
+        "output": {"type": "Block", "code": "game:clutter", "attributes": { "type": "angledstall1x1-plain" } }
+    },
+    {
+        "ingredientPattern": "BBB,SXS",
+        "recipeGroup": 333,
+        "ingredients": {
+            "X": {"type": "Item", "code": "betterruins:br-schematic-carpenter", "consume": false },
+            "S": {"type": "Block", "code": "game:supportbeam-oak" },
+            "B": {"type": "Item", "code": "bdtree:plank-*" , "quantity": 1}
+            
+        },
+        "width": 3,
+        "height": 2,
+        "output": {"type": "Block", "code": "game:clutter", "attributes": { "type": "table1x1-plain" } }
+    }
+]

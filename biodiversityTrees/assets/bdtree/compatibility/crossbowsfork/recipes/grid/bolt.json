@@ -1,0 +1,146 @@
+[
+  {
+    "ingredientPattern": "HSP",
+    "ingredients": {
+      "H": {
+        "type": "item",
+        "code": "game:arrowhead-tinbronze"
+      },
+      "S": {
+        "type": "item",
+        "code": "game:stick"
+      },
+      "P": {
+        "type": "item",
+        "code": "bdtree:plank-*"
+      }
+    },
+    "width": 3,
+    "height": 1,
+    "output": {
+      "type": "item",
+      "code": "maltiezcrossbows:bolt-tinbronze",
+      "quantity": 1
+    }
+  },
+  {
+    "ingredientPattern": "HSP",
+    "ingredients": {
+      "H": {
+        "type": "item",
+        "code": "game:arrowhead-bismuthbronze"
+      },
+      "S": {
+        "type": "item",
+        "code": "game:stick"
+      },
+      "P": {
+        "type": "item",
+        "code": "bdtree:plank-*"
+      }
+    },
+    "width": 3,
+    "height": 1,
+    "output": {
+      "type": "item",
+      "code": "maltiezcrossbows:bolt-bismuthbronze",
+      "quantity": 1
+    }
+  },
+  {
+    "ingredientPattern": "HSP",
+    "ingredients": {
+      "H": {
+        "type": "item",
+        "code": "game:arrowhead-blackbronze"
+      },
+      "S": {
+        "type": "item",
+        "code": "game:stick"
+      },
+      "P": {
+        "type": "item",
+        "code": "bdtree:plank-*"
+      }
+    },
+    "width": 3,
+    "height": 1,
+    "output": {
+      "type": "item",
+      "code": "maltiezcrossbows:bolt-blackbronze",
+      "quantity": 1
+    }
+  },
+  {
+    "ingredientPattern": "HSP",
+    "ingredients": {
+      "H": {
+        "type": "item",
+        "code": "game:arrowhead-iron"
+      },
+      "S": {
+        "type": "item",
+        "code": "game:stick"
+      },
+      "P": {
+        "type": "item",
+        "code": "bdtree:plank-*"
+      }
+    },
+    "width": 3,
+    "height": 1,
+    "output": {
+      "type": "item",
+      "code": "maltiezcrossbows:bolt-iron",
+      "quantity": 1
+    }
+  },
+  {
+    "ingredientPattern": "HSP",
+    "ingredients": {
+      "H": {
+        "type": "item",
+        "code": "game:arrowhead-meteoriciron"
+      },
+      "S": {
+        "type": "item",
+        "code": "game:stick"
+      },
+      "P": {
+        "type": "item",
+        "code": "bdtree:plank-*"
+      }
+    },
+    "width": 3,
+    "height": 1,
+    "output": {
+      "type": "item",
+      "code": "maltiezcrossbows:bolt-meteoriciron",
+      "quantity": 1
+    }
+  },
+  {
+    "ingredientPattern": "HSP",
+    "ingredients": {
+      "H": {
+        "type": "item",
+        "code": "game:arrowhead-steel"
+      },
+      "S": {
+        "type": "item",
+        "code": "game:stick"
+      },
+      "P": {
+        "type": "item",
+        "code": "bdtree:plank-*"
+      }
+    },
+    "width": 3,
+    "height": 1,
+    "output": {
+      "type": "item",
+      "code": "maltiezcrossbows:bolt-steel",
+      "quantity": 1
+    }
+  }
+]

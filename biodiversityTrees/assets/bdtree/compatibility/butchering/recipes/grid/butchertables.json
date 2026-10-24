@@ -1,0 +1,114 @@
+[
+	{
+		"ingredientPattern": "KAF,LSL",
+		"ingredients": {
+			"L": {
+				"type": "block",
+				"code": "bdtree:log-*",
+				"quantity": 2
+			},
+			"K": {
+				"type": "item",
+				"code": "game:knife-generic-*",
+				"allowedVariants": [ "chert", "granite", "andesite", "basalt", "obsidian", "peridotite", "flint", "bonechert", "bonegranite", "boneandesite", "bonebasalt", "boneobsidian", "boneperidotite", "boneflint" ]
+			},
+			"A": {
+				"type": "item",
+				"code": "game:axe-*",
+				"allowedVariants": [ "chert", "granite", "andesite", "basalt", "obsidian", "peridotite", "flint", "bone-chert", "bone-granite", "bone-andesite", "bone-basalt", "bone-obsidian", "bone-peridotite", "bone-flint" ]
+			},
+			"F": {
+				"type": "item",
+				"code": "game:flint",
+				"quantity": 6
+			},
+			"S": {
+				"type": "item",
+				"code": "game:stone-*",
+				"quantity": 12
+			}
+		},
+		"width": 3,
+		"height": 2,
+		"output": {
+			"type": "block",
+			"code": "butchering:butchertable-primitive-north",
+			"quantity": 1
+		}
+	},
+	{
+		"ingredientPattern": "KSL,PCP",
+		"ingredients": {
+			"P": {
+				"type": "item",
+				"code": "bdtree:plank-*",
+				"quantity": 16
+			},
+			"K": {
+				"type": "item",
+				"code": "game:knife-generic-*",
+				"allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze" ]
+			},
+			"S": {
+				"type": "item",
+				"code": "game:shears-*",
+				"allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze" ]
+			},
+			"L": {
+				"type": "item",
+				"code": "game:cleaver-*",
+				"allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze" ]
+			},
+			"C": {
+				"type": "item",
+				"code": "game:metalplate-copper",
+				"quantity": 2
+			}
+		},
+		"width": 3,
+		"height": 2,
+		"output": {
+			"type": "block",
+			"code": "butchering:butchertable-simple-north",
+			"quantity": 1
+		}
+	},
+	{
+		"ingredientPattern": "KSL,PIP",
+		"ingredients": {
+			"P": {
+				"type": "item",
+				"code": "bdtree:plank-*",
+				"quantity": 16
+			},
+			"K": {
+				"type": "item",
+				"code": "game:knife-generic-*",
+				"allowedVariants": [ "iron" ]
+			},
+			"S": {
+				"type": "item",
+				"code": "game:shears-*",
+				"allowedVariants": [ "iron" ]
+			},
+			"L": {
+				"type": "item",
+				"code": "game:cleaver-*",
+				"allowedVariants": [ "iron" ]
+			},
+			"I": {
+				"type": "item",
+				"code": "game:metalplate-iron",
+				"quantity": 2
+			}
+		},
+		"width": 3,
+		"height": 2,
+		"output": {
+			"type": "block",
+			"code": "butchering:butchertable-advanced-north",
+			"quantity": 1
+		}
+	}
+
+]

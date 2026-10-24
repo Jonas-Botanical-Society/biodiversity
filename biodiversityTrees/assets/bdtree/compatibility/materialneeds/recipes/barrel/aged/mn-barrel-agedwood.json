@@ -1,0 +1,434 @@
+[
+  {
+    "code": "boards-aged",
+    "ingredients": [
+      {
+        "type": "item",
+        "code": "game:vinegarportion",
+        "litres": 1,
+        "consumeLitres": 1
+      },
+      {
+        "type": "item",
+        "code": "bdtree:plank-*",
+        "name": "wood",
+        "quantity": 12
+      }
+    ],
+    "output": {
+      "type": "item",
+      "code": "game:plank-aged",
+      "quantity": 12
+    },
+    "requiresSeal": true,
+    "sealHours": 24
+  },
+  {
+    "code": "log-placed-aged",
+    "ingredients": [
+      {
+        "type": "item",
+        "code": "game:vinegarportion",
+        "litres": 1,
+        "consumeLitres": 1
+      },
+      {
+        "type": "block",
+        "code": "bdtree:log-placed-*-ud",
+        "name": "wood",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "type": "block",
+      "code": "game:log-placed-aged-ud",
+      "quantity": 1
+    },
+    "requiresSeal": true,
+    "sealHours": 24
+  },
+  {
+    "code": "debarkedlog-aged",
+    "ingredients": [
+      {
+        "type": "item",
+        "code": "game:vinegarportion",
+        "litres": 1,
+        "consumeLitres": 1
+      },
+      {
+        "type": "block",
+        "code": "bdtree:debarkedlog-*-ud",
+        "name": "wood",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "type": "block",
+      "code": "game:debarkedlog-aged-ud",
+      "quantity": 1
+    },
+    "requiresSeal": true,
+    "sealHours": 24
+  },
+  {
+    "code": "trapdoor-solid-aged",
+    "ingredients": [
+      {
+        "type": "item",
+        "code": "game:vinegarportion",
+        "litres": 1,
+        "consumeLitres": 1
+      },
+      {
+        "type": "block",
+        "code": "bdtree:trapdoor-solid-*-1",
+        "name": "wood",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "type": "block",
+      "code": "game:trapdoor-solid-aged-1",
+      "quantity": 1
+    },
+    "requiresSeal": true,
+    "sealHours": 24
+  },
+  {
+    "code": "trapdoor-window-aged",
+    "ingredients": [
+      {
+        "type": "item",
+        "code": "game:vinegarportion",
+        "litres": 1,
+        "consumeLitres": 1
+      },
+      {
+        "type": "block",
+        "code": "bdtree:trapdoor-window-*-1",
+        "name": "wood",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "type": "block",
+      "code": "game:trapdoor-window-aged-1",
+      "quantity": 1
+    },
+    "requiresSeal": true,
+    "sealHours": 24
+  },
+  {
+    "code": "logquad-barkedcorner-aged",
+    "ingredients": [
+      {
+        "type": "item",
+        "code": "game:vinegarportion",
+        "litres": 1,
+        "consumeLitres": 1
+      },
+      {
+        "type": "block",
+        "code": "bdtree:logquad-barkedcorner-*-north",
+        "name": "wood",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "type": "block",
+      "code": "game:logquad-barkedcorner-aged-north",
+      "quantity": 1
+    },
+    "requiresSeal": true,
+    "sealHours": 24
+  },
+  {
+    "code": "logquad-debarkedcorner-aged",
+    "ingredients": [
+      {
+        "type": "item",
+        "code": "game:vinegarportion",
+        "litres": 1,
+        "consumeLitres": 1
+      },
+      {
+        "type": "block",
+        "code": "bdtree:logquad-debarkedcorner-*-north",
+        "name": "wood",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "type": "block",
+      "code": "game:logquad-debarkedcorner-aged-north",
+      "quantity": 1
+    },
+    "requiresSeal": true,
+    "sealHours": 24
+  },
+  {
+    "code": "logquad-placed-aged",
+    "ingredients": [
+      {
+        "type": "item",
+        "code": "game:vinegarportion",
+        "litres": 1,
+        "consumeLitres": 1
+      },
+      {
+        "type": "block",
+        "code": "bdtree:logquad-placed-*-ud",
+        "name": "wood",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "type": "block",
+      "code": "game:logquad-placed-aged-ud",
+      "quantity": 1
+    },
+    "requiresSeal": true,
+    "sealHours": 24
+  },
+  {
+    "code": "logquad-debarked-aged",
+    "ingredients": [
+      {
+        "type": "item",
+        "code": "game:vinegarportion",
+        "litres": 1,
+        "consumeLitres": 1
+      },
+      {
+        "type": "block",
+        "code": "bdtree:logquad-debarked-*-ud",
+        "name": "wood",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "type": "block",
+      "code": "game:logquad-debarked-aged-ud",
+      "quantity": 1
+    },
+    "requiresSeal": true,
+    "sealHours": 24
+  },
+  {
+    "code": "plankslab-aged",
+    "ingredients": [
+      {
+        "type": "item",
+        "code": "game:vinegarportion",
+        "litres": 1,
+        "consumeLitres": 1
+      },
+      {
+        "type": "block",
+        "code": "bdtree:plankslab-*-down-free",
+        "name": "wood",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "type": "block",
+      "code": "game:plankslab-aged-down-free",
+      "quantity": 1
+    },
+    "requiresSeal": true,
+    "sealHours": 24
+  },
+  {
+    "code": "roughhewnfence-aged",
+    "ingredients": [
+      {
+        "type": "item",
+        "code": "game:vinegarportion",
+        "litres": 1,
+        "consumeLitres": 1
+      },
+      {
+        "type": "block",
+        "code": "bdtree:roughhewnfence-*-ew-free",
+        "name": "wood",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "type": "block",
+      "code": "game:roughhewnfence-aged-ew-free",
+      "quantity": 1
+    },
+    "requiresSeal": true,
+    "sealHours": 24
+  },
+  {
+    "code": "woodenfencegate-aged",
+    "ingredients": [
+      {
+        "type": "item",
+        "code": "game:vinegarportion",
+        "litres": 1,
+        "consumeLitres": 1
+      },
+      {
+        "type": "block",
+        "code": "bdtree:woodenfencegate-*-n-closed-left-free",
+        "name": "wood",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "type": "block",
+      "code": "game:woodenfencegate-aged-n-closed-left-free",
+      "quantity": 1
+    },
+    "requiresSeal": true,
+    "sealHours": 24
+  },
+  {
+    "code": "supportbeam-aged",
+    "ingredients": [
+      {
+        "type": "item",
+        "code": "game:vinegarportion",
+        "litres": 1,
+        "consumeLitres": 1
+      },
+      {
+        "type": "block",
+        "code": "bdtree:supportbeam-*",
+        "name": "wood",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "type": "block",
+      "code": "game:supportbeam-aged",
+      "quantity": 1
+    },
+    "requiresSeal": true,
+    "sealHours": 24
+  },
+  {
+    "code": "roughhewnfencegate-aged",
+    "ingredients": [
+      {
+        "type": "item",
+        "code": "game:vinegarportion",
+        "litres": 1,
+        "consumeLitres": 1
+      },
+      {
+        "type": "block",
+        "code": "bdtree:roughhewnfencegate-*-n-closed-free",
+        "name": "wood",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "type": "block",
+      "code": "game:roughhewnfencegate-aged-n-closed-free",
+      "quantity": 1
+    },
+    "requiresSeal": true,
+    "sealHours": 24
+  },
+  {
+    "code": "woodenfence-aged",
+    "ingredients": [
+      {
+        "type": "item",
+        "code": "game:vinegarportion",
+        "litres": 1,
+        "consumeLitres": 1
+      },
+      {
+        "type": "block",
+        "code": "bdtree:woodenfence-*-ew-free",
+        "name": "wood",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "type": "block",
+      "code": "game:woodenfence-aged-ew-free",
+      "quantity": 1
+    },
+    "requiresSeal": true,
+    "sealHours": 24
+  },
+  {
+    "code": "planks-aged",
+    "ingredients": [
+      {
+        "type": "item",
+        "code": "game:vinegarportion",
+        "litres": 1,
+        "consumeLitres": 1
+      },
+      {
+        "type": "block",
+        "code": "bdtree:planks-*-ud",
+        "name": "wood",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "type": "block",
+      "code": "game:planks-aged-ud",
+      "quantity": 1
+    },
+    "requiresSeal": true,
+    "sealHours": 24
+  },
+  {
+    "code": "plankstairs-aged",
+    "ingredients": [
+      {
+        "type": "item",
+        "code": "game:vinegarportion",
+        "litres": 1,
+        "consumeLitres": 1
+      },
+      {
+        "type": "block",
+        "code": "bdtree:plankstairs-*-up-north-free",
+        "name": "wood",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "type": "block",
+      "code": "game:plankstairs-aged-up-north-free",
+      "quantity": 1
+    },
+    "requiresSeal": true,
+    "sealHours": 24
+  },
+  {
+    "code": "plankslab-aged",
+    "ingredients": [
+      {
+        "type": "item",
+        "code": "game:vinegarportion",
+        "litres": 1,
+        "consumeLitres": 1
+      },
+      {
+        "type": "block",
+        "code": "bdtree:plankslab-*-ud",
+        "name": "wood",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "type": "block",
+      "code": "game:plankslab-aged-ud",
+      "quantity": 1
+    },
+    "requiresSeal": true,
+    "sealHours": 24
+  },
+]

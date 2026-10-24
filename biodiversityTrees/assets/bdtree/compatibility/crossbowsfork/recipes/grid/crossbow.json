@@ -1,0 +1,122 @@
+[
+  {
+    "ingredientPattern": "ANF,LBS,WWK",
+    "ingredients": {
+      "B": {"type": "item", "code": "maltiezcrossbows:bow-steel-heavy", "quantity": 1},
+      "S": {"type": "item", "code": "maltiezcrossbows:parts-stirrup-steel", "quantity": 1},
+      "N": {"type": "item", "code": "game:metalnailsandstrips-steel", "quantity": 1},
+      "L": {"type": "item", "code": "maltiezcrossbows:parts-lock-steel", "quantity": 1},
+      "A": {"type": "item", "code": "game:metalplate-iron", "quantity": 1},
+      "F": {"type": "item", "code": "game:flaxtwine", "quantity": 16},
+      "W": {"type": "item", "code": "bdtree:plank-*", "quantity": 1},
+      "K": { "type": "item", "code": "game:saw-*", "isTool": true }
+    },
+    "width": 3,
+    "height": 3,
+    "output": {"type": "item", "code": "maltiezcrossbows:crossbow-windlass-steel"}
+  },
+  {
+    "ingredientPattern": "ANF,LB_,WWK",
+    "ingredients": {
+      "B": {"type": "item", "code": "maltiezcrossbows:bow-steel-light", "quantity": 1},
+      "L": {"type": "item", "code": "maltiezcrossbows:parts-lock-steel", "quantity": 1},
+      "N": {"type": "item", "code": "game:metalnailsandstrips-steel", "quantity": 1},
+      "A": {"type": "item", "code": "game:metalplate-iron", "quantity": 1},
+      "F": {"type": "item", "code": "game:flaxtwine", "quantity": 8},
+      "W": {"type": "item", "code": "bdtree:plank-*", "quantity": 1},
+      "K": { "type": "item", "code": "game:saw-*", "isTool": true }
+    },
+    "width": 3,
+    "height": 3,
+    "output": {"type": "item", "code": "maltiezcrossbows:crossbow-goatsfoot-steel"}
+  },
+  {
+    "ingredientPattern": "_NF,LB_,WWK",
+    "ingredients": {
+      "B": {"type": "item", "code": "maltiezcrossbows:bow-composite-heavy", "quantity": 1},
+      "L": {"type": "item", "code": "maltiezcrossbows:parts-latch-iron", "quantity": 1},
+      "N": {"type": "item", "code": "game:metalnailsandstrips-*iron", "quantity": 1},
+      "F": {"type": "item", "code": "game:flaxtwine", "quantity": 4},
+      "W": {"type": "item", "code": "bdtree:plank-*", "quantity": 1},
+      "K": { "type": "item", "code": "game:saw-*", "isTool": true }
+    },
+    "width": 3,
+    "height": 3,
+    "output": {"type": "item", "code": "maltiezcrossbows:crossbow-latch-iron"}
+  },
+  {
+    "ingredientPattern": "_NF,LB_,WWK",
+    "ingredients": {
+      "B": {"type": "item", "code": "maltiezcrossbows:bow-composite-heavy", "quantity": 1},
+      "L": {"type": "item", "code": "maltiezcrossbows:parts-latch-meteoriciron", "quantity": 1},
+      "N": {"type": "item", "code": "game:metalnailsandstrips-*iron", "quantity": 1},
+      "F": {"type": "item", "code": "game:flaxtwine", "quantity": 4},
+      "W": {"type": "item", "code": "bdtree:plank-*", "quantity": 1},
+      "K": { "type": "item", "code": "game:saw-*", "isTool": true }
+    },
+    "width": 3,
+    "height": 3,
+    "output": {"type": "item", "code": "maltiezcrossbows:crossbow-latch-meteoriciron"}
+  },
+  {
+    "ingredientPattern": "ANF,LBS,WWK",
+    "ingredients": {
+      "B": {"type": "item", "code": "maltiezcrossbows:bow-composite-heavy", "quantity": 1},
+      "S": {"type": "item", "code": "maltiezcrossbows:parts-stirrup-*bronze", "quantity": 1},
+      "N": {"type": "item", "code": "game:metalnailsandstrips-*bronze", "quantity": 1},
+      "A": {"type": "item", "code": "game:metalplate-brass", "quantity": 1},
+      "L": {"type": "item", "code": "maltiezcrossbows:parts-lock-tinbronze", "quantity": 1},
+      "F": {"type": "item", "code": "game:flaxtwine", "quantity": 4},
+      "W": {"type": "item", "code": "bdtree:plank-*", "quantity": 1},
+      "K": { "type": "item", "code": "game:saw-*", "isTool": true }
+    },
+    "width": 3,
+    "height": 3,
+    "output": {"type": "item", "code": "maltiezcrossbows:crossbow-stirrup-tinbronze"}
+  },
+  {
+    "ingredientPattern": "ANF,LBS,WWK",
+    "ingredients": {
+      "B": {"type": "item", "code": "maltiezcrossbows:bow-composite-heavy", "quantity": 1},
+      "S": {"type": "item", "code": "maltiezcrossbows:parts-stirrup-*bronze", "quantity": 1},
+      "N": {"type": "item", "code": "game:metalnailsandstrips-*bronze", "quantity": 1},
+      "A": {"type": "item", "code": "game:metalplate-brass", "quantity": 1},
+      "L": {"type": "item", "code": "maltiezcrossbows:parts-lock-bismuthbronze", "quantity": 1},
+      "F": {"type": "item", "code": "game:flaxtwine", "quantity": 4},
+      "W": {"type": "item", "code": "bdtree:plank-*", "quantity": 1},
+      "K": { "type": "item", "code": "game:saw-*", "isTool": true }
+    },
+    "width": 3,
+    "height": 3,
+    "output": {"type": "item", "code": "maltiezcrossbows:crossbow-stirrup-bismuthbronze"}
+  },
+  {
+    "ingredientPattern": "ANF,LBS,WWK",
+    "ingredients": {
+      "B": {"type": "item", "code": "maltiezcrossbows:bow-composite-heavy", "quantity": 1},
+      "S": {"type": "item", "code": "maltiezcrossbows:parts-stirrup-*bronze", "quantity": 1},
+      "N": {"type": "item", "code": "game:metalnailsandstrips-*bronze", "quantity": 1},
+      "A": {"type": "item", "code": "game:metalplate-brass", "quantity": 1},
+      "L": {"type": "item", "code": "maltiezcrossbows:parts-lock-blackbronze", "quantity": 1},
+      "F": {"type": "item", "code": "game:flaxtwine", "quantity": 4},
+      "W": {"type": "item", "code": "bdtree:plank-*", "quantity": 1},
+      "K": { "type": "item", "code": "game:saw-*", "isTool": true }
+    },
+    "width": 3,
+    "height": 3,
+    "output": {"type": "item", "code": "maltiezcrossbows:crossbow-stirrup-blackbronze"}
+  },
+  {
+    "ingredientPattern": "SMP,PFB",
+    "ingredients": {
+      "B": {"type": "item", "code": "game:bow-simple", "quantity": 1},
+      "M": {"type": "item", "code": "game:metalnailsandstrips-copper", "quantity": 2},
+      "P": {"type": "item", "code": "bdtree:plank-*", "quantity": 2},
+      "F": {"type": "item", "code": "game:rope", "quantity": 1},
+      "S": { "type": "item", "code": "game:saw-*", "isTool": true }
+    },
+    "width": 3,
+    "height": 2,
+    "output": {"type": "item", "code": "maltiezcrossbows:crossbow-repeating-copper"}
+  }
+]

@@ -1,0 +1,14 @@
+{
+	enabled: false,
+	ingredientPattern: "HPP,CPP,SN_",
+	ingredients: {
+		"H": { type: "item", tags: ["tool-hammer"], isTool: true, toolDurabilityCost: 0 },
+		"C": { type: "item", tags: ["tool-chisel"], isTool: true, toolDurabilityCost: 0 },
+		"P": { type: "item", code: "bdtree:plank-*",               name: "wood" },
+		"S": { type: "item", code: "game:metalplate-*" },
+		"N": { type: "item", code: "game:metalnailsandstrips-*", name: "metal" }
+	},
+	width: 3,
+	height: 3,
+	output: { type: "item", code: "immersivewoodworking:chopperdrive", quantity: 1 }
+}

@@ -1,0 +1,29 @@
+[
+	{
+	"ingredientPattern": "KA ,SPS,SDS",
+	"ingredients": {
+		"P": { "type": "item", "code": "bdtree:plank-*" },
+		"S": { "type": "block", "code": "tailorsdelight:panel-leather-plain" },
+		"D": { "type": "block", "code": "tailorsdelight:panel-leather-plain", "quantity": 2 },
+		"K": { "type": "item", "code": "game:knife-generic-*", "isTool": true, "toolDurabilityCost": 6 },
+		"A": { "type": "item", "code": "tailorsdelight:awl-*", "isTool": true, "toolDurabilityCost": 6 }
+	},
+	"width": 3,
+	"height": 3,
+	"output": { "type": "block", "code": "game:leather" }
+	},
+
+	{
+	"ingredientPattern": "KA ,SPS,SDS",
+	"ingredients": {
+		"P": { "type": "item", "code": "bdtree:plank-*" },
+		"S": { "type": "block", "code": "tailorsdelight:panel-leather-*", "name": "type", "skipVariants": [ "plain" ] },
+		"D": { "type": "block", "code": "tailorsdelight:panel-leather-*", "quantity": 2, "name": "type", "skipVariants": [ "plain" ] },
+		"K": { "type": "item", "code": "game:knife-generic-*", "isTool": true, "toolDurabilityCost": 6 },
+		"A": { "type": "item", "code": "tailorsdelight:awl-*", "isTool": true, "toolDurabilityCost": 6 }
+	},
+	"width": 3,
+	"height": 3,
+	"output": { "type": "block", "code": "tailorsdelight:leatherblock-{type}" }
+	}
+]

@@ -1,0 +1,15 @@
+{
+    "ingredientPattern": "BBB,SRS,S_S",
+    "ingredients": {
+        "B": { "type": "item", "code": "bdtree:plank-*" },
+        "R": { "type": "item", "code": "game:rope" },
+        "S": { "type": "item", "code": "game:stick" }
+    },
+    "width": 3,
+    "height": 3,
+    "output": {
+        "type": "block",
+        "code": "scaffolding:scaffolding-top-ns",
+        "quantity": 4
+    }
+}

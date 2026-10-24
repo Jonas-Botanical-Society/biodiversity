@@ -1,0 +1,13 @@
+[
+	{	
+		ingredientPattern: "PPP,PSP,PRP",
+		ingredients: {
+			"S": { type: "item", code: "game:saw-*", isTool: true, toolDurabilityCost: 60 },
+			"P": { type: "item", code: "bdtree:plank-*", quantity: 6 },
+			"R": { type: "block", code: "game:rock-*", name: "rock", allowedVariants: [ "arenite", "arkose", "komatiite", "pyroxenite", "serpentinite", "monzonite", "syenite" ]  }
+		},
+		width: 3,
+		height: 3,
+		output: { type: "block", code: "game:pulverizerframe-north", quantity: 1 }
+	},
+]

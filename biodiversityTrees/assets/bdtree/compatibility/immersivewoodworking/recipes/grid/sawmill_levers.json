@@ -1,0 +1,12 @@
+{
+	enabled: false,
+	ingredientPattern: "PNP,_N_,_L_",
+	ingredients: {
+		"P": { type: "item", code: "bdtree:plank-*",               name: "wood" },
+		"N": { type: "item", code: "game:metalnailsandstrips-*", name: "metal" },
+		"L": { type: "item", code: "game:metalplate-*",          name: "plate" }
+	},
+	width: 3,
+	height: 3,
+	output: { type: "item", code: "immersivewoodworking:sawmilllevers", quantity: 1 }
+}

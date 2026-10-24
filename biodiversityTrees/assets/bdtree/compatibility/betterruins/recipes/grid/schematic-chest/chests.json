@@ -1,0 +1,28 @@
+[
+    {
+        "ingredientPattern": "BGB,BCB,NS_",
+        "ingredients": {
+            "B": {type: "Item", code: "bdtree:plank-*", name: "wood", skipVariants: ["aged"]},
+            "G": {type: "Item", code: "game:nugget-nativegold", quantity: 2},
+            "C": {type: "Item", code: "game:cloth-red"},
+            "N": {type: "Item", code: "game:metalnailsandstrips-*"},
+            "S": {"type": "Item", "code": "betterruins:br-schematic-chest", "consume": false }
+        },
+        "width": 3,
+        "height": 3,
+        "output": {type: "Block", code: "game:chest-east", attributes: {"type": "golden"}}
+    },
+    {
+        "ingredientPattern": "BGB,BCB,NS_",
+        "ingredients": {
+            "B": {type: "Item", code: "bdtree:plank-*", name: "wood", skipVariants: ["aged"]},
+            "G": {type: "Item", code: "game:metalbit-brass", quantity: 2},
+            "C": {type: "Item", code: "game:cloth-blue"},
+            "N": {type: "Item", code: "game:metalnailsandstrips-*"},
+            "S": {"type": "Item", "code": "betterruins:br-schematic-chest", "consume": false }
+        },
+        "width": 3,
+        "height": 3,
+        "output": {type: "Block", code: "game:chest-east", attributes: {"type": "owl"}}
+    }
+]

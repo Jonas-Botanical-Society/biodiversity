@@ -1,0 +1,51 @@
+﻿[
+	{
+        "enabled": true,
+		"name": "Pillory 2 - Restoration",
+		recipeGroup: 1,
+		"ingredientPattern": "WHF,NPN",
+        "width": 3,
+        "height": 2,
+        "ingredients": {
+            "H": { "type": "item", "code": "game:chisel-*", "isTool": true },
+            "W": { "type": "block", "code": "game:clutter", "attributes": {"type":"pillory2"}},
+			"N": { "type": "item", "code": "game:metalnailsandstrips-{metal}", "quantity": 2 },
+			"P": { "type": "item", "code": "bdtree:plank-*","name": "wood", "quantity": 2 },
+			"F": { "type": "item", "code": "game:fat-rendered" }
+
+        },
+        "output": { "type": "block", "code": "portcullis:pillory-north"} 
+    },
+	{
+        "enabled": true,
+		"name": "Pillory 3 - Restoration",
+		recipeGroup: 1,
+		"ingredientPattern":"WHF,NPN",
+        "width": 3,
+        "height": 2,
+        "ingredients": {
+            "H": { "type": "item", "code": "game:chisel-*", "isTool": true },
+			"W": { "type": "block", "code": "game:clutter", "attributes": {"type":"pillory3"}},
+			"N": { "type": "item", "code": "game:metalnailsandstrips-{metal}", "quantity": 3 },
+			"P": { "type": "item", "code": "bdtree:plank-*","name": "wood", "quantity": 3 },
+			"F": { "type": "item", "code": "game:fat-rendered" }
+        },
+        "output": { "type": "block", "code": "portcullis:pillory-north"} 
+    },
+	{
+        "enabled": true,
+		"name": "Pillory 4 - Restoration",
+		recipeGroup: 1,
+		"ingredientPattern": "WHF,NPN",
+        "width": 3,
+        "height": 2,
+        "ingredients": {
+            "H": { "type": "item", "code": "game:chisel-*", "isTool": true },
+			"W": { "type": "block", "code": "game:clutter", "attributes": {"type":"pillory4"}},
+			"N": { "type": "item", "code": "game:metalnailsandstrips-{metal}", "quantity": 4 },
+			"P": { "type": "item", "code": "bdtree:plank-*","name": "wood", "quantity": 4 },
+			"F": { "type": "item", "code": "game:fat-rendered", "quantity": 3 }
+        },
+        "output": { "type": "block", "code": "portcullis:pillory-north"} 
+    }
+]

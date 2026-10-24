@@ -1,0 +1,164 @@
+[
+  {
+    "ingredientPattern": "HCR,PAP,_W_",
+    "recipeGroup": 1,
+    "ingredients": {
+      "H": { "type": "item", "code": "game:hammer-*", "isTool": true },
+      "C": { "type": "item", "code": "game:chisel-*", "isTool": true },
+      "R": { "type": "item", "code": "game:resin", "quantity": 4 },
+      "P": { "type": "item", "code": "bdtree:plank-*", "name": "wood", "quantity": 4 },
+      "W": { "type": "block", "code": "game:woodbucket" },
+      "A": { "type": "block", "code": "game:woodenaxle-ud" }
+    },
+    "attributes": {
+      "liquidContainerProps": {
+        "requiresContent": { "type": "item", "code": "expandedfoods:foodoilportion-flax" },
+        "requiresLitres": 0.2
+      }
+    },
+    "width": 3,
+    "height": 3,
+    "output": { "type": "block", "code": "game:woodentoggle-ns", "quantity": 1 }
+  },
+  {
+    "ingredientPattern": "HCR,PAP,_W_",
+    "recipeGroup": 1,
+    "ingredients": {
+      "H": { "type": "item", "code": "game:hammer-*", "isTool": true },
+      "C": { "type": "item", "code": "game:chisel-*", "isTool": true },
+      "R": { "type": "item", "code": "game:resin", "quantity": 4 },
+      "P": { "type": "item", "code": "bdtree:plank-*", "name": "wood", "quantity": 4 },
+      "W": { "type": "block", "code": "game:woodbucket" },
+      "A": { "type": "block", "code": "game:woodenaxle-ud" }
+    },
+    "attributes": {
+      "liquidContainerProps": {
+        "requiresContent": { "type": "item", "code": "expandedfoods:foodoilportion-rice" },
+        "requiresLitres": 0.2
+      }
+    },
+    "width": 3,
+    "height": 3,
+    "output": { "type": "block", "code": "game:woodentoggle-ns", "quantity": 1 }
+  },
+  {
+    "ingredientPattern": "HCR,PAP,_W_",
+    "recipeGroup": 1,
+    "ingredients": {
+      "H": { "type": "item", "code": "game:hammer-*", "isTool": true },
+      "C": { "type": "item", "code": "game:chisel-*", "isTool": true },
+      "R": { "type": "item", "code": "game:resin", "quantity": 4 },
+      "P": { "type": "item", "code": "bdtree:plank-*", "name": "wood", "quantity": 4 },
+      "W": { "type": "block", "code": "game:woodbucket" },
+      "A": { "type": "block", "code": "game:woodenaxle-ud" }
+    },
+    "attributes": {
+      "liquidContainerProps": {
+        "requiresContent": { "type": "item", "code": "expandedfoods:foodoilportion-seed" },
+        "requiresLitres": 0.2
+      }
+    },
+    "width": 3,
+    "height": 3,
+    "output": { "type": "block", "code": "game:woodentoggle-ns", "quantity": 1 }
+  },
+  {
+    "ingredientPattern": "HCR,PAP,_W_",
+    "recipeGroup": 1,
+    "ingredients": {
+      "H": { "type": "item", "code": "game:hammer-*", "isTool": true },
+      "C": { "type": "item", "code": "game:chisel-*", "isTool": true },
+      "R": { "type": "item", "code": "game:resin", "quantity": 4 },
+      "P": { "type": "item", "code": "bdtree:plank-*", "name": "wood", "quantity": 4 },
+      "W": { "type": "block", "code": "game:woodbucket" },
+      "A": { "type": "block", "code": "game:woodenaxle-ud" }
+    },
+    "attributes": {
+      "liquidContainerProps": {
+        "requiresContent": { "type": "item", "code": "expandedfoods:foodoilportion-soy" },
+        "requiresLitres": 0.2
+      }
+    },
+    "width": 3,
+    "height": 3,
+    "output": { "type": "block", "code": "game:woodentoggle-ns", "quantity": 1 }
+  },
+  {
+    "ingredientPattern": "HCR,PAP,_W_",
+    "recipeGroup": 1,
+    "ingredients": {
+      "H": { "type": "item", "code": "game:hammer-*", "isTool": true },
+      "C": { "type": "item", "code": "game:chisel-*", "isTool": true },
+      "R": { "type": "item", "code": "game:resin", "quantity": 4 },
+      "P": { "type": "item", "code": "bdtree:plank-*", "name": "wood", "quantity": 4 },
+      "W": { "type": "block", "code": "game:woodbucket" },
+      "A": { "type": "block", "code": "game:woodenaxle-ud" }
+    },
+    "attributes": {
+      "liquidContainerProps": {
+        "requiresContent": { "type": "item", "code": "expandedfoods:foodoilportion-sunflower" },
+        "requiresLitres": 0.2
+      }
+    },
+    "width": 3,
+    "height": 3,
+    "output": { "type": "block", "code": "game:woodentoggle-ns", "quantity": 1 }
+  },
+  {
+    "ingredientPattern": "HCR,PAP,_W_",
+    "recipeGroup": 1,
+    "ingredients": {
+      "H": { "type": "item", "code": "game:hammer-*", "isTool": true },
+      "C": { "type": "item", "code": "game:chisel-*", "isTool": true },
+      "R": { "type": "item", "code": "game:resin", "quantity": 4 },
+      "P": { "type": "item", "code": "bdtree:plank-*", "name": "wood", "quantity": 4 },
+      "W": { "type": "block", "code": "game:woodbucket" },
+      "A": { "type": "block", "code": "game:woodenaxle-ud" }
+    },
+    "attributes": {
+      "liquidContainerProps": {
+        "requiresContent": { "type": "item", "code": "expandedfoods:foodoilportion-peanut" },
+        "requiresLitres": 0.2
+      }
+    },
+    "width": 3,
+    "height": 3,
+    "output": { "type": "block", "code": "game:woodentoggle-ns", "quantity": 1 }
+  },
+  {
+    "ingredientPattern": "HCR,PAP,_W_",
+    "recipeGroup": 1,
+    "ingredients": {
+      "H": { "type": "item", "code": "game:hammer-*", "isTool": true },
+      "C": { "type": "item", "code": "game:chisel-*", "isTool": true },
+      "R": { "type": "item", "code": "game:resin", "quantity": 4 },
+      "P": { "type": "item", "code": "bdtree:plank-*", "name": "wood", "quantity": 4 },
+      "W": { "type": "block", "code": "game:woodbucket" },
+      "A": { "type": "block", "code": "game:woodenaxle-ud" }
+    },
+    "attributes": {
+      "liquidContainerProps": {
+        "requiresContent": { "type": "item", "code": "expandedfoods:foodoilportion-olive" },
+        "requiresLitres": 0.2
+      }
+    },
+    "width": 3,
+    "height": 3,
+    "output": { "type": "block", "code": "game:woodentoggle-ns", "quantity": 1 }
+  },
+  {
+    "ingredientPattern": "HCR,PAP,_W_",
+    "recipeGroup": 2,
+    "ingredients": {
+      "H": { "type": "item", "code": "game:hammer-*", "isTool": true },
+      "C": { "type": "item", "code": "game:chisel-*", "isTool": true },
+      "R": { "type": "item", "code": "game:resin", "quantity": 4 },
+      "P": { "type": "item", "code": "bdtree:plank-*", "name": "wood", "quantity": 4 },
+      "W": { "type": "block", "code": "expandedfoods:hardlard", "quantity":  2 },
+      "A": { "type": "block", "code": "game:woodenaxle-ud" }
+    },
+    "width": 3,
+    "height": 3,
+    "output": { "type": "block", "code": "game:woodentoggle-ns", "quantity": 1 }
+  }
+]

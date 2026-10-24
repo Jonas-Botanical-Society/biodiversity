@@ -1,0 +1,41 @@
+[
+    {
+		name: "Wood raft",
+        "recipeGroup": 333,
+		ingredientPattern: "LXL,LRL,LRL",
+		ingredients: {
+			"L": { type: "block", code: "bdtree:log-placed-*-ud", name: "wood", quantity: 1 },
+            "X": {type: "Item", code: "betterruins:br-schematic-shipwright", "consume": false },
+			"R": { type: "item", code: "game:rope" }
+		},
+		width: 3,
+		height: 3,
+		output: { type: "item", code: "bdtree:boat-raft-{wood}"  }
+	},
+	{
+		name: "Wood raft",
+        "recipeGroup": 333,
+		ingredientPattern: "LXL,LRL,LRL",
+		ingredients: {
+			"L": { type: "block", code: "bdtree:logsection-placed-*-ne-ud", name: "wood", quantity: 1 },
+            "X": {type: "Item", code: "betterruins:br-schematic-shipwright", "consume": false },
+			"R": { type: "item", code: "game:rope" }
+		},
+		width: 3,
+		height: 3,
+		output: { type: "item", code: "bdtree:boat-raft-{wood}"  }
+	},
+    {
+		ingredientPattern: "HLX",
+        "recipeGroup": 333,
+		ingredients: {
+			"H": { type: "item", code: "game:saw-*", isTool: true  },
+			"L": { type: "block", code: "bdtree:debarkedlog-*-ud", name: "wood" },
+            "X": {type: "Item", code: "betterruins:br-schematic-shipwright", "consume": false },
+
+		},
+		width: 3,
+		height: 1,
+		output: { type: "block", code: "bdtree:supportbeam-{wood}", quantity: 9  }
+	}
+]

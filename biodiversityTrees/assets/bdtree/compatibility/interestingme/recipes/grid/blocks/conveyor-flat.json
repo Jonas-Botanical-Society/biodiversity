@@ -1,0 +1,11 @@
+{
+	ingredientPattern: "PPP,GCG,PPP",
+	ingredients: {
+		"P": { type: "item", code: "bdtree:plank-*" },
+		"G": { type: "item", code: "game:leather-normal-plain" },
+		"C": { type: "item", code: "game:resin" }
+	},
+	width: 3,
+	height: 3,
+	output: { type: "block", code: "interestingme:conveyor-flat-north", quantity: 1 }
+}

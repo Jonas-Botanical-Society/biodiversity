@@ -1,0 +1,27 @@
+[
+    {
+        "ingredientPattern": "BC_,BCC,BXA",
+        "ingredients": {
+            "X": {type: "Item", code: "betterruins:br-schematic-table", "consume": false },
+            "C": {type: "Item", code: "game:cloth-blue"},
+            "B": {type: "Item", code: "bdtree:plank-*", name: "wood", skipVariants:["aged"]},
+            "A": {type: "Item", code: "bdtree:plank-*", name: "wood", skipVariants:["aged"], quantity: 2},
+        },
+        "width": 3,
+        "height": 3,
+        "output": {type: "Block", code: "game:clutter", attributes: { "type": "chair-back", "collected":true} }
+
+    },
+    {
+        "ingredientPattern": "BC_,BCC,BXA",
+        "ingredients": {
+            "X": {type: "Item", code: "betterruins:br-schematic-table", "consume": false },
+            "C": {type: "Item", code: "game:cloth-blue"},
+            "B": {type: "Item", code: "bdtree:plank-*", name: "wood", skipVariants:["aged"]},
+            "A": {type: "Item", code: "bdtree:plank-*", name: "wood", skipVariants:["aged"], quantity: 2},
+        },
+        "width": 3,
+        "height": 3,
+        "output": {type: "Block", code: "game:clutter", attributes: { "type": "chair-back"} }
+    }
+]

@@ -1,0 +1,13 @@
+{
+	enabled: false,
+	ingredientPattern: "HMP,BBB,PMP",
+	ingredients: {
+		"H": { type: "item",  tags: ["tool-hammer"], isTool: true, toolDurabilityCost: 0 },
+		"M": { type: "item",  code: "game:resin" },
+		"P": { type: "item",  code: "bdtree:plank-*",       name: "wood" },
+		"B": { type: "block", code: "bdtree:supportbeam-*", name: "beam" }
+	},
+	width: 3,
+	height: 3,
+	output: { type: "block", code: "immersivewoodworking:sawmill-frame-north", quantity: 1 }
+}

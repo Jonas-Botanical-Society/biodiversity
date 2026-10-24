@@ -1,0 +1,14 @@
+[
+    {
+		name: "Fancy door",
+		ingredientPattern: "AWW,SWW,_WW",
+		ingredients: {
+			"W": { type: "item", code: "bdtree:plank-*", name: "wood" },
+            "A": { type: "item", code: "game:saw-*", isTool: true  },
+            "S": {"type": "Item", "code": "betterruins:br-schematic-door", "consume": false }
+		},
+		width: 3,
+		height: 3,
+		output: {type: "Block", code: "bdtree:door-sleek-windowed-{wood}" }
+	}
+]

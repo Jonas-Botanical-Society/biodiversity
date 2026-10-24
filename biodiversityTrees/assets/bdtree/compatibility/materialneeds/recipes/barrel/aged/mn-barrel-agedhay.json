@@ -1,0 +1,107 @@
+[
+	{
+	"code": "hay-aged",
+	"ingredients":
+		[ { "type": "item", "code": "game:vinegarportion", "litres": 1, "consumeLitres": 1 },
+		  { "type": "block", "code": "game:hay-normal-ud", "name": "wood", "quantity": 1 } ],
+	"output":
+		{ "type": "block", "code": "game:hay-aged-ud", "quantity": 1 }, "requiresSeal": true, "sealHours": 24 },
+	{
+	"code": "slantedroofingcornerinner-agedthatch",
+	"ingredients":
+		[ { "type": "item", "code": "game:vinegarportion", "litres": 1, "consumeLitres": 1 },
+		  { "type": "block", "code": "game:slantedroofingcornerinner-thatch-east-free", "name": "wood", "quantity": 1 } ],
+	"output":
+		{ "type": "block", "code": "game:slantedroofingcornerinner-agedthatch-east-free", "quantity": 1 }, "requiresSeal": true, "sealHours": 24 },
+	{
+	"code": "slantedroofingridgeend-agedthatch",
+	"ingredients":
+		[ { "type": "item", "code": "game:vinegarportion", "litres": 1, "consumeLitres": 1 },
+		  { "type": "block", "code": "game:slantedroofingridgeend-thatch-east-free", "name": "wood", "quantity": 1 } ],
+	"output":
+		{ "type": "block", "code": "game:slantedroofingridgeend-agedthatch-east-free", "quantity": 1 }, "requiresSeal": true, "sealHours": 24 },
+	{
+	"code": "slantedroofinghalfright-agedthatch",
+	"ingredients":
+		[ { "type": "item", "code": "game:vinegarportion", "litres": 1, "consumeLitres": 1 },
+		  { "type": "block", "code": "game:slantedroofinghalfright-thatch-east-free", "name": "wood", "quantity": 1 } ],
+	"output":
+		{ "type": "block", "code": "game:slantedroofinghalfright-agedthatch-east-free", "quantity": 1 }, "requiresSeal": true, "sealHours": 24 },
+	{
+	"code": "slantedroofingridgehalfright-agedthatch",
+	"ingredients":
+		[ { "type": "item", "code": "game:vinegarportion", "litres": 1, "consumeLitres": 1 },
+		  { "type": "block", "code": "game:slantedroofingridgehalfright-thatch-east-free", "name": "wood", "quantity": 1 } ],
+	"output":
+		{ "type": "block", "code": "game:slantedroofingridgehalfright-agedthatch-east-free", "quantity": 1 }, "requiresSeal": true, "sealHours": 24 },
+	{
+	"code": "slantedroofingridgehalfright-agedthatch",
+	"ingredients":
+		[ { "type": "item", "code": "game:vinegarportion", "litres": 1, "consumeLitres": 1 },
+		  { "type": "block", "code": "game:slantedroofingridgehalfright-thatch-east-free", "name": "wood", "quantity": 1 } ],
+	"output":
+		{ "type": "block", "code": "game:slantedroofingridgehalfright-agedthatch-east-free", "quantity": 1 }, "requiresSeal": true, "sealHours": 24 },
+	{
+	"code": "slantedroofingridgehalfleft-agedthatch",
+	"ingredients":
+		[ { "type": "item", "code": "game:vinegarportion", "litres": 1, "consumeLitres": 1 },
+		  { "type": "block", "code": "game:slantedroofingridgehalfleft-thatch-east-free", "name": "wood", "quantity": 1 } ],
+	"output":
+		{ "type": "block", "code": "game:slantedroofingridgehalfleft-agedthatch-east-free", "quantity": 1 }, "requiresSeal": true, "sealHours": 24 },
+	{
+	"code": "slantedroofingbottom-agedthatch",
+	"ingredients":
+		[ { "type": "item", "code": "game:vinegarportion", "litres": 1, "consumeLitres": 1 },
+		  { "type": "block", "code": "game:slantedroofingbottom-thatch-east-free", "name": "wood", "quantity": 1 } ],
+	"output":
+		{ "type": "block", "code": "game:slantedroofingbottom-agedthatch-east-free", "quantity": 1 }, "requiresSeal": true, "sealHours": 24 },
+	{
+	"code": "slantedroofinghalfleft-agedthatch",
+	"ingredients":
+		[ { "type": "item", "code": "game:vinegarportion", "litres": 1, "consumeLitres": 1 },
+		  { "type": "block", "code": "game:slantedroofinghalfleft-thatch-east-free", "name": "wood", "quantity": 1 } ],
+	"output":
+		{ "type": "block", "code": "game:slantedroofinghalfleft-agedthatch-east-free", "quantity": 1 }, "requiresSeal": true, "sealHours": 24 },
+	{
+	"code": "slantedroofinghalfleft-agedthatch",
+	"ingredients":
+		[ { "type": "item", "code": "game:vinegarportion", "litres": 1, "consumeLitres": 1 },
+		  { "type": "block", "code": "game:slantedroofingcornerouter-thatch-east-free", "name": "wood", "quantity": 1 } ],
+	"output":
+		{ "type": "block", "code": "game:slantedroofingcornerouter-agedthatch-east-free", "quantity": 1 }, "requiresSeal": true, "sealHours": 24 },
+	{
+	"code": "slantedroofingcornerinner-agedthatch",
+	"ingredients":
+		[ { "type": "item", "code": "game:vinegarportion", "litres": 1, "consumeLitres": 1 },
+		  { "type": "block", "code": "game:slantedroofingcornerinner-thatch-east-free", "name": "wood", "quantity": 1 } ],
+	"output":
+		{ "type": "block", "code": "game:slantedroofingcornerinner-agedthatch-east-free", "quantity": 1 }, "requiresSeal": true, "sealHours": 24 },
+	{
+	"code": "slantedroofingtop-agedthatch",
+	"ingredients":
+		[ { "type": "item", "code": "game:vinegarportion", "litres": 1, "consumeLitres": 1 },
+		  { "type": "block", "code": "game:slantedroofingtop-thatch-east-free", "name": "wood", "quantity": 1 } ],
+	"output":
+		{ "type": "block", "code": "game:slantedroofingtop-agedthatch-east-free", "quantity": 1 }, "requiresSeal": true, "sealHours": 24 },
+	{
+	"code": "slantedroofingridge-agedthatch",
+	"ingredients":
+		[ { "type": "item", "code": "game:vinegarportion", "litres": 1, "consumeLitres": 1 },
+		  { "type": "block", "code": "game:slantedroofingridge-thatch-ns-free", "name": "wood", "quantity": 1 } ],
+	"output":
+		{ "type": "block", "code": "game:slantedroofingridge-agedthatch-ns-free", "quantity": 1 }, "requiresSeal": true, "sealHours": 24 },
+	{
+	"code": "slantedroofingtip-agedthatch",
+	"ingredients":
+		[ { "type": "item", "code": "game:vinegarportion", "litres": 1, "consumeLitres": 1 },
+		  { "type": "block", "code": "game:slantedroofingtip-thatch-free", "name": "wood", "quantity": 1 } ],
+	"output":
+		{ "type": "block", "code": "game:slantedroofingtip-agedthatch-free", "quantity": 1 }, "requiresSeal": true, "sealHours": 24 },
+	{
+	"code": "slantedroofing-agedthatch",
+	"ingredients":
+		[ { "type": "item", "code": "game:vinegarportion", "litres": 1, "consumeLitres": 1 },
+		  { "type": "block", "code": "game:slantedroofing-thatch-east-free", "name": "wood", "quantity": 1 } ],
+	"output":
+		{ "type": "block", "code": "game:slantedroofing-agedthatch-east-free", "quantity": 1 }, "requiresSeal": true, "sealHours": 24 },
+]

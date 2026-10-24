@@ -1,0 +1,11 @@
+{
+	ingredientPattern: "SRS,PRP,SSS",
+	ingredients: {
+		"S": { type: "item", code: "bdtree:plank-*" },
+		"R": { type: "item", code: "game:rod-iron", quantity: 4 },
+		"P": { type: "item", code: "game:metalplate-iron" }
+	},
+	width: 3,
+	height: 3,
+	output: { type: "block", code: "interestingme:jaw-crusher", quantity: 1 }
+}

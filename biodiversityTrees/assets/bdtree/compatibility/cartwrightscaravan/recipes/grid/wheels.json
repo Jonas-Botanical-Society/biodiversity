@@ -1,0 +1,112 @@
+[
+  {
+    "code": "wheelspoked",
+    "ingredientPattern": "WNW,RHR,WNW",
+    "ingredients": {
+      "N": {
+        "type": "item",
+        "code": "game:metalnailsandstrips-*",
+        "name": "metal",
+        "allowedVariants": [ "iron", "steel", "meteoriciron" ],
+        "quantity": 4
+      },
+      "W": {
+        "type": "block",
+        "code": "bdtree:supportbeam-*",
+        "name": "wood",
+        "quantity": 4
+      },
+      "R": {
+        "type": "item",
+        "code": "game:resin"
+      },
+      "H": {
+        "type": "item",
+        "code": "game:hoop-*",
+        "name": "metal",
+        "allowedVariants": [ "iron", "steel", "meteoriciron" ],
+        "quantity": 2
+      }
+    },
+    "width": 3,
+    "height": 3,
+    "recipeGroup": 1,
+    "shapeless": false,
+    "output": {
+      "type": "item",
+      "code": "cartwrightscaravan:cartsmisc-wheelspoked",
+        "quantity":  2
+    }
+  },
+  {
+    "code": "wheelsolid",
+    "ingredientPattern": "WWW,SHS,WWW",
+    "ingredients": {
+      "S": {
+        "type": "item",
+        "code": "game:resin"
+        
+      },
+      "W": {
+        "type": "block",
+        "code": "bdtree:supportbeam-*",
+        "name": "wood",
+        "quantity": 2
+      },
+      "H": {
+        "type": "item",
+        "code": "game:hoop-*",
+        "name": "metal",
+        "allowedVariants": [ "tinbronze", "blackbronze", "bismuthbronze", "iron", "steel", "meteoriciron" ],
+        "quantity": 2
+      }
+    },
+    "width": 3,
+    "height": 3,
+    "recipeGroup": 1,
+    "shapeless": false,
+    "output": {
+      "type": "item",
+      "code": "cartwrightscaravan:cartsmisc-wheelsolid",
+      "quantity":  2
+    }
+  },
+  {
+    "code": "wheelsmall",
+    "ingredientPattern": "WRW,ESE,WRW",
+    "ingredients": {
+      "S": {
+        "type": "item",
+        "code": "cartwrightscaravan:cartschematics-carts",
+        "returnedStack": {
+          "type": "item",
+          "code": "cartwrightscaravan:cartschematics-carts"
+        }
+      },
+      "E": {
+        "type": "item",
+        "code": "game:metalnailsandstrips-*",
+        "quantity": 1
+      },
+      "W": {
+        "type": "block",
+        "code": "bdtree:supportbeam-*",
+        "name": "wood",
+        "quantity": 1
+      },
+      "R": {
+        "type": "item",
+        "code": "game:rope"
+      }
+    },
+    "width": 3,
+    "height": 3,
+    "recipeGroup": 1,
+    "shapeless": false,
+    "output": {
+      "type": "item",
+      "code": "cartwrightscaravan:cartsmisc-wheelsmall",
+      "quantity": 2
+    }
+  }
+]

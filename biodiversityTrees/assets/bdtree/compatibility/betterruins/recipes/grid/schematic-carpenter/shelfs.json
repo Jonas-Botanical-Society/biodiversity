@@ -1,0 +1,52 @@
+[
+    {
+        "ingredientPattern": "X__,N_N,BBB",
+        "recipeGroup": 333,
+        "ingredients": {
+            "X": {"type": "Item", "code": "betterruins:br-schematic-carpenter", "consume": false },
+            "N": {"type": "Item", "code": "game:flaxfibers" },
+            "B": {"type": "Item", "code": "bdtree:plank-*" , "quantity": 1}
+            
+        },
+        "width": 3,
+        "height": 3,
+        "output": {"type": "Block", "code": "game:clutter", "attributes": { "type": "shelf1x1-crude" , "collected": true} }
+    },
+    {
+        "ingredientPattern": "X__,BBB",
+        "recipeGroup": 333,
+        "ingredients": {
+            "X": {"type": "Item", "code": "betterruins:br-schematic-carpenter", "consume": false },
+            "B": {"type": "Item", "code": "bdtree:plank-*" , "quantity": 1}
+            
+        },
+        "width": 3,
+        "height": 2,
+        "output": {"type": "Block", "code": "game:clutter", "attributes": { "type": "shelf1x1-plain" , "collected": true} }
+    },
+    {
+        "ingredientPattern": "X__,N_N,BBB",
+        "recipeGroup": 333,
+        "ingredients": {
+            "X": {"type": "Item", "code": "betterruins:br-schematic-carpenter", "consume": false },
+            "N": {"type": "Item", "code": "game:flaxfibers" },
+            "B": {"type": "Item", "code": "bdtree:plank-*" , "quantity": 1}
+            
+        },
+        "width": 3,
+        "height": 3,
+        "output": {"type": "Block", "code": "game:clutter", "attributes": { "type": "shelf1x1-crude" } }
+    },
+    {
+        "ingredientPattern": "X__,BBB",
+        "recipeGroup": 333,
+        "ingredients": {
+            "X": {"type": "Item", "code": "betterruins:br-schematic-carpenter", "consume": false },
+            "B": {"type": "Item", "code": "bdtree:plank-*" , "quantity": 1}
+            
+        },
+        "width": 3,
+        "height": 2,
+        "output": {"type": "Block", "code": "game:clutter", "attributes": { "type": "shelf1x1-plain" } }
+    }
+]

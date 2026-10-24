@@ -1,0 +1,10 @@
+{
+	ingredientPattern: "W__	_P_	__W",
+	ingredients: {
+		"W": { type: "item", code: "bdtree:plank-*" },
+		"P": { type: "block", code: "plaster-{color}-plain" }
+	},
+	width: 3,
+	height: 3,
+	output: { type: "block", code: "plaster-{color}-diagonal-ud"  }
+}
