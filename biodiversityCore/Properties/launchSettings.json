@@ -3,14 +3,14 @@
     "Client": {
       "commandName": "Executable",
       "executablePath": "dotnet",
-      "commandLineArgs": "\"$(VINTAGE_STORY)/Vintagestory.dll\" --tracelog --addModPath \"$(SolutionDir)bin/$(Configuration)/Mods\" --addOrigin \"$(ProjectDir)assets\" $(AquaticSubModAssetPath) $(CropsSubModAssetPath) $(FlowersSubModAssetPath) $(HerbsSubModAssetPath) $(OrchardsSubModAssetPath) $(ShrubsSubModAssetPath) $(TreesSubModAssetPath)",
-      "workingDirectory": "$(VINTAGE_STORY)"
+      "commandLineArgs": "\"C:\\Users\\bensk\\AppData\\Roaming\\VintagestoryTest\\Vintagestory.dll\" --tracelog --dataPath \"C:\\Users\\bensk\\AppData\\Roaming\\VintagestoryTestData\" --addModPath \"$(SolutionDir)bin/$(Configuration)/Mods\" --addOrigin \"$(ProjectDir)assets\" $(AquaticSubModAssetPath) $(CropsSubModAssetPath) $(FlowersSubModAssetPath) $(HerbsSubModAssetPath) $(OrchardsSubModAssetPath) $(ShrubsSubModAssetPath) $(TreesSubModAssetPath)",
+      "workingDirectory": "C:\\Users\\bensk\\AppData\\Roaming\\VintagestoryTest"
     },
     "Server": {
       "commandName": "Executable",
       "executablePath": "dotnet",
-      "commandLineArgs": "\"$(VINTAGE_STORY)/VintagestoryServer.dll\" --tracelog --addModPath \"$(SolutionDir)bin/$(Configuration)/Mods\" --addOrigin \"$(ProjectDir)assets\" $(AquaticSubModAssetPath) $(CropsSubModAssetPath) $(FlowersSubModAssetPath) $(HerbsSubModAssetPath) $(OrchardsSubModAssetPath) $(ShrubsSubModAssetPath) $(TreesSubModAssetPath)",
-      "workingDirectory": "$(VINTAGE_STORY)"
+      "commandLineArgs": "\"C:\\Users\\bensk\\AppData\\Roaming\\VintagestoryTest\\VintagestoryServer.dll\" --tracelog --dataPath \"C:\\Users\\bensk\\AppData\\Roaming\\VintagestoryTestData\" --addModPath \"$(SolutionDir)bin/$(Configuration)/Mods\" --addOrigin \"$(ProjectDir)assets\" $(AquaticSubModAssetPath) $(CropsSubModAssetPath) $(FlowersSubModAssetPath) $(HerbsSubModAssetPath) $(OrchardsSubModAssetPath) $(ShrubsSubModAssetPath) $(TreesSubModAssetPath)",
+      "workingDirectory": "C:\\Users\\bensk\\AppData\\Roaming\\VintagestoryTest"
     }
   }
 }

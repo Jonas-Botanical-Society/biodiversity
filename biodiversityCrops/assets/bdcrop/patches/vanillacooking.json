@@ -186,5 +186,20 @@
       }
     ],
     "side": "server"
+  },
+  // Add grains to porridge recipies
+  {
+    "file": "game:recipes/cooking/porridge.json",
+    "op": "addeach",
+    "path": "/ingredients/0/validStacks/-",
+    "value": [
+      {
+        "type": "item",
+        "code": "bdcrop:grain-*",
+        "shapeElement": "bowl/grain 1/*",
+        "textureMapping": [ "grain", "group1" ]
+      }
+    ],
+    "side": "server"
   }
 ]
